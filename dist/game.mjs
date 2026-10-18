@@ -400,6 +400,7 @@ function render(dt){
 function updateUI(){
   const defeat=health.dead?(mummyGameOver()?{stage:'mummifield',gameOver:mummifieldPose(mummifield).gameOver}:webGameOver()?{stage:'webbed',gameOver:true}:defeatPose(health.deathTime,health.facing)):null;
   $('stateLabel').textContent=defeat?({spin:'หมุนเซ…',collapse:'หมดแรง…',rest:'นอนมึน…',webbed:'ติดใยแน่น…',mummifield:mummyCoffinLabel()}[defeat.stage]):combat.state==='slash'?'ฟันดาบ':combat.state==='spin'?'หมุนฟัน!':combat.state==='charging'?(chargeRatio(combat)>=1?'พร้อมหมุนฟัน!':'กำลังชาร์จ'):player.moving?'กำลังเดิน':'ยืนพัก';$('stateDot').classList.toggle('walking',!health.dead&&(player.moving||combat.state!=='idle'));
+  for(const id of ['nitroButton','bombButton'])$(id).style.visibility=mummyGameOver()&&mummifield.coffinDrag?'hidden':'';
   $('deathOverlay').hidden=!defeat?.gameOver;
   $('deathOverlay').querySelector('p').textContent=mummyGameOver()?'ถูกพันร่างและปิดไว้ในโลงศพ · ลองใหม่อีกครั้ง':webGameOver()?'ดิ้นไม่ทันเวลา · ถูกใยขั้นสองพันไว้ ลองใหม่อีกครั้ง':'พักสักนิด แล้วลองหลบกระสุนกันใหม่';
   $('deathOverlay').querySelector('.eyebrow').textContent=mummyGameOver()?'MUMMIFIELD II · TIME OUT':webGameOver()?'WEBBED II · TIME OUT':'TAKE A BREATHER, BURNICE';
