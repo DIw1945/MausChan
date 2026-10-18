@@ -1,0 +1,1019 @@
+{
+  "image": "mummy-coffin-close-v35-atlas.png",
+  "anchor": [
+    56,
+    80
+  ],
+  "fps": 8,
+  "loop": false,
+  "frames": [
+    {
+      "file": "mummy-coffin-close-v35-frames/close-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 0,
+      "sourceBounds": [
+        18,
+        11,
+        240,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        82,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-1.png",
+      "x": 112,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 1,
+      "sourceBounds": [
+        274,
+        11,
+        496,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-2.png",
+      "x": 224,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 2,
+      "sourceBounds": [
+        530,
+        11,
+        752,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-3.png",
+      "x": 336,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 3,
+      "sourceBounds": [
+        786,
+        11,
+        1008,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-4.png",
+      "x": 448,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 4,
+      "sourceBounds": [
+        1042,
+        11,
+        1264,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-5.png",
+      "x": 560,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 5,
+      "sourceBounds": [
+        1298,
+        11,
+        1520,
+        251
+      ],
+      "visibleBounds": [
+        13,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-6.png",
+      "x": 0,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 6,
+      "sourceBounds": [
+        18,
+        267,
+        276,
+        507
+      ],
+      "visibleBounds": [
+        4,
+        28,
+        84,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-7.png",
+      "x": 112,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 7,
+      "sourceBounds": [
+        274,
+        267,
+        528,
+        507
+      ],
+      "visibleBounds": [
+        12,
+        28,
+        91,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-8.png",
+      "x": 224,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 8,
+      "sourceBounds": [
+        530,
+        267,
+        782,
+        507
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        91,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-9.png",
+      "x": 336,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 9,
+      "sourceBounds": [
+        786,
+        267,
+        1033,
+        507
+      ],
+      "visibleBounds": [
+        12,
+        27,
+        89,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-10.png",
+      "x": 448,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 10,
+      "sourceBounds": [
+        1042,
+        267,
+        1296,
+        507
+      ],
+      "visibleBounds": [
+        12,
+        27,
+        91,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-11.png",
+      "x": 560,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 11,
+      "sourceBounds": [
+        1298,
+        266,
+        1530,
+        508
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        85,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-12.png",
+      "x": 0,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 12,
+      "sourceBounds": [
+        18,
+        522,
+        273,
+        763
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        92,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-13.png",
+      "x": 112,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 13,
+      "sourceBounds": [
+        274,
+        522,
+        525,
+        763
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        91,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-14.png",
+      "x": 224,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 14,
+      "sourceBounds": [
+        531,
+        522,
+        790,
+        763
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        93,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-15.png",
+      "x": 336,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 15,
+      "sourceBounds": [
+        786,
+        522,
+        1041,
+        763
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        92,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-16.png",
+      "x": 448,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 16,
+      "sourceBounds": [
+        1042,
+        522,
+        1299,
+        765
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        93,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-17.png",
+      "x": 560,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 18,
+      "sourceBounds": [
+        18,
+        778,
+        271,
+        1019
+      ],
+      "visibleBounds": [
+        12,
+        27,
+        91,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-18.png",
+      "x": 0,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 19,
+      "sourceBounds": [
+        274,
+        778,
+        520,
+        1019
+      ],
+      "visibleBounds": [
+        11,
+        27,
+        87,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-19.png",
+      "x": 112,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 20,
+      "sourceBounds": [
+        530,
+        778,
+        789,
+        1019
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        93,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-20.png",
+      "x": 224,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 21,
+      "sourceBounds": [
+        786,
+        778,
+        1036,
+        1019
+      ],
+      "visibleBounds": [
+        9,
+        27,
+        87,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-21.png",
+      "x": 336,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 22,
+      "sourceBounds": [
+        1042,
+        778,
+        1281,
+        1019
+      ],
+      "visibleBounds": [
+        12,
+        27,
+        86,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-22.png",
+      "x": 448,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-wrap-v35-generated.png",
+      "sourceIndex": 23,
+      "sourceBounds": [
+        1298,
+        778,
+        1520,
+        1019
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-23.png",
+      "x": 560,
+      "y": 336,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 1,
+      "sourceBounds": [
+        399,
+        48,
+        754,
+        436
+      ],
+      "visibleBounds": [
+        17,
+        28,
+        85,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-24.png",
+      "x": 0,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 2,
+      "sourceBounds": [
+        782,
+        48,
+        1138,
+        436
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        85,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-25.png",
+      "x": 112,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 3,
+      "sourceBounds": [
+        1166,
+        48,
+        1523,
+        436
+      ],
+      "visibleBounds": [
+        17,
+        28,
+        86,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-26.png",
+      "x": 224,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 4,
+      "sourceBounds": [
+        16,
+        548,
+        366,
+        938
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        84,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-27.png",
+      "x": 336,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 5,
+      "sourceBounds": [
+        399,
+        548,
+        754,
+        938
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        85,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-28.png",
+      "x": 448,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 6,
+      "sourceBounds": [
+        783,
+        548,
+        1122,
+        938
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-29.png",
+      "x": 560,
+      "y": 448,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-tuck-v35-generated.png",
+      "sourceIndex": 7,
+      "sourceBounds": [
+        1167,
+        548,
+        1505,
+        938
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-30.png",
+      "x": 0,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 6,
+      "sourceBounds": [
+        20,
+        266,
+        247,
+        508
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        83,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-31.png",
+      "x": 112,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 7,
+      "sourceBounds": [
+        349,
+        265,
+        521,
+        505
+      ],
+      "visibleBounds": [
+        29,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-32.png",
+      "x": 224,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 8,
+      "sourceBounds": [
+        616,
+        265,
+        776,
+        503
+      ],
+      "visibleBounds": [
+        33,
+        28,
+        83,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-33.png",
+      "x": 336,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 9,
+      "sourceBounds": [
+        875,
+        265,
+        1032,
+        503
+      ],
+      "visibleBounds": [
+        34,
+        28,
+        83,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-34.png",
+      "x": 448,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 10,
+      "sourceBounds": [
+        1134,
+        265,
+        1285,
+        502
+      ],
+      "visibleBounds": [
+        35,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-35.png",
+      "x": 560,
+      "y": 560,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 11,
+      "sourceBounds": [
+        1385,
+        266,
+        1530,
+        504
+      ],
+      "visibleBounds": [
+        38,
+        28,
+        83,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-36.png",
+      "x": 0,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 12,
+      "sourceBounds": [
+        83,
+        520,
+        241,
+        758
+      ],
+      "visibleBounds": [
+        33,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-37.png",
+      "x": 112,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 13,
+      "sourceBounds": [
+        373,
+        520,
+        519,
+        758
+      ],
+      "visibleBounds": [
+        37,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-38.png",
+      "x": 224,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 14,
+      "sourceBounds": [
+        639,
+        520,
+        775,
+        758
+      ],
+      "visibleBounds": [
+        40,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-39.png",
+      "x": 336,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 15,
+      "sourceBounds": [
+        899,
+        521,
+        1031,
+        758
+      ],
+      "visibleBounds": [
+        41,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-40.png",
+      "x": 448,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 16,
+      "sourceBounds": [
+        1149,
+        520,
+        1279,
+        758
+      ],
+      "visibleBounds": [
+        42,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-41.png",
+      "x": 560,
+      "y": 672,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 17,
+      "sourceBounds": [
+        1398,
+        520,
+        1522,
+        758
+      ],
+      "visibleBounds": [
+        44,
+        28,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-42.png",
+      "x": 0,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 18,
+      "sourceBounds": [
+        103,
+        775,
+        236,
+        1011
+      ],
+      "visibleBounds": [
+        41,
+        28,
+        82,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-43.png",
+      "x": 112,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 19,
+      "sourceBounds": [
+        395,
+        775,
+        520,
+        1011
+      ],
+      "visibleBounds": [
+        44,
+        28,
+        83,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-44.png",
+      "x": 224,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 20,
+      "sourceBounds": [
+        648,
+        775,
+        769,
+        1011
+      ],
+      "visibleBounds": [
+        45,
+        28,
+        83,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-45.png",
+      "x": 336,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 21,
+      "sourceBounds": [
+        893,
+        775,
+        1010,
+        1011
+      ],
+      "visibleBounds": [
+        46,
+        29,
+        82,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-46.png",
+      "x": 448,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 22,
+      "sourceBounds": [
+        1136,
+        775,
+        1252,
+        1011
+      ],
+      "visibleBounds": [
+        47,
+        29,
+        83,
+        102
+      ]
+    },
+    {
+      "file": "mummy-coffin-close-v35-frames/close-47.png",
+      "x": 560,
+      "y": 784,
+      "w": 112,
+      "h": 112,
+      "source": "mummy-coffin-close-v35-generated.png",
+      "sourceIndex": 23,
+      "sourceBounds": [
+        1363,
+        775,
+        1479,
+        1011
+      ],
+      "visibleBounds": [
+        47,
+        28,
+        83,
+        101
+      ]
+    }
+  ]
+}
