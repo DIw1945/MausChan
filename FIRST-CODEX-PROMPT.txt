@@ -1,0 +1,21 @@
+ช่วยรับช่วงพัฒนาเกม Burnice Pixel Walk ที่อยู่ในโฟลเดอร์นี้ต่อจาก ChatGPT
+
+เริ่มจากอ่าน AGENTS.md, CODEX_HANDOFF.md และ README.md ให้ครบก่อน
+นี่คือเกม HTML/CSS/JavaScript Canvas แบบ top-down ใช้ ES modules ไม่มี build step และไม่มี runtime npm dependencies
+
+งานแรก:
+1. ตรวจโครงสร้างโปรเจกต์และการโหลด assets แล้วสรุปสถานะปัจจุบันสั้น ๆ เป็นภาษาไทย
+2. รัน npm test (บน PowerShell ใช้ npm.cmd test ได้) โดย baseline ตอนส่งต่อมี 45 tests ผ่าน
+3. เตรียมเปิดเกมด้วย npm start หรือ npm.cmd start และแจ้ง URL ถ้าเปิด server ให้ได้
+4. ตรวจว่ามี assets v8 และใช้ Nitro-Fuel กระป๋องโลหะสีทอง พร้อม shooter/projectile ที่แก้ crop แล้ว
+5. ช่วงรับงานนี้ให้ตรวจและตั้งค่าการรันก่อน จากนั้นรอคำสั่งฟีเจอร์ถัดไปจากฉัน
+
+รักษาระบบเดิม: เดิน 8 ทิศ, idle/walk 4 ทิศ, ฟัน/ชาร์จ/หมุน, เดินระหว่างชาร์จ,
+ออร่าดาบกระพริบแม้ชาร์จเต็ม, HP หัวใจ/โดนโจมตี/ล้มมึน, คลื่นดาบไฟเมื่อเลือดเต็ม,
+Dummy ยิง projectile และ Nitro-Fuel ฟื้น 2 หัวใจเมื่อจบอนิเมชั่น 4.6 วินาที
+
+ภาพตัวละคร/ไอเท็ม/หุ่น/เอฟเฟคใหม่ให้สร้างผ่าน Image Generation โดยอิง generated PNG เดิม
+แล้วค่อยหั่นเฟรม คุมขนาดตัวละครและ foot anchor ให้ตรงกัน
+ใช้ corrected-v8-atlas.json เป็น metadata ปัจจุบันของ combat/item/effects และ burnice-atlas.json สำหรับ movement
+ระบบแก้แมพยังพักไว้ ไม่ต้องเริ่มทำเอง
+รักษาสถาปัตยกรรมเดิมและอย่าเผยแพร่หรือแก้ Site เดิม เว้นแต่ฉันจะสั่ง

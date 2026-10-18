@@ -1,0 +1,5 @@
+# Optional: used only by Python sprite slicing/preparation scripts.
+# Not needed to run the game or the Node.js tests.
+Pillow
+numpy
+scipy

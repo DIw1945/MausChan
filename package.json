@@ -1,0 +1,12 @@
+{
+  "name": "burnice-pixel-walk",
+  "version": "0.10.0",
+  "private": true,
+  "description": "Portable source handoff of the Burnice Pixel Walk browser game",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node tools/dev-server.mjs",
+    "test": "node tools/run-tests.mjs"
+  }
+}

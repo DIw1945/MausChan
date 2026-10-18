@@ -1,0 +1,16 @@
+.bomb-button{position:absolute;right:170px;bottom:142px;display:flex;align-items:center;gap:5px;width:132px;min-height:54px;padding:6px 8px 7px 3px;border:1px solid #e6ae6b;background:#343122ed;color:#ffedc4;border-radius:7px;text-align:left;touch-action:manipulation}
+.bomb-button img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated;flex-shrink:0}
+.bomb-button strong{display:block;font:600 11px system-ui,sans-serif;white-space:nowrap}
+.bomb-button b{display:inline-grid;place-items:center;min-width:17px;padding:2px 3px;background:#e6b563;color:#263522;border-radius:3px;margin-left:4px;font:700 10px monospace}
+.bomb-button small{display:block;font-size:8px;margin-top:4px;color:#e2d6b9}
+.bomb-button:disabled{opacity:.65;cursor:default}
+.bomb-button:hover:enabled{background:#514127}
+.bomb-note{border-left:2px solid #dc9857;background:#2c2d20;padding:11px 15px;margin:12px 0 0;color:var(--muted);font-size:11px;line-height:2}
+.bomb-note strong{color:#efbd7b;margin-right:12px;font:10px monospace}
+@media(max-width:700px){
+  .bomb-button{right:14px;bottom:194px;width:128px;min-height:44px;padding:3px 5px 4px 2px}
+  .bomb-button strong{font-size:10px}
+  .bomb-button small{font-size:8px;margin-top:2px}
+  .bomb-note{font-size:10px;padding:10px 12px}
+  .bomb-note strong{display:block;margin:0 0 3px}
+}

@@ -1,0 +1,775 @@
+{
+  "sources": [
+    "spiders-v12-generated.png",
+    "burnice-webbed-v12-generated.png"
+  ],
+  "selection": "complete component bounding-box centres in detected row gutters and intended columns",
+  "sequences": {
+    "spider-weaver": [
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          46,
+          86,
+          272,
+          285
+        ],
+        "sourceCell": [
+          0,
+          0
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-1.png",
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          321,
+          101,
+          547,
+          272
+        ],
+        "sourceCell": [
+          1,
+          0
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-2.png",
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          582,
+          86,
+          806,
+          286
+        ],
+        "sourceCell": [
+          2,
+          0
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-3.png",
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          863,
+          86,
+          1076,
+          276
+        ],
+        "sourceCell": [
+          3,
+          0
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-4.png",
+        "x": 0,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          43,
+          349,
+          285,
+          532
+        ],
+        "sourceCell": [
+          0,
+          1
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-5.png",
+        "x": 96,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          313,
+          333,
+          549,
+          528
+        ],
+        "sourceCell": [
+          1,
+          1
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-6.png",
+        "x": 192,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          588,
+          325,
+          818,
+          591
+        ],
+        "sourceCell": [
+          2,
+          1
+        ]
+      },
+      {
+        "image": "spider-weaver-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-weaver-7.png",
+        "x": 288,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          863,
+          347,
+          1087,
+          538
+        ],
+        "sourceCell": [
+          3,
+          1
+        ]
+      }
+    ],
+    "spider-hunter": [
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          43,
+          615,
+          269,
+          821
+        ],
+        "sourceCell": [
+          0,
+          2
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-1.png",
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          313,
+          626,
+          547,
+          834
+        ],
+        "sourceCell": [
+          1,
+          2
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-2.png",
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          582,
+          616,
+          809,
+          819
+        ],
+        "sourceCell": [
+          2,
+          2
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-3.png",
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          854,
+          616,
+          1086,
+          816
+        ],
+        "sourceCell": [
+          3,
+          2
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-4.png",
+        "x": 0,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          35,
+          886,
+          288,
+          1055
+        ],
+        "sourceCell": [
+          0,
+          3
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-5.png",
+        "x": 96,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          326,
+          876,
+          561,
+          1075
+        ],
+        "sourceCell": [
+          1,
+          3
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-6.png",
+        "x": 192,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          588,
+          883,
+          811,
+          1076
+        ],
+        "sourceCell": [
+          2,
+          3
+        ]
+      },
+      {
+        "image": "spider-hunter-v12-atlas.png",
+        "file": "spiders-v12-frames/spider-hunter-7.png",
+        "x": 288,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          64
+        ],
+        "sourceBounds": [
+          862,
+          880,
+          1089,
+          1067
+        ],
+        "sourceCell": [
+          3,
+          3
+        ]
+      }
+    ],
+    "web-shot": [
+      {
+        "image": "web-shot-v12-atlas.png",
+        "file": "spiders-v12-frames/web-shot-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          16
+        ],
+        "sourceBounds": [
+          82,
+          1163,
+          235,
+          1325
+        ],
+        "sourceCell": [
+          0,
+          4
+        ]
+      },
+      {
+        "image": "web-shot-v12-atlas.png",
+        "file": "spiders-v12-frames/web-shot-1.png",
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          16
+        ],
+        "sourceBounds": [
+          325,
+          1153,
+          520,
+          1329
+        ],
+        "sourceCell": [
+          1,
+          4
+        ]
+      },
+      {
+        "image": "web-shot-v12-atlas.png",
+        "file": "spiders-v12-frames/web-shot-2.png",
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          16
+        ],
+        "sourceBounds": [
+          575,
+          1127,
+          799,
+          1350
+        ],
+        "sourceCell": [
+          2,
+          4
+        ]
+      },
+      {
+        "image": "web-shot-v12-atlas.png",
+        "file": "spiders-v12-frames/web-shot-3.png",
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          16
+        ],
+        "sourceBounds": [
+          838,
+          1124,
+          1086,
+          1362
+        ],
+        "sourceCell": [
+          3,
+          4
+        ]
+      }
+    ],
+    "burnice-webbed": [
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          34,
+          138,
+          430,
+          326
+        ],
+        "sourceCell": [
+          0,
+          0
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-1.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          480,
+          129,
+          873,
+          326
+        ],
+        "sourceCell": [
+          1,
+          0
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-2.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          922,
+          132,
+          1317,
+          325
+        ],
+        "sourceCell": [
+          2,
+          0
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-3.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          1367,
+          133,
+          1757,
+          323
+        ],
+        "sourceCell": [
+          3,
+          0
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-4.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          39,
+          383,
+          432,
+          582
+        ],
+        "sourceCell": [
+          0,
+          1
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-5.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          480,
+          387,
+          863,
+          584
+        ],
+        "sourceCell": [
+          1,
+          1
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-6.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          925,
+          387,
+          1323,
+          578
+        ],
+        "sourceCell": [
+          2,
+          1
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-7.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          1368,
+          384,
+          1762,
+          576
+        ],
+        "sourceCell": [
+          3,
+          1
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-8.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          34,
+          646,
+          434,
+          834
+        ],
+        "sourceCell": [
+          0,
+          2
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-9.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          480,
+          641,
+          874,
+          836
+        ],
+        "sourceCell": [
+          1,
+          2
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-10.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          923,
+          646,
+          1316,
+          836
+        ],
+        "sourceCell": [
+          2,
+          2
+        ]
+      },
+      {
+        "image": "burnice-webbed-v12-atlas.png",
+        "file": "spiders-v12-frames/burnice-webbed-11.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "sourceBounds": [
+          1367,
+          650,
+          1760,
+          837
+        ],
+        "sourceCell": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  "webbedCalibration": {
+    "referenceHeadWidth": 40,
+    "headWidths": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "bodyLengths": [
+      73,
+      73,
+      73,
+      74,
+      75,
+      73,
+      73,
+      74,
+      74,
+      74,
+      73,
+      73
+    ],
+    "scale": [
+      0.18518518518518517,
+      0.18691588785046728,
+      0.18518518518518517,
+      0.18867924528301888,
+      0.19138755980861244,
+      0.19047619047619047,
+      0.18433179723502305,
+      0.18691588785046728,
+      0.18433179723502305,
+      0.18691588785046728,
+      0.18691588785046728,
+      0.18604651162790697
+    ]
+  },
+  "webbedAnimation": {
+    "frames": 12,
+    "fps": 8,
+    "orientation": "lying, head right, boots left",
+    "anchor": [
+      80,
+      112
+    ]
+  }
+}

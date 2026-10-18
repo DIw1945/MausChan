@@ -1,0 +1,872 @@
+{
+  "frameSize": [
+    160,
+    160
+  ],
+  "anchor": [
+    80,
+    112
+  ],
+  "sequences": {
+    "slash-down": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-v3-frames/slash-down-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 0,
+        "file": "combat-v3-frames/slash-down-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 0,
+        "file": "combat-v3-frames/slash-down-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 0,
+        "file": "combat-v3-frames/slash-down-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-left": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 160,
+        "file": "combat-v3-frames/slash-left-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 160,
+        "file": "combat-v3-frames/slash-left-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 160,
+        "file": "combat-v3-frames/slash-left-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 160,
+        "file": "combat-v3-frames/slash-left-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-right": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 320,
+        "file": "combat-v3-frames/slash-right-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 320,
+        "file": "combat-v3-frames/slash-right-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 320,
+        "file": "combat-v3-frames/slash-right-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 320,
+        "file": "combat-v3-frames/slash-right-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-up": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 480,
+        "file": "combat-v3-frames/slash-up-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 480,
+        "file": "combat-v3-frames/slash-up-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 480,
+        "file": "combat-v3-frames/slash-up-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 480,
+        "file": "combat-v3-frames/slash-up-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-walk-down": [
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-v3-frames/charge-walk-down-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 160,
+        "y": 0,
+        "file": "combat-v3-frames/charge-walk-down-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 320,
+        "y": 0,
+        "file": "combat-v3-frames/charge-walk-down-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 480,
+        "y": 0,
+        "file": "combat-v3-frames/charge-walk-down-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-walk-left": [
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 0,
+        "y": 160,
+        "file": "combat-v3-frames/charge-walk-left-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 160,
+        "y": 160,
+        "file": "combat-v3-frames/charge-walk-left-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 320,
+        "y": 160,
+        "file": "combat-v3-frames/charge-walk-left-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 480,
+        "y": 160,
+        "file": "combat-v3-frames/charge-walk-left-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-walk-right": [
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 0,
+        "y": 320,
+        "file": "combat-v3-frames/charge-walk-right-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 160,
+        "y": 320,
+        "file": "combat-v3-frames/charge-walk-right-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 320,
+        "y": 320,
+        "file": "combat-v3-frames/charge-walk-right-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 480,
+        "y": 320,
+        "file": "combat-v3-frames/charge-walk-right-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-walk-up": [
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 0,
+        "y": 480,
+        "file": "combat-v3-frames/charge-walk-up-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 160,
+        "y": 480,
+        "file": "combat-v3-frames/charge-walk-up-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 320,
+        "y": 480,
+        "file": "combat-v3-frames/charge-walk-up-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-charge-walk-atlas.png",
+        "x": 480,
+        "y": 480,
+        "file": "combat-v3-frames/charge-walk-up-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-down": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-v3-frames/charge-down-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "combat-v3-frames/charge-down-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-left": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "combat-v3-frames/charge-left-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "combat-v3-frames/charge-left-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-right": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "combat-v3-frames/charge-right-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "combat-v3-frames/charge-right-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-up": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "combat-v3-frames/charge-up-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "combat-v3-frames/charge-up-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "spin": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 192,
+        "file": "combat-v3-frames/spin-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 192,
+        "file": "combat-v3-frames/spin-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 192,
+        "file": "combat-v3-frames/spin-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 192,
+        "file": "combat-v3-frames/spin-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 288,
+        "file": "combat-v3-frames/spin-4.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 288,
+        "file": "combat-v3-frames/spin-5.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 288,
+        "file": "combat-v3-frames/spin-6.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 288,
+        "file": "combat-v3-frames/spin-7.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "dummy-idle": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-v3-frames/dummy-idle-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "combat-v3-frames/dummy-idle-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "combat-v3-frames/dummy-idle-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "combat-v3-frames/dummy-idle-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "dummy-hit": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "combat-v3-frames/dummy-hit-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "combat-v3-frames/dummy-hit-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "combat-v3-frames/dummy-hit-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "combat-v3-frames/dummy-hit-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ]
+  },
+  "sourceRegions": {
+    "slash-left": [
+      [
+        187,
+        123,
+        468,
+        548
+      ],
+      [
+        655,
+        193,
+        1156,
+        552
+      ],
+      [
+        62,
+        789,
+        596,
+        1134
+      ],
+      [
+        768,
+        792,
+        1127,
+        1136
+      ]
+    ],
+    "slash-right": [
+      [
+        140,
+        147,
+        465,
+        578
+      ],
+      [
+        677,
+        221,
+        1200,
+        592
+      ],
+      [
+        93,
+        768,
+        722,
+        1126
+      ],
+      [
+        820,
+        774,
+        1158,
+        1141
+      ]
+    ],
+    "charge-walk-down": [
+      [
+        52,
+        63,
+        258,
+        313
+      ],
+      [
+        367,
+        66,
+        574,
+        308
+      ],
+      [
+        678,
+        63,
+        885,
+        308
+      ],
+      [
+        996,
+        64,
+        1204,
+        308
+      ]
+    ],
+    "charge-walk-left": [
+      [
+        17,
+        370,
+        261,
+        597
+      ],
+      [
+        325,
+        368,
+        586,
+        598
+      ],
+      [
+        641,
+        368,
+        895,
+        597
+      ],
+      [
+        951,
+        369,
+        1214,
+        598
+      ]
+    ],
+    "charge-walk-right": [
+      [
+        29,
+        668,
+        301,
+        891
+      ],
+      [
+        346,
+        665,
+        617,
+        889
+      ],
+      [
+        657,
+        664,
+        930,
+        893
+      ],
+      [
+        971,
+        664,
+        1241,
+        893
+      ]
+    ],
+    "charge-walk-up": [
+      [
+        52,
+        941,
+        258,
+        1238
+      ],
+      [
+        367,
+        943,
+        574,
+        1227
+      ],
+      [
+        676,
+        943,
+        885,
+        1236
+      ],
+      [
+        996,
+        944,
+        1204,
+        1227
+      ]
+    ]
+  }
+}

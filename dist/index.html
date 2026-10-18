@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111914">
+  <meta name="description" content="Burnice Pixel Art: เดิน 8 ทิศ ฟันดาบ คลื่นไฟ ดื่ม Nitro-Fuel และวางระเบิดทำลายหินเปราะ บนคอมและมือถือ">
+  <title>Burnice — Pixel Walk</title>
+  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="bombs.css?v=9">
+  <link rel="stylesheet" href="slimes.css?v=13">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a href="./" class="brand" aria-label="Burnice Pixel Walk"><span class="brand-icon">B<span>✦</span></span><span class="brand-text">BURNICE<small>PIXEL WALK</small></span></a>
+      <div class="top-actions"><span class="build-tag"><i></i> TRAINING GARDEN · 15</span><button id="spriteButton" class="quiet-button">ดู Sprite <span>↗</span></button></div>
+    </header>
+    <main>
+      <div class="intro"><div><span class="eyebrow">A LITTLE SWORD PRACTICE IN THE OUTER RING</span><h1>ลองวิชาดาบกันหน่อยไหม?</h1><p>ฟันดาบ · คลื่นไฟ · จิบ Nitro-Fuel แล้วกลับไปลุย กับ Burnice ในโลกพิกเซล</p></div><div class="study-badge"><span>✦</span><div>ฝึกดาบกับ Dummy<small>SLASH 20 / SPIN 60</small></div></div></div>
+      <section class="game-wrap" aria-label="เกมเดินเล่น Burnice">
+        <div class="game-topline"><span><b class="tiny-flame">✦</b> NITRO REST STOP</span><span class="location-label">OUTER RING <i>01</i></span></div>
+        <div class="viewport" id="viewport">
+          <canvas id="game" tabindex="0" aria-label="Burnice เดินด้วย WASD หรือลูกศร กด J Z หรือ Space ฟัน กดค้างชาร์จแล้วปล่อยเพื่อหมุน กด E ดื่ม Nitro-Fuel กด Q วางระเบิด มือถือใช้จอย ปุ่มดาบและปุ่มไอเทม"></canvas>
+          <div class="scene-caption"><i></i><span>ลานฝึก Nitro</span></div>
+          <div class="health-hud" id="healthHud" role="status" aria-live="polite"><div id="hearts" class="hearts" aria-hidden="true"></div><span id="hpLabel">3 / 3</span><span id="powerLabel" class="power-label">คลื่นไฟพร้อม</span></div>
+          <div id="itemNotice" class="item-notice" role="status" aria-live="polite" hidden></div>
+          <div id="slimeHud" class="slime-hud" role="status" aria-live="polite" hidden><span id="slimeStatus">เมือกเหนียว 0%</span><div id="slimeMeter" class="slime-meter" role="progressbar" aria-label="เมือกเหนียวและการสลัดออก" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="slimeMeterFill"></i></div><div id="webPressure" class="web-pressure" hidden><span id="webPressureLabel"></span><div id="webPressureMeter" class="slime-meter" role="progressbar" aria-label="ใย Webbed ขั้นสอง" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="webPressureFill"></i></div></div></div>
+          <button id="struggleButton" class="struggle-button" hidden><strong>สลัดเมือก!</strong><small>กดรัว ๆ · WASD / ↑↓←→</small></button>
+          <div class="game-tools"><button id="resetButton" title="เริ่มใหม่และฟื้นหัวใจ" aria-label="เริ่มใหม่และฟื้นหัวใจ">↺</button><button id="fullscreenButton" title="เต็มจอ" aria-label="เปิดหรือปิดเต็มจอ">⛶</button></div>
+          <div class="walk-hint" id="walkHint"><span>✦</span> ลองฟัน Dummy ดูสิ!</div>
+          <div id="joystick" class="joystick" role="group" aria-label="จอยสัมผัส ลากเพื่อเดินได้ 8 ทิศ"><div class="joy-cross"></div><span class="joy-arrow north">▲</span><span class="joy-arrow south">▼</span><span class="joy-arrow west">◀</span><span class="joy-arrow east">▶</span><div id="joyKnob" class="joy-knob"></div></div>
+          <div class="touch-label">ลากจอยเพื่อเดิน</div>
+          <button id="attackButton" class="attack-button" aria-label="โจมตี กดค้างชาร์จแล้วปล่อยเพื่อหมุนฟัน"><span class="sword-icon">⚔</span><strong>ฟันดาบ</strong><small>ค้าง = ชาร์จ</small><span class="attack-charge" id="attackCharge"></span></button>
+          <button id="nitroButton" class="nitro-button" aria-label="ดื่ม Nitro-Fuel เพื่อฟื้น 2 หัวใจ"><img src="assets/corrected-v8-frames/nitro-item-0.png" alt=""><span><strong>Nitro-Fuel <b id="nitroCount">0</b></strong><small id="nitroHint">E · ฟื้น 2 หัวใจ</small></span><i id="nitroProgress"></i></button>
+          <button id="bombButton" class="bomb-button" aria-label="วางระเบิด กด Q"><img src="assets/bombs-v9-frames/bomb-0.png" alt=""><span><strong>ระเบิด <b id="bombCount">0</b></strong><small id="bombHint">Q · วางแล้วถอย!</small></span></button>
+          <div id="deathOverlay" class="death-overlay" role="dialog" aria-labelledby="gameOverTitle" hidden><div><span class="eyebrow">TAKE A BREATHER, BURNICE</span><h2 id="gameOverTitle">GAME OVER</h2><p>พักสักนิด แล้วลองหลบกระสุนกันใหม่</p><button id="retryButton">ลองใหม่ · ฟื้นหัวใจเต็ม ↺</button><small>หรือกด R เพื่อเริ่มใหม่</small></div></div>
+          <div class="loading" id="loading"><span class="loading-pixel"></span><p>กำลังเตรียมโลกพิกเซล…</p></div>
+        </div>
+        <div class="game-bottomline"><span class="live-state"><i id="stateDot"></i><strong id="stateLabel">ยืนพัก</strong><span class="divider">/</span><span id="directionLabel">หันลง</span></span><span id="positionLabel" class="position-label">X 468 · Y 408</span><span class="pixel-tag">PIXEL PERFECT</span></div>
+      </section>
+      <div class="below-game"><div class="controls-note"><div class="key-cluster"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></div><div><strong>กดสั้นเพื่อฟัน · กดค้างจนเต็มแล้วปล่อยเพื่อหมุน</strong><p><span class="desktop-note">WASD / ลูกศร เดิน · J / Z / Space โจมตี · E ดื่ม Nitro-Fuel · Q วางระเบิด</span><span class="mobile-note">จอยซ้ายเดิน · ปุ่มดาบโจมตี · ปุ่ม Nitro-Fuel ฟื้นหัวใจ · ปุ่มระเบิดวางแล้วถอย</span></p></div></div><p class="scope-note">Dummy ฟื้นเลือดอัตโนมัติ<span>ฟัน 20 · หมุน 60 · ระเบิด 180</span></p></div>
+      <section class="combat-stats" aria-label="สถิติทดสอบดาเมจ"><div><small>โจมตีล่าสุด</small><strong id="lastDamage">—</strong><span id="lastKind">ยังไม่ได้โจมตี</span></div><div><small>ดาเมจสะสม</small><strong id="totalDamage">0</strong><span>ทุก Dummy</span></div><div><small>โจมตีโดน</small><strong id="hitCount">0</strong><span>ครั้ง</span></div><button id="resetDummies" class="quiet-button">รีเซ็ต Dummy ↺</button></section>
+      <p class="health-note"><span>↓ หุ่นปืนอยู่ด้านซ้ายของลาน</span> หัวใจเต็ม: ฟันปล่อยคลื่นไฟ / ปล่อยชาร์จเต็มยิงคลื่นไฟ 8 ทิศ · กระสุนยิงลงตรง ๆ · โดนครั้งละ ½ หัวใจ · ตัวกระพริบ = ยังอมตะชั่วคราว · HP หมดจะหมุนเซ 2 วิ แล้วล้มนอนก่อน Game Over · กด ↺ เพื่อเริ่มใหม่</p>
+      <p class="nitro-note"><strong>NITRO-FUEL · พักเติมพลัง</strong> เดินเก็บชิ้นทดสอบด้านซ้ายล่างของจุดเริ่ม ได้ครั้งละ 1 ชิ้น · กด E หรือปุ่ม Nitro-Fuel · หยิบ → ดื่ม → ชูพร้อมประกาย รวม 4.6 วิ แล้วฟื้น 2 หัวใจ ไม่เกิน HP สูงสุด · พักการต่อสู้ระหว่างดื่ม · หุ่นที่ HP หมดมีโอกาสดรอป 5%</p>
+      <p class="bomb-note"><strong>BOMB · เปิดทางด้วยแรงระเบิด</strong> มีระเบิด 3 ลูกให้เก็บใกล้จุดเริ่ม · กด Q หรือแตะปุ่มระเบิดเพื่อวางด้านหน้า · ชนวน 2.2 วินาที · ดาเมจ 180 ในรัศมีวงที่เห็น · หินร้าวก้อนใหญ่ด้านขวาทำลายได้ด้วยระเบิดเท่านั้น แล้วเดินผ่านได้ · ถอยให้พ้นวง แรงระเบิดโดนตัวเอง 1 หัวใจ</p>
+      <p class="slime-note"><strong>SLIME YARD → ลานฝึกด้านขวา</strong> เดินผ่านช่องพุ่มไม้ด้านขวาไปยังลานใหม่ · จุดเกิด 4 จุด เติมเมื่อมีน้อยกว่าจุดละ 3 ตัว · Slime เขียวธรรมดา / น้ำเงินตัวใหญ่แตกเป็นลูก 4 ตัว ซึ่งเกินเพดานจุดเกิดได้ / ชมพูตัวเล็กเร็ว · มีอยู่ <b id="slimePopulation">0</b> ตัว · โดนโจมตีสะสมเมือก เมื่อเต็มจะขยับไม่ได้ ให้กด WASD หรือลูกศรรัว ๆ 12 ครั้ง หรือแตะปุ่มสลัด / ขยับจอยสลับทิศ · ระหว่างดื่ม Nitro พักการต่อสู้เช่นเดิม</p>
+      <p class="slime-note spider-note"><strong>← SPIDER YARD · ลานฝึกแมงมุมด้านซ้าย</strong> เดินผ่านช่องพุ่มไม้ฝั่งซ้าย · 4 รัง เกิดสูงสุดรังละ 2 ตัว · สีม่วงยิงใย / สีส้มโจมตีประชิด · มีอยู่ <b id="spiderPopulation">0</b>/8 ตัว · กระสุนใยสะสม Webbed ครั้งละ 50% · ขั้นแรกดิ้น 28 ครั้ง · ขณะติดใย การโจมตีไม่ลดเลือด แต่สะสมใยขั้นสอง กระสุนละ 20% / ประชิดครั้งละ 15% เมื่อเต็มจะถูกพันแน่นและปิดตา ต้องดิ้น 44 ครั้งใน 10 วินาที หากไม่ทันจะ Game Over ในสภาพติดใย แมงมุมจะถอยออกแล้วเดินสุ่มต่อ · กดค้างไม่นับรัว</p>
+      <section id="spriteLab" class="sprite-lab" hidden>
+        <div class="lab-heading"><div><span class="eyebrow">BEHIND THE PIXELS</span><h2>จากพิกเซล สู่เพลงดาบ</h2><p>388 เฟรม — ต้นไม้ Sprite ภาพนิ่ง 4 แบบ พร้อมแมงมุมเดิน/โจมตี 4 ทิศ และ Webbed I / II / หมดเวลา</p></div><div class="downloads"><a class="old-pack" href="assets/trees-v15-sprites.zip" download>ต้นไม้ภาพนิ่ง · v15 ↓</a><a class="download-button" href="assets/spiders-webbed-v14-sprites.zip" download>แมงมุมและ Webbed · v14 <span>↓</span></a><a class="old-pack" href="assets/slimes-sticky-v11-sprites.zip" download>Slime และท่าสลัด · v11</a><a class="old-pack" href="assets/bombs-rocks-v9-sprites.zip" download>ระเบิดและหิน · v9</a><a class="old-pack" href="assets/burnice-corrected-v8-sprites.zip" download>ชุดตัวละครและ Nitro · v8</a><a class="old-pack" href="assets/burnice-sprites.zip" download>ดาวน์โหลดชุดเดินเดิม</a></div></div>
+        <div class="lab-toolbar"><div class="segmented" id="animTabs"><button data-action="walk" class="active">เดิน</button><button data-action="idle">Idle</button><button data-action="slash">ฟันดาบ</button><button data-action="charge">ชาร์จ</button><button data-action="chargeWalk">เดินชาร์จ</button><button data-action="hurt">โดนโจมตี</button><button data-action="spin">หมุนฟัน</button><button data-action="dizzy">หมุนเซ</button><button data-action="fall">ล้ม</button><button data-action="rest">นอนมึน</button><button data-action="fireWave">คลื่นดาบไฟ</button><button data-action="fireSpin">หมุนฟันไฟ</button><button data-action="nitro">ดื่ม Nitro-Fuel</button><button data-action="bombs">ระเบิด / หินแตก</button><button data-action="slimes">Slime / สลัดเมือก</button><button data-action="spiders">แมงมุม / Webbed</button><button data-action="weaverWalk">ยิงใย · เดิน 4 ทิศ</button><button data-action="weaverAttack">ยิงใย · โจมตี 4 ทิศ</button><button data-action="hunterWalk">ประชิด · เดิน 4 ทิศ</button><button data-action="hunterAttack">ประชิด · โจมตี 4 ทิศ</button><button data-action="webStatus">Webbed I / II / หมดเวลา</button><button data-action="trees">ต้นไม้ภาพนิ่ง</button></div><button id="pausePreview" class="quiet-button">หยุดอนิเมชัน</button><label class="frame-control" hidden id="frameControl">เฟรม <input id="frameSlider" type="range" min="0" max="3" value="0"><output id="frameOutput">1</output></label></div>
+        <div class="direction-cards"><article><div class="checker"><canvas class="preview" data-direction="down" width="64" height="64"></canvas></div><span>↓ ด้านหน้า</span><small>DOWN</small></article><article><div class="checker"><canvas class="preview" data-direction="left" width="64" height="64"></canvas></div><span>← ด้านซ้าย</span><small>LEFT</small></article><article><div class="checker"><canvas class="preview" data-direction="right" width="64" height="64"></canvas></div><span>→ ด้านขวา</span><small>RIGHT</small></article><article><div class="checker"><canvas class="preview" data-direction="up" width="64" height="64"></canvas></div><span>↑ ด้านหลัง</span><small>UP</small></article></div>
+        <div class="dummy-previews"><div><canvas id="dummyIdlePreview" width="96" height="96"></canvas><span>Dummy · Idle</span></div><div><canvas id="dummyHitPreview" width="96" height="96"></canvas><span>Dummy · โดนโจมตี</span></div><p>Dummy 300 HP<br>ฟื้นหลังหยุดโจมตี 4 วินาที<br>เมื่อ HP หมดจะฟื้นใน 2.2 วินาที</p></div>
+        <div class="dummy-previews"><div><canvas id="shooterPreview" width="96" height="96"></canvas><span>Dummy ปืน · ยิงลง ↓</span></div><div><canvas id="projectilePreview" width="96" height="96"></canvas><span>กระสุน · ½ หัวใจ</span></div><p>ยิงทุก 1.35 วินาที<br>โจมตีหุ่นให้ HP หมดเพื่อหยุดยิงชั่วคราว<br>ท่าเจ็บทำให้เสียจังหวะและยกเลิกชาร์จ</p></div>
+        <p class="atlas-note">Nitro-Fuel: หยิบ 1.2 วิ → ดื่ม 2 วิ → ชู 1.4 วิ → ฟื้น HP · ลำตัวยังสูงเท่าชุดเดินเดิม<br>หมุนเซ 2 วิ → ล้ม 1 วิ → นอนมึน 1.2 วิ → Game Over · ดาว 3 ดวงหมุนต่อเนื่องรอบหัว<br>ชุดเดิน 64 px · ฟัน / เดินชาร์จ / ท่าหมดสติ 160 px พร้อมขอบว่าง · ชาร์จ / หมุน / Dummy 96 px · คลื่นไฟ 64 px / วงไฟ 128 px · ทุกชุดมีภาพต้นฉบับ, atlas, เฟรมแยก และ JSON</p>
+      </section>
+    </main>
+    <footer><span>MADE FOR THE LOVE OF BURNICE <b>✦</b></span><span>แฟนเมด · ตัวละครจาก Zenless Zone Zero / HoYoverse</span></footer>
+  </div>
+  <script type="module" src="game.mjs?v=17"></script>
+</body>
+</html>

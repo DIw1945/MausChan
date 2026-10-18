@@ -1,0 +1,121 @@
+{
+  "sources": [
+    "trees-v15-generated.png"
+  ],
+  "animated": false,
+  "variants": 4,
+  "selection": "whole connected-component bounds by centre in a 2x2 grid; trunk-aligned; nearest-neighbour",
+  "placement": "anchor at original world x,y; root baseline y+4; existing trunk collision unchanged",
+  "sequences": {
+    "trees": [
+      {
+        "image": "trees-v15-atlas.png",
+        "file": "trees-v15-frames/tree-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 112,
+        "anchor": [
+          48,
+          96
+        ],
+        "sourceCell": [
+          0,
+          0
+        ],
+        "sourceBounds": [
+          146,
+          158,
+          578,
+          597
+        ],
+        "visibleSize": [
+          76,
+          77
+        ],
+        "trunkPivot": 207.5
+      },
+      {
+        "image": "trees-v15-atlas.png",
+        "file": "trees-v15-frames/tree-1.png",
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 112,
+        "anchor": [
+          48,
+          96
+        ],
+        "sourceCell": [
+          1,
+          0
+        ],
+        "sourceBounds": [
+          746,
+          73,
+          1165,
+          597
+        ],
+        "visibleSize": [
+          62,
+          78
+        ],
+        "trunkPivot": 214.5
+      },
+      {
+        "image": "trees-v15-atlas.png",
+        "file": "trees-v15-frames/tree-2.png",
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 112,
+        "anchor": [
+          48,
+          96
+        ],
+        "sourceCell": [
+          0,
+          1
+        ],
+        "sourceBounds": [
+          40,
+          699,
+          642,
+          1185
+        ],
+        "visibleSize": [
+          76,
+          61
+        ],
+        "trunkPivot": 301.0
+      },
+      {
+        "image": "trees-v15-atlas.png",
+        "file": "trees-v15-frames/tree-3.png",
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 112,
+        "anchor": [
+          48,
+          96
+        ],
+        "sourceCell": [
+          1,
+          1
+        ],
+        "sourceBounds": [
+          708,
+          678,
+          1214,
+          1185
+        ],
+        "visibleSize": [
+          76,
+          76
+        ],
+        "trunkPivot": 251.0
+      }
+    ]
+  }
+}

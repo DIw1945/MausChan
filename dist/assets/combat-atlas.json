@@ -1,0 +1,274 @@
+{
+  "frameSize": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    75
+  ],
+  "sequences": {
+    "slash-down": [
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-frames/slash-down-0.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "combat-frames/slash-down-1.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "combat-frames/slash-down-2.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "combat-frames/slash-down-3.png"
+      }
+    ],
+    "slash-left": [
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "combat-frames/slash-left-0.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "combat-frames/slash-left-1.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "combat-frames/slash-left-2.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "combat-frames/slash-left-3.png"
+      }
+    ],
+    "slash-right": [
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 0,
+        "y": 192,
+        "file": "combat-frames/slash-right-0.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 96,
+        "y": 192,
+        "file": "combat-frames/slash-right-1.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 192,
+        "y": 192,
+        "file": "combat-frames/slash-right-2.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 288,
+        "y": 192,
+        "file": "combat-frames/slash-right-3.png"
+      }
+    ],
+    "slash-up": [
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 0,
+        "y": 288,
+        "file": "combat-frames/slash-up-0.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 96,
+        "y": 288,
+        "file": "combat-frames/slash-up-1.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 192,
+        "y": 288,
+        "file": "combat-frames/slash-up-2.png"
+      },
+      {
+        "image": "burnice-slash-atlas.png",
+        "x": 288,
+        "y": 288,
+        "file": "combat-frames/slash-up-3.png"
+      }
+    ],
+    "charge-down": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-frames/charge-down-0.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "combat-frames/charge-down-1.png"
+      }
+    ],
+    "charge-left": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "combat-frames/charge-left-0.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "combat-frames/charge-left-1.png"
+      }
+    ],
+    "charge-right": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "combat-frames/charge-right-0.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "combat-frames/charge-right-1.png"
+      }
+    ],
+    "charge-up": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "combat-frames/charge-up-0.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "combat-frames/charge-up-1.png"
+      }
+    ],
+    "spin": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 192,
+        "file": "combat-frames/spin-0.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 192,
+        "file": "combat-frames/spin-1.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 192,
+        "file": "combat-frames/spin-2.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 192,
+        "file": "combat-frames/spin-3.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 288,
+        "file": "combat-frames/spin-4.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 288,
+        "file": "combat-frames/spin-5.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 288,
+        "file": "combat-frames/spin-6.png"
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 288,
+        "file": "combat-frames/spin-7.png"
+      }
+    ],
+    "dummy-idle": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "combat-frames/dummy-idle-0.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "combat-frames/dummy-idle-1.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "combat-frames/dummy-idle-2.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "combat-frames/dummy-idle-3.png"
+      }
+    ],
+    "dummy-hit": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "combat-frames/dummy-hit-0.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "combat-frames/dummy-hit-1.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "combat-frames/dummy-hit-2.png"
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "combat-frames/dummy-hit-3.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2769 @@
+{
+  "sequences": {
+    "defeat-spin": [
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-0.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-1.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-2.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-3.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-4.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-5.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-6.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-7.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-8.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-9.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-10.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-11.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-12.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-13.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-14.png"
+      },
+      {
+        "image": "defeat-spin-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-spin-15.png"
+      }
+    ],
+    "defeat-collapse": [
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-0.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-1.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-2.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-3.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-4.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-5.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-6.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-7.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-8.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-9.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-10.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-11.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-12.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-13.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-14.png"
+      },
+      {
+        "image": "defeat-collapse-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "defeat-v5-frames/defeat-collapse-15.png"
+      }
+    ],
+    "defeat-rest": [
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-0.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-1.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-2.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-3.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-4.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-5.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-6.png"
+      },
+      {
+        "image": "defeat-rest-v6-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "combat-v6-frames/defeat-rest-7.png"
+      }
+    ],
+    "defeat-stars": [
+      {
+        "image": "defeat-stars-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "anchor": [
+          8,
+          8
+        ],
+        "file": "defeat-v5-frames/defeat-stars-0.png"
+      },
+      {
+        "image": "defeat-stars-atlas.png",
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "anchor": [
+          8,
+          8
+        ],
+        "file": "defeat-v5-frames/defeat-stars-1.png"
+      },
+      {
+        "image": "defeat-stars-atlas.png",
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "anchor": [
+          8,
+          8
+        ],
+        "file": "defeat-v5-frames/defeat-stars-2.png"
+      },
+      {
+        "image": "defeat-stars-atlas.png",
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "anchor": [
+          8,
+          8
+        ],
+        "file": "defeat-v5-frames/defeat-stars-3.png"
+      }
+    ],
+    "charge-walk-down": [
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-down-0.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-down-1.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-down-2.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-down-3.png"
+      }
+    ],
+    "charge-walk-left": [
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-left-0.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-left-1.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-left-2.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-left-3.png"
+      }
+    ],
+    "charge-walk-right": [
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-right-0.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-right-1.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-right-2.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-right-3.png"
+      }
+    ],
+    "charge-walk-up": [
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-up-0.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-up-1.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-up-2.png"
+      },
+      {
+        "image": "burnice-charge-walk-v4-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/charge-walk-up-3.png"
+      }
+    ],
+    "hurt-down": [
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-down-0.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-down-1.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-down-2.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-down-3.png"
+      }
+    ],
+    "hurt-left": [
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-left-0.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-left-1.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-left-2.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-left-3.png"
+      }
+    ],
+    "hurt-right": [
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-right-0.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-right-1.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-right-2.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-right-3.png"
+      }
+    ],
+    "hurt-up": [
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-up-0.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-up-1.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-up-2.png"
+      },
+      {
+        "image": "burnice-hurt-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "health-v4-frames/hurt-up-3.png"
+      }
+    ],
+    "shooter-idle": [
+      {
+        "image": "shooter-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-idle-0.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-idle-1.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-idle-2.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-idle-3.png"
+      }
+    ],
+    "shooter-fire": [
+      {
+        "image": "shooter-atlas.png",
+        "x": 0,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-fire-0.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 96,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-fire-1.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 192,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-fire-2.png"
+      },
+      {
+        "image": "shooter-atlas.png",
+        "x": 288,
+        "y": 96,
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ],
+        "file": "health-v4-frames/shooter-fire-3.png"
+      }
+    ],
+    "projectile": [
+      {
+        "image": "projectile-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          18
+        ],
+        "file": "health-v4-frames/projectile-0.png"
+      },
+      {
+        "image": "projectile-atlas.png",
+        "x": 24,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          18
+        ],
+        "file": "health-v4-frames/projectile-1.png"
+      },
+      {
+        "image": "projectile-atlas.png",
+        "x": 48,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          18
+        ],
+        "file": "health-v4-frames/projectile-2.png"
+      },
+      {
+        "image": "projectile-atlas.png",
+        "x": 72,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          18
+        ],
+        "file": "health-v4-frames/projectile-3.png"
+      }
+    ],
+    "slash-down": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "health-v4-frames/slash-down-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 0,
+        "file": "health-v4-frames/slash-down-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 0,
+        "file": "health-v4-frames/slash-down-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 0,
+        "file": "health-v4-frames/slash-down-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-left": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 160,
+        "file": "health-v4-frames/slash-left-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 160,
+        "file": "health-v4-frames/slash-left-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 160,
+        "file": "health-v4-frames/slash-left-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 160,
+        "file": "health-v4-frames/slash-left-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-right": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 320,
+        "file": "health-v4-frames/slash-right-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 320,
+        "file": "health-v4-frames/slash-right-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 320,
+        "file": "health-v4-frames/slash-right-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 320,
+        "file": "health-v4-frames/slash-right-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "slash-up": [
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 0,
+        "y": 480,
+        "file": "health-v4-frames/slash-up-0.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 160,
+        "y": 480,
+        "file": "health-v4-frames/slash-up-1.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 320,
+        "y": 480,
+        "file": "health-v4-frames/slash-up-2.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      },
+      {
+        "image": "burnice-slash-v3-atlas.png",
+        "x": 480,
+        "y": 480,
+        "file": "health-v4-frames/slash-up-3.png",
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ]
+      }
+    ],
+    "charge-down": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "health-v4-frames/charge-down-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "health-v4-frames/charge-down-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-left": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "health-v4-frames/charge-left-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "health-v4-frames/charge-left-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-right": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "health-v4-frames/charge-right-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "health-v4-frames/charge-right-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "charge-up": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "health-v4-frames/charge-up-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "health-v4-frames/charge-up-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "spin": [
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 192,
+        "file": "health-v4-frames/spin-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 192,
+        "file": "health-v4-frames/spin-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 192,
+        "file": "health-v4-frames/spin-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 192,
+        "file": "health-v4-frames/spin-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 0,
+        "y": 288,
+        "file": "health-v4-frames/spin-4.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 96,
+        "y": 288,
+        "file": "health-v4-frames/spin-5.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 192,
+        "y": 288,
+        "file": "health-v4-frames/spin-6.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "burnice-charge-spin-atlas.png",
+        "x": 288,
+        "y": 288,
+        "file": "health-v4-frames/spin-7.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "dummy-idle": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 0,
+        "file": "health-v4-frames/dummy-idle-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 0,
+        "file": "health-v4-frames/dummy-idle-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 0,
+        "file": "health-v4-frames/dummy-idle-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 0,
+        "file": "health-v4-frames/dummy-idle-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "dummy-hit": [
+      {
+        "image": "dummy-atlas.png",
+        "x": 0,
+        "y": 96,
+        "file": "health-v4-frames/dummy-hit-0.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 96,
+        "y": 96,
+        "file": "health-v4-frames/dummy-hit-1.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 192,
+        "y": 96,
+        "file": "health-v4-frames/dummy-hit-2.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      },
+      {
+        "image": "dummy-atlas.png",
+        "x": 288,
+        "y": 96,
+        "file": "health-v4-frames/dummy-hit-3.png",
+        "w": 96,
+        "h": 96,
+        "anchor": [
+          48,
+          75
+        ]
+      }
+    ],
+    "fire-wave": [
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-0.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-1.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-2.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-3.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 0,
+        "y": 64,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-4.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 64,
+        "y": 64,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-5.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 128,
+        "y": 64,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-6.png"
+      },
+      {
+        "image": "fire-wave-v6-atlas.png",
+        "x": 192,
+        "y": 64,
+        "w": 64,
+        "h": 64,
+        "anchor": [
+          32,
+          32
+        ],
+        "file": "combat-v6-frames/fire-wave-7.png"
+      }
+    ],
+    "fire-ring": [
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-0.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-1.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 256,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-2.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 384,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-3.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 0,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-4.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 128,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-5.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 256,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-6.png"
+      },
+      {
+        "image": "fire-ring-v6-atlas.png",
+        "x": 384,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "anchor": [
+          64,
+          64
+        ],
+        "file": "combat-v6-frames/fire-ring-7.png"
+      }
+    ],
+    "nitro-fetch": [
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-0.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-1.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-2.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-3.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-4.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-5.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-6.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-7.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-8.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-9.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-10.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-11.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-12.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-13.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-14.png"
+      },
+      {
+        "image": "nitro-fetch-v7-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-fetch-15.png"
+      }
+    ],
+    "nitro-sip": [
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-0.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-1.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-2.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-3.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-4.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-5.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-6.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-7.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-8.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-9.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-10.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-11.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-12.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-13.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-14.png"
+      },
+      {
+        "image": "nitro-sip-v7-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-sip-15.png"
+      }
+    ],
+    "nitro-cheer": [
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-0.png",
+        "cup": [
+          13,
+          -33
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-1.png",
+        "cup": [
+          13,
+          -32
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-2.png",
+        "cup": [
+          13,
+          -32
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-3.png",
+        "cup": [
+          14,
+          -32
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-4.png",
+        "cup": [
+          20,
+          -25
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-5.png",
+        "cup": [
+          20,
+          -30
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-6.png",
+        "cup": [
+          16,
+          -38
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-7.png",
+        "cup": [
+          14,
+          -43
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-8.png",
+        "cup": [
+          14,
+          -44
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-9.png",
+        "cup": [
+          13,
+          -43
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-10.png",
+        "cup": [
+          13,
+          -43
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-11.png",
+        "cup": [
+          14,
+          -44
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-12.png",
+        "cup": [
+          14,
+          -43
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-13.png",
+        "cup": [
+          14,
+          -42
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-14.png",
+        "cup": [
+          14,
+          -43
+        ]
+      },
+      {
+        "image": "nitro-cheer-v7-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "file": "nitro-v7-frames/nitro-cheer-15.png",
+        "cup": [
+          15,
+          -42
+        ]
+      }
+    ],
+    "nitro-item": [
+      {
+        "image": "nitro-item-v7-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          26
+        ],
+        "file": "nitro-v7-frames/nitro-item-0.png"
+      },
+      {
+        "image": "nitro-item-v7-atlas.png",
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          26
+        ],
+        "file": "nitro-v7-frames/nitro-item-1.png"
+      },
+      {
+        "image": "nitro-item-v7-atlas.png",
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          26
+        ],
+        "file": "nitro-v7-frames/nitro-item-2.png"
+      },
+      {
+        "image": "nitro-item-v7-atlas.png",
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "anchor": [
+          16,
+          26
+        ],
+        "file": "nitro-v7-frames/nitro-item-3.png"
+      }
+    ],
+    "nitro-sparkle": [
+      {
+        "image": "nitro-sparkle-v7-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          12
+        ],
+        "file": "nitro-v7-frames/nitro-sparkle-0.png"
+      },
+      {
+        "image": "nitro-sparkle-v7-atlas.png",
+        "x": 24,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          12
+        ],
+        "file": "nitro-v7-frames/nitro-sparkle-1.png"
+      },
+      {
+        "image": "nitro-sparkle-v7-atlas.png",
+        "x": 48,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          12
+        ],
+        "file": "nitro-v7-frames/nitro-sparkle-2.png"
+      },
+      {
+        "image": "nitro-sparkle-v7-atlas.png",
+        "x": 72,
+        "y": 0,
+        "w": 24,
+        "h": 24,
+        "anchor": [
+          12,
+          12
+        ],
+        "file": "nitro-v7-frames/nitro-sparkle-3.png"
+      }
+    ]
+  },
+  "timing": {
+    "spin": 2,
+    "collapse": 1,
+    "restBeforeGameOver": 1.2
+  },
+  "origin": [
+    80,
+    112
+  ],
+  "headOffset": [
+    15,
+    -17
+  ],
+  "chargeCalibration": {
+    "down": {
+      "referenceHeight": 54,
+      "referenceHeadWidth": 40,
+      "oldBodyHeights": [
+        70,
+        64,
+        69,
+        65
+      ],
+      "scale": 0.8059701492537313,
+      "widthCorrection": 0.8333333333333334,
+      "newBodyHeights": [
+        56,
+        52,
+        56,
+        52
+      ],
+      "newHeadWidths": [
+        40,
+        39,
+        40,
+        40
+      ]
+    },
+    "left": {
+      "referenceHeight": 58,
+      "referenceHeadWidth": 35,
+      "oldBodyHeights": [
+        57,
+        58,
+        57,
+        58
+      ],
+      "scale": 1,
+      "widthCorrection": 0.8641975308641975,
+      "newBodyHeights": [
+        57,
+        58,
+        57,
+        58
+      ],
+      "newHeadWidths": [
+        35,
+        35,
+        35,
+        36
+      ]
+    },
+    "right": {
+      "referenceHeight": 58,
+      "referenceHeadWidth": 36,
+      "oldBodyHeights": [
+        57,
+        57,
+        58,
+        58
+      ],
+      "scale": 1,
+      "widthCorrection": 0.8181818181818182,
+      "newBodyHeights": [
+        57,
+        57,
+        58,
+        58
+      ],
+      "newHeadWidths": [
+        36,
+        36,
+        36,
+        36
+      ]
+    },
+    "up": {
+      "referenceHeight": 55,
+      "referenceHeadWidth": 42,
+      "oldBodyHeights": [
+        60,
+        56,
+        59,
+        57
+      ],
+      "scale": 0.9482758620689655,
+      "widthCorrection": 0.7924528301886793,
+      "newBodyHeights": [
+        57,
+        53,
+        56,
+        54
+      ],
+      "newHeadWidths": [
+        42,
+        42,
+        43,
+        42
+      ]
+    }
+  },
+  "restContinuity": {
+    "firstFrameMatches": "defeat-collapse-15",
+    "arm": "outward elbow and glove beside cheek",
+    "headOffset": [
+      15,
+      -17
+    ]
+  },
+  "fire": {
+    "waveFrames": 8,
+    "ringFrames": 8,
+    "fullHeartsOnly": true,
+    "slashDirections": 4,
+    "chargedDirections": 8,
+    "waveSpeed": 240,
+    "waveRange": 300,
+    "slashDamage": 20,
+    "spinDamage": 60,
+    "hitPolicy": "one hit per target per attack, shared with melee"
+  },
+  "nitroCalibration": {
+    "fetch": {
+      "referenceHeight": 54,
+      "referenceHeadWidth": 40,
+      "bodyHeights": [
+        54,
+        54,
+        54,
+        54,
+        53,
+        53,
+        53,
+        54,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        54,
+        54
+      ],
+      "scaleX": 0.1762114537444934,
+      "scaleY": 0.20689655172413793,
+      "headWidths": [
+        40,
+        40,
+        39
+      ]
+    },
+    "sip": {
+      "referenceHeight": 54,
+      "referenceHeadWidth": 40,
+      "bodyHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        55,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "scaleX": 0.16129032258064516,
+      "scaleY": 0.19852941176470587,
+      "headWidths": [
+        40,
+        40,
+        40
+      ]
+    },
+    "cheer": {
+      "referenceHeight": 54,
+      "referenceHeadWidth": 40,
+      "bodyHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        55,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "scaleX": 0.16806722689075632,
+      "scaleY": 0.2288135593220339,
+      "headWidths": [
+        40,
+        39,
+        40
+      ]
+    }
+  },
+  "nitro": {
+    "duration": 4.6,
+    "fetch": 1.2,
+    "sip": 2,
+    "cheer": 1.4,
+    "healHalfHearts": 4,
+    "dropChance": 0.05,
+    "sample": [
+      412,
+      432
+    ],
+    "healAt": "end",
+    "pauseCombatWhileUsing": true,
+    "useKey": "E"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sources": [
+    "spider-nest-v16-generated.png"
+  ],
+  "animated": false,
+  "selection": "single complete transparent subject; whole alpha bounds; nearest-neighbour",
+  "placement": "ground layer at each existing spawn point; no new collision",
+  "sequences": {
+    "spider-nest": [
+      {
+        "image": "spider-nest-v16-atlas.png",
+        "file": "spider-nest-v16-frames/nest-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 64,
+        "anchor": [
+          48,
+          40
+        ],
+        "sourceBounds": [
+          0,
+          8,
+          1432,
+          1086
+        ],
+        "visibleSize": [
+          61,
+          43
+        ]
+      }
+    ]
+  }
+}

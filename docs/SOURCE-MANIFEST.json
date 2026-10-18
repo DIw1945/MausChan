@@ -1,0 +1,2431 @@
+{
+  "sourceCommit": "2a5f3db146dda14d2c680d1c0f85ad32a725b25c",
+  "trackedFileCount": 485,
+  "files": [
+    {
+      "original": ".openai/hosting.json",
+      "exported": "docs/original-site-hosting.json",
+      "sha256": "b5f86b7a1c598f0525b6aecb654c847968c1061f5abec813abff974c4ba65b54"
+    },
+    {
+      "original": "README.md",
+      "exported": "docs/DEVELOPMENT-HISTORY.md",
+      "sha256": "040e459f9e701b8b39a7c7a7849b764cf8c33a51a33403f85005c4317527cf07"
+    },
+    {
+      "original": "dist/assets/burnice-atlas.json",
+      "exported": "dist/assets/burnice-atlas.json",
+      "sha256": "4be6fd65f2b85eaffc720c7f89579ed0c8bcbac6fa4e3b3f3d9666753e90092c"
+    },
+    {
+      "original": "dist/assets/burnice-atlas.png",
+      "exported": "dist/assets/burnice-atlas.png",
+      "sha256": "4a978a5dd67c2be079f9a642003269137c0b61c5474ef6a415470115bee93544"
+    },
+    {
+      "original": "dist/assets/burnice-charge-spin-atlas.png",
+      "exported": "dist/assets/burnice-charge-spin-atlas.png",
+      "sha256": "27dd5b78ddd8d571bf72b85fd33c79993e18083ca0584957877e12dd5a6357c0"
+    },
+    {
+      "original": "dist/assets/burnice-charge-spin-generated.png",
+      "exported": "dist/assets/burnice-charge-spin-generated.png",
+      "sha256": "e2b7bf65a2e0bcc824c292d302218ac8f8842b81b735587ea697cdc2e94d4146"
+    },
+    {
+      "original": "dist/assets/burnice-charge-walk-atlas.png",
+      "exported": "dist/assets/burnice-charge-walk-atlas.png",
+      "sha256": "b5d30f975c7c60650a9cf8bc4732deeb381d6612f5e48c38d80fdff15c82d8e6"
+    },
+    {
+      "original": "dist/assets/burnice-charge-walk-generated.png",
+      "exported": "dist/assets/burnice-charge-walk-generated.png",
+      "sha256": "6069e80b752e322ecab021f3b3867e8c45096a7e4e6af5d2477aa859fa5e57e1"
+    },
+    {
+      "original": "dist/assets/burnice-charge-walk-v4-atlas.png",
+      "exported": "dist/assets/burnice-charge-walk-v4-atlas.png",
+      "sha256": "87c6d79f657e4059ab947c4dc7c67c0ca4806f5bab37ce855ee75ccf589d88db"
+    },
+    {
+      "original": "dist/assets/burnice-collapse-generated.png",
+      "exported": "dist/assets/burnice-collapse-generated.png",
+      "sha256": "1268146d487625e42578523d1dc2bd1a879b42f1ce81564b1bfab1005f406968"
+    },
+    {
+      "original": "dist/assets/burnice-combat-sprites.zip",
+      "exported": "dist/assets/burnice-combat-sprites.zip",
+      "sha256": "45ccf9b36265065106a887e8d5dd15f3e808322c428c53e9d6b1183daa449bc5"
+    },
+    {
+      "original": "dist/assets/burnice-combat-v3-sprites.zip",
+      "exported": "dist/assets/burnice-combat-v3-sprites.zip",
+      "sha256": "d167591e3409682b8a23f8e22978f9dc06874d9d603bebfa50c95d64d1cf17b4"
+    },
+    {
+      "original": "dist/assets/burnice-corrected-v8-sprites.zip",
+      "exported": "dist/assets/burnice-corrected-v8-sprites.zip",
+      "sha256": "49eba8231d5f36f0138e86cb5fd113746523ef7fed396b40bc5be65003ffe452"
+    },
+    {
+      "original": "dist/assets/burnice-defeat-v5-sprites.zip",
+      "exported": "dist/assets/burnice-defeat-v5-sprites.zip",
+      "sha256": "158cce4565abd7f133f158eccfc49ee67207b8120e3a4239f7c1dcdf25092486"
+    },
+    {
+      "original": "dist/assets/burnice-dizzy-rest-generated.png",
+      "exported": "dist/assets/burnice-dizzy-rest-generated.png",
+      "sha256": "276b4bf85780586a9eddfbd8d4f350f0985b70d060530d4e2b647e350e42f13b"
+    },
+    {
+      "original": "dist/assets/burnice-dizzy-rest-v6-generated.png",
+      "exported": "dist/assets/burnice-dizzy-rest-v6-generated.png",
+      "sha256": "0d2b4e291efb760b8f1a66e28414b1d53a435cdd9e5b2c27935f7f4944858d9b"
+    },
+    {
+      "original": "dist/assets/burnice-dizzy-spin-generated.png",
+      "exported": "dist/assets/burnice-dizzy-spin-generated.png",
+      "sha256": "0fe1b424e3e34bc9350a53ae1e15ac3d66e9bb8131af7a3444041cd74b4e304e"
+    },
+    {
+      "original": "dist/assets/burnice-fire-v6-sprites.zip",
+      "exported": "dist/assets/burnice-fire-v6-sprites.zip",
+      "sha256": "682fb4263cb2d438c1c4b9037f148d95fb5e8985545d4005f6ad9d1142a7bae0"
+    },
+    {
+      "original": "dist/assets/burnice-generated.png",
+      "exported": "dist/assets/burnice-generated.png",
+      "sha256": "bcf9009ae2f3e0453aca5ab7d137716c4bd1a1dd9b6e666254f56077600357fd"
+    },
+    {
+      "original": "dist/assets/burnice-health-v4-sprites.zip",
+      "exported": "dist/assets/burnice-health-v4-sprites.zip",
+      "sha256": "8630769ccbf3db1fa634074a29c27949ab7e1ea50fe10d634c010a110d1a5adc"
+    },
+    {
+      "original": "dist/assets/burnice-hurt-atlas.png",
+      "exported": "dist/assets/burnice-hurt-atlas.png",
+      "sha256": "c091655f7fc196ea3e6005e41549c446aad39a216ecc28eb529b2eca4889ab65"
+    },
+    {
+      "original": "dist/assets/burnice-hurt-generated.png",
+      "exported": "dist/assets/burnice-hurt-generated.png",
+      "sha256": "93cd821fa5a8cd4b346f28ca9ff25eb15f2a4c55f76b9d76e851dd68492cd18b"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-cheer-v7-generated.png",
+      "exported": "dist/assets/burnice-nitro-cheer-v7-generated.png",
+      "sha256": "82b82a01784ca4755d378ff0bb83a3e533891034fc30a9bda9394bdd63c4d350"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-cheer-v8-generated.png",
+      "exported": "dist/assets/burnice-nitro-cheer-v8-generated.png",
+      "sha256": "36835ea8c7b154900a6864624c23b09942f3943231a295de3eb58103d6fa3a56"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-fetch-v7-generated.png",
+      "exported": "dist/assets/burnice-nitro-fetch-v7-generated.png",
+      "sha256": "8d30c01e7bef2e66bccc1f1c9ab3589a1739528bb36fab5585b459e17e96b807"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-fetch-v8-generated.png",
+      "exported": "dist/assets/burnice-nitro-fetch-v8-generated.png",
+      "sha256": "17bf22d713305e6450c454826c02245feac448befacce087834dc66b56ec9f9c"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-sip-v7-generated.png",
+      "exported": "dist/assets/burnice-nitro-sip-v7-generated.png",
+      "sha256": "ce058313ffbf4438244c86f8b8f802a6c34039a1d770f23f025ebb38af3fd2f3"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-sip-v8-generated.png",
+      "exported": "dist/assets/burnice-nitro-sip-v8-generated.png",
+      "sha256": "02d0954e5a914c37860ddc2dfa6061225d6a8550a207385c73a82357c71f142e"
+    },
+    {
+      "original": "dist/assets/burnice-nitro-v7-sprites.zip",
+      "exported": "dist/assets/burnice-nitro-v7-sprites.zip",
+      "sha256": "6fc75bb2355f44c7cd0920c35414bee4db3909272131b945acf70d1c118fbf18"
+    },
+    {
+      "original": "dist/assets/burnice-slash-atlas.png",
+      "exported": "dist/assets/burnice-slash-atlas.png",
+      "sha256": "1303a11918a7df17dd3b2ea4f42395808949961b42939ffcf7ba7eae61e8f0a0"
+    },
+    {
+      "original": "dist/assets/burnice-slash-generated.png",
+      "exported": "dist/assets/burnice-slash-generated.png",
+      "sha256": "a5709f6fa13dfb67135f6dd780293ddd376a5b025a18e1526a9cba89438b0aac"
+    },
+    {
+      "original": "dist/assets/burnice-slash-left-v3-generated.png",
+      "exported": "dist/assets/burnice-slash-left-v3-generated.png",
+      "sha256": "c9cd7d7fd8dbe6407c86259e09e6ad76b4202e7c9176effbb9a3ab942996c53b"
+    },
+    {
+      "original": "dist/assets/burnice-slash-right-v3-generated.png",
+      "exported": "dist/assets/burnice-slash-right-v3-generated.png",
+      "sha256": "178c949dc19aa44d9fa1909f1f1c21a48300d19334c954eec63bbb53db723de3"
+    },
+    {
+      "original": "dist/assets/burnice-slash-v3-atlas.png",
+      "exported": "dist/assets/burnice-slash-v3-atlas.png",
+      "sha256": "968373a2f06bede78f2c18332e97048b3b87a32ced4c01fcce242e2ea8cb8358"
+    },
+    {
+      "original": "dist/assets/burnice-sprites.zip",
+      "exported": "dist/assets/burnice-sprites.zip",
+      "sha256": "51b300f2b783eb455c3f532eca4918155c2cf6008cc95c419c9dbf98f4bcb24c"
+    },
+    {
+      "original": "dist/assets/combat-atlas.json",
+      "exported": "dist/assets/combat-atlas.json",
+      "sha256": "4a9b6466d5aa4b287f5c93ca3220181e5b69a1affe93589dce5efb33e9b96560"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-down-0.png",
+      "exported": "dist/assets/combat-frames/charge-down-0.png",
+      "sha256": "33c4b174b6097f4145dd931baef2c4232d423263820cc9603c59c1fd46671e09"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-down-1.png",
+      "exported": "dist/assets/combat-frames/charge-down-1.png",
+      "sha256": "56cef5765aad35e54b9e87fa28e0b445c558206aed34c626e99f0e196bc5dcc1"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-left-0.png",
+      "exported": "dist/assets/combat-frames/charge-left-0.png",
+      "sha256": "44f3e277160abfc37c4ffd85de1dc52b039d50bddbfac2e3c9ce042f88ef5aca"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-left-1.png",
+      "exported": "dist/assets/combat-frames/charge-left-1.png",
+      "sha256": "13c460f1ffacc439348e71e4c39cd117a27b0179139b26fd6ed8cdd3bda4ffa0"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-right-0.png",
+      "exported": "dist/assets/combat-frames/charge-right-0.png",
+      "sha256": "886ec3e43813839fa227af8634a27a537c88050b6233f22b198a9416ebf2c859"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-right-1.png",
+      "exported": "dist/assets/combat-frames/charge-right-1.png",
+      "sha256": "6656461abf51253e292b8a3bf1cb0bf2fc936c78ec3cb4126ad90c7e04abc080"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-up-0.png",
+      "exported": "dist/assets/combat-frames/charge-up-0.png",
+      "sha256": "c676feed7c7b386c7c3b01ec3ada1c0d39ca87f78062fdeedf795695c96896a5"
+    },
+    {
+      "original": "dist/assets/combat-frames/charge-up-1.png",
+      "exported": "dist/assets/combat-frames/charge-up-1.png",
+      "sha256": "7d2fb54fa22226a723a757a5acd17b7769088470c3929297895f6c9f79e1da8b"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-hit-0.png",
+      "exported": "dist/assets/combat-frames/dummy-hit-0.png",
+      "sha256": "0be6238b443a05523973e684e846490f02c1e20e34283133051a2e3fbdca9a2b"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-hit-1.png",
+      "exported": "dist/assets/combat-frames/dummy-hit-1.png",
+      "sha256": "85e1398171db99724c0a051de2ad89b062692aebb368a162fdb6cab18ccb5659"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-hit-2.png",
+      "exported": "dist/assets/combat-frames/dummy-hit-2.png",
+      "sha256": "da873f6878a0291d0bb99ebd4fca5f562039bda5e334a4bdeceb0b5414d3429d"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-hit-3.png",
+      "exported": "dist/assets/combat-frames/dummy-hit-3.png",
+      "sha256": "e04b09237869bc958b76eab59df3d3b4025b2ed3a909d962b8d3b3b7f78ae5d4"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-idle-0.png",
+      "exported": "dist/assets/combat-frames/dummy-idle-0.png",
+      "sha256": "d62d74036378394e588b5ce6f0767418a4b5faaa073a6ae503204aa473975736"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-idle-1.png",
+      "exported": "dist/assets/combat-frames/dummy-idle-1.png",
+      "sha256": "e1f3c9cf937a6697edb49ca64480572c739bbbd90499db3c9d2bc4ef93d2aa89"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-idle-2.png",
+      "exported": "dist/assets/combat-frames/dummy-idle-2.png",
+      "sha256": "634b006554fb2e09c33646f5b37627c5a025c4bfdfea4ff0daf75c26c2ad44c3"
+    },
+    {
+      "original": "dist/assets/combat-frames/dummy-idle-3.png",
+      "exported": "dist/assets/combat-frames/dummy-idle-3.png",
+      "sha256": "3744605ce3b20eba1e00ca96f4f22357e1287271fa8cf0ec05754253a4f794f8"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-down-0.png",
+      "exported": "dist/assets/combat-frames/slash-down-0.png",
+      "sha256": "bb2951908b9a9307bd92422e044dbc0d937f123fccf296bda196135422ddbea5"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-down-1.png",
+      "exported": "dist/assets/combat-frames/slash-down-1.png",
+      "sha256": "de00917eb5858528a34fbc2fda921e6d2ef318c844c362aeaeb54fbdf6f4c03b"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-down-2.png",
+      "exported": "dist/assets/combat-frames/slash-down-2.png",
+      "sha256": "2469e6723800e4247c45448709b699edac86886ea83445eceb75034a69db9a19"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-down-3.png",
+      "exported": "dist/assets/combat-frames/slash-down-3.png",
+      "sha256": "d8360aaccebf542ad982d88ca992c1724c698c1157008beec05dc576ccf6fa73"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-left-0.png",
+      "exported": "dist/assets/combat-frames/slash-left-0.png",
+      "sha256": "6e364e555c4091cea9f8b8119947081c66d2490c258240812581d95f08435a05"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-left-1.png",
+      "exported": "dist/assets/combat-frames/slash-left-1.png",
+      "sha256": "48a4fc6c5533b14f695b22fa84c83e143532779720f0c6af001d525e2fb4740e"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-left-2.png",
+      "exported": "dist/assets/combat-frames/slash-left-2.png",
+      "sha256": "244d7b23e9ccc4a18a0df8e582de7c9dde52b1f32ca05688dd4a854064609b89"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-left-3.png",
+      "exported": "dist/assets/combat-frames/slash-left-3.png",
+      "sha256": "bcdf1ce1094a4250400b5f7c5c59bdd90458cce0dc749195c9ed8f388cd8d33b"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-right-0.png",
+      "exported": "dist/assets/combat-frames/slash-right-0.png",
+      "sha256": "79cbda5521c7c8778ce5df2286f7965b325c4112aeb64e05e11f73bb85385524"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-right-1.png",
+      "exported": "dist/assets/combat-frames/slash-right-1.png",
+      "sha256": "2db2685abe03af2c8b09629465e0448149334011f5d22281940cbf6be272513e"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-right-2.png",
+      "exported": "dist/assets/combat-frames/slash-right-2.png",
+      "sha256": "3c61763c152b77fac98faba2a1107ff8238de42c33ac8859e36693d3ecb1ec83"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-right-3.png",
+      "exported": "dist/assets/combat-frames/slash-right-3.png",
+      "sha256": "3b8e6a1f53e295fdaad4813aaa5409b48d6f0b0a47fbe0a51e1c72fcb7e555cc"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-up-0.png",
+      "exported": "dist/assets/combat-frames/slash-up-0.png",
+      "sha256": "7114c973318eb086d2d2f36051e2997af9cec0d398c3ad817b9a7c6c618313b5"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-up-1.png",
+      "exported": "dist/assets/combat-frames/slash-up-1.png",
+      "sha256": "3c60812f1316dc6f200ff28ecab7812e485a872dfe5f00ce8af085d7348da46b"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-up-2.png",
+      "exported": "dist/assets/combat-frames/slash-up-2.png",
+      "sha256": "88b344abdb4d69f15927dd5df47c56a73f6b501c0243ae7a78bae16e2e0298a2"
+    },
+    {
+      "original": "dist/assets/combat-frames/slash-up-3.png",
+      "exported": "dist/assets/combat-frames/slash-up-3.png",
+      "sha256": "02269af6e5f02ef833311b8ca26bcd693755ce8515db0c03a218df5518993479"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-0.png",
+      "exported": "dist/assets/combat-frames/spin-0.png",
+      "sha256": "f9c520d90cbc5d0f06c715e86bb2411bba00a6158cc9e936c360489bc55d75ba"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-1.png",
+      "exported": "dist/assets/combat-frames/spin-1.png",
+      "sha256": "1c8bf033e6c05d7d7947a91bbf3fb0009ebc9aeb5779e326ac01aa0d6a6a7808"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-2.png",
+      "exported": "dist/assets/combat-frames/spin-2.png",
+      "sha256": "726312c71e18f9e1340c1d453e102a37b64ebcd6ded495592c23ba915148def4"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-3.png",
+      "exported": "dist/assets/combat-frames/spin-3.png",
+      "sha256": "c10a4132e630849cba19bfbc7d972a1bf258c454162350d77189e3da3185ea4b"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-4.png",
+      "exported": "dist/assets/combat-frames/spin-4.png",
+      "sha256": "8d2edc035708f9de8dbfba3451278ad634587cf26d2f2328eace3024c6a15b8d"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-5.png",
+      "exported": "dist/assets/combat-frames/spin-5.png",
+      "sha256": "51f55e31407bd9a70954cef13ed7dbcd927ecb6050504359c66af98cb09f0bd9"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-6.png",
+      "exported": "dist/assets/combat-frames/spin-6.png",
+      "sha256": "87c7f62541b3b10d544540df3535bd6e84494a1a71a220469d3132571214f4b2"
+    },
+    {
+      "original": "dist/assets/combat-frames/spin-7.png",
+      "exported": "dist/assets/combat-frames/spin-7.png",
+      "sha256": "9dd01902096c584312124de80381137380a8721a08b4c2cf94688fe78fbebcb0"
+    },
+    {
+      "original": "dist/assets/combat-v3-atlas.json",
+      "exported": "dist/assets/combat-v3-atlas.json",
+      "sha256": "f1f0ffce707bb782b22bda474d07955e7357a2b5a055f22aeaa1e38dbcd2bc76"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-down-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-down-0.png",
+      "sha256": "33c4b174b6097f4145dd931baef2c4232d423263820cc9603c59c1fd46671e09"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-down-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-down-1.png",
+      "sha256": "56cef5765aad35e54b9e87fa28e0b445c558206aed34c626e99f0e196bc5dcc1"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-left-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-left-0.png",
+      "sha256": "44f3e277160abfc37c4ffd85de1dc52b039d50bddbfac2e3c9ce042f88ef5aca"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-left-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-left-1.png",
+      "sha256": "13c460f1ffacc439348e71e4c39cd117a27b0179139b26fd6ed8cdd3bda4ffa0"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-right-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-right-0.png",
+      "sha256": "886ec3e43813839fa227af8634a27a537c88050b6233f22b198a9416ebf2c859"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-right-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-right-1.png",
+      "sha256": "6656461abf51253e292b8a3bf1cb0bf2fc936c78ec3cb4126ad90c7e04abc080"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-up-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-up-0.png",
+      "sha256": "c676feed7c7b386c7c3b01ec3ada1c0d39ca87f78062fdeedf795695c96896a5"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-up-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-up-1.png",
+      "sha256": "7d2fb54fa22226a723a757a5acd17b7769088470c3929297895f6c9f79e1da8b"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-down-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-down-0.png",
+      "sha256": "a4f2a1c5d821dd23eb61c96f2d28bfeddddfd3a0e55978b349d730910e8cb1cd"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-down-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-down-1.png",
+      "sha256": "d5c74959b4678c129aaba37ce16fe284079e8e976c2032d635c40e369ca2fb13"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-down-2.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-down-2.png",
+      "sha256": "7a3591b7744080490511201850e11b9f1366928fbf20159edc6bcc8da426a3b4"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-down-3.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-down-3.png",
+      "sha256": "f5eedf2c6e5fa40494cbb11f47652857d9182c91aaf5a7a261c7bf178a922c62"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-left-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-left-0.png",
+      "sha256": "b3378bae6996c4a28f16dc134b9754e61745ab5dfdb1ad620cb8ca1699ca143d"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-left-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-left-1.png",
+      "sha256": "e5a447c94b895810ed73928a8111f8b46342d7607c8e2339d92562074af9fa44"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-left-2.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-left-2.png",
+      "sha256": "fd7ad187ca24b9d1ac8e63ae5346327fddff07144d651a8e54c0a23481c790de"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-left-3.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-left-3.png",
+      "sha256": "275af164e70d4d6c326100bf870f01043d20f57eb419cf5f6f4e6086aa7acdd9"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-right-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-right-0.png",
+      "sha256": "07e75d9894771351f9199f964a8f83432f6147ae592bf9bde61d0e40a4c33191"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-right-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-right-1.png",
+      "sha256": "44a91e80c1f7df234875d9faf97f19b0e2b93bb90947a1eb6ca9addd5056a6f0"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-right-2.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-right-2.png",
+      "sha256": "aa74cb81ec5893e016c66579bf19c3b540b35182daa7f62ebdacef505ec471ff"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-right-3.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-right-3.png",
+      "sha256": "14f9ff2f806edb4efa07b510c01d7d8e885b0a91778aaf05cf31a5249c6698e4"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-up-0.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-up-0.png",
+      "sha256": "1040c702fd28d5e1b1163ef8af391d669273d0b2c878468637c1740f044f7b90"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-up-1.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-up-1.png",
+      "sha256": "faffb65ea55e93262f2297e86820c4893b328296d0a8c460f8b50bc08f6a09f3"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-up-2.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-up-2.png",
+      "sha256": "16c9f2eae7edc8bd89af0030b2eeba97f4753e94586daa573b6cdeb61496bb45"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/charge-walk-up-3.png",
+      "exported": "dist/assets/combat-v3-frames/charge-walk-up-3.png",
+      "sha256": "fb49d6f507cb8b50d80446b219596ce8756dcc31e5c61f5b1db7df32c4510dd4"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-hit-0.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-hit-0.png",
+      "sha256": "0be6238b443a05523973e684e846490f02c1e20e34283133051a2e3fbdca9a2b"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-hit-1.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-hit-1.png",
+      "sha256": "85e1398171db99724c0a051de2ad89b062692aebb368a162fdb6cab18ccb5659"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-hit-2.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-hit-2.png",
+      "sha256": "da873f6878a0291d0bb99ebd4fca5f562039bda5e334a4bdeceb0b5414d3429d"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-hit-3.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-hit-3.png",
+      "sha256": "e04b09237869bc958b76eab59df3d3b4025b2ed3a909d962b8d3b3b7f78ae5d4"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-idle-0.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-idle-0.png",
+      "sha256": "d62d74036378394e588b5ce6f0767418a4b5faaa073a6ae503204aa473975736"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-idle-1.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-idle-1.png",
+      "sha256": "e1f3c9cf937a6697edb49ca64480572c739bbbd90499db3c9d2bc4ef93d2aa89"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-idle-2.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-idle-2.png",
+      "sha256": "634b006554fb2e09c33646f5b37627c5a025c4bfdfea4ff0daf75c26c2ad44c3"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/dummy-idle-3.png",
+      "exported": "dist/assets/combat-v3-frames/dummy-idle-3.png",
+      "sha256": "3744605ce3b20eba1e00ca96f4f22357e1287271fa8cf0ec05754253a4f794f8"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-down-0.png",
+      "exported": "dist/assets/combat-v3-frames/slash-down-0.png",
+      "sha256": "0fdca53da3fcbd343949474e8b53b52f36d1ebec7e998b14d7ee3069c57595d8"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-down-1.png",
+      "exported": "dist/assets/combat-v3-frames/slash-down-1.png",
+      "sha256": "2156ec302248da64b7873e35aac6a649fb9cc32337338d17319fbeec9972ceb3"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-down-2.png",
+      "exported": "dist/assets/combat-v3-frames/slash-down-2.png",
+      "sha256": "1240c9bf0493a575583fa9292244893e46dae3c7b5c85fd959c29c16df3c5fde"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-down-3.png",
+      "exported": "dist/assets/combat-v3-frames/slash-down-3.png",
+      "sha256": "5cb655d4c6e2e699442767e4a64b88dabc944e6c1551861f12e67a6e4e6ea3e8"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-left-0.png",
+      "exported": "dist/assets/combat-v3-frames/slash-left-0.png",
+      "sha256": "66251acf8770911f4a649e699fc5eeca807675552677a9e402c5a360c137f47c"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-left-1.png",
+      "exported": "dist/assets/combat-v3-frames/slash-left-1.png",
+      "sha256": "120073fb2faa5dda3a731f4864304f5b8430ce2dda90ea146c83de47dff8d065"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-left-2.png",
+      "exported": "dist/assets/combat-v3-frames/slash-left-2.png",
+      "sha256": "556e77cc2d45d1fc6f1498e999066ffd507d2b32df3e4ddb317a7eb03424855b"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-left-3.png",
+      "exported": "dist/assets/combat-v3-frames/slash-left-3.png",
+      "sha256": "4ea3a87f070209c3d37ba19c12368d5ff79a15647dbac92b0ac383a09ec7f4fd"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-right-0.png",
+      "exported": "dist/assets/combat-v3-frames/slash-right-0.png",
+      "sha256": "6cb3060d555e68c3e6ca73ca1d4c18b0e06c414cfdba8f7d88f85c80dbfe5380"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-right-1.png",
+      "exported": "dist/assets/combat-v3-frames/slash-right-1.png",
+      "sha256": "3d2e43380a07752a67088ee6a8e3a69aad00d8c75de96d4e33fcf666c38a0ade"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-right-2.png",
+      "exported": "dist/assets/combat-v3-frames/slash-right-2.png",
+      "sha256": "19d3bce8f83bf78fecbcf5c6d942d93b038654dc3de97b85cd26209eb9dab976"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-right-3.png",
+      "exported": "dist/assets/combat-v3-frames/slash-right-3.png",
+      "sha256": "670607eb3a8d07e1aab5815382cd8593af324d2a76cd57790b1ff59d325b2a8e"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-up-0.png",
+      "exported": "dist/assets/combat-v3-frames/slash-up-0.png",
+      "sha256": "9ba84d788ed7c0e0284b488174fc851e72f9d4c640e5615c49ada1f604bcd616"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-up-1.png",
+      "exported": "dist/assets/combat-v3-frames/slash-up-1.png",
+      "sha256": "19233d5cc3b8d941d3f1b7ade202fa894c9b826c2764f892eaa871fe17de14d7"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-up-2.png",
+      "exported": "dist/assets/combat-v3-frames/slash-up-2.png",
+      "sha256": "647dd806904e62dba83b68de9d37c8a3cc4caa38152dad400a8385be28a46d37"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/slash-up-3.png",
+      "exported": "dist/assets/combat-v3-frames/slash-up-3.png",
+      "sha256": "75061e56c8c7302aa717750a6554a9012d0a243bc3463ba5260212ba4fbc9aa6"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-0.png",
+      "exported": "dist/assets/combat-v3-frames/spin-0.png",
+      "sha256": "f9c520d90cbc5d0f06c715e86bb2411bba00a6158cc9e936c360489bc55d75ba"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-1.png",
+      "exported": "dist/assets/combat-v3-frames/spin-1.png",
+      "sha256": "1c8bf033e6c05d7d7947a91bbf3fb0009ebc9aeb5779e326ac01aa0d6a6a7808"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-2.png",
+      "exported": "dist/assets/combat-v3-frames/spin-2.png",
+      "sha256": "726312c71e18f9e1340c1d453e102a37b64ebcd6ded495592c23ba915148def4"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-3.png",
+      "exported": "dist/assets/combat-v3-frames/spin-3.png",
+      "sha256": "c10a4132e630849cba19bfbc7d972a1bf258c454162350d77189e3da3185ea4b"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-4.png",
+      "exported": "dist/assets/combat-v3-frames/spin-4.png",
+      "sha256": "8d2edc035708f9de8dbfba3451278ad634587cf26d2f2328eace3024c6a15b8d"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-5.png",
+      "exported": "dist/assets/combat-v3-frames/spin-5.png",
+      "sha256": "51f55e31407bd9a70954cef13ed7dbcd927ecb6050504359c66af98cb09f0bd9"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-6.png",
+      "exported": "dist/assets/combat-v3-frames/spin-6.png",
+      "sha256": "87c7f62541b3b10d544540df3535bd6e84494a1a71a220469d3132571214f4b2"
+    },
+    {
+      "original": "dist/assets/combat-v3-frames/spin-7.png",
+      "exported": "dist/assets/combat-v3-frames/spin-7.png",
+      "sha256": "9dd01902096c584312124de80381137380a8721a08b4c2cf94688fe78fbebcb0"
+    },
+    {
+      "original": "dist/assets/combat-v6-atlas.json",
+      "exported": "dist/assets/combat-v6-atlas.json",
+      "sha256": "d3c6430865c65fa86146bb51460ceabf47a284f3e1baf1ebb4c516051d808e31"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-0.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-0.png",
+      "sha256": "2564ec1dbf33b27e0679b59558467b5556b6a158fd5e28434ef963aed219ab14"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-1.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-1.png",
+      "sha256": "68491b4f9ee3172dd3e7f062d251e485f7b39f4c64789977801b1575047b945c"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-2.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-2.png",
+      "sha256": "91fb77c787ea9fb018644e23676e724aed5b5ad1313f90f4553c25d2d4768e11"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-3.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-3.png",
+      "sha256": "e2cdf1ba386426a2ad1e0147ca0294ade220628231bac9af5240c3cea96f80c5"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-4.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-4.png",
+      "sha256": "68aed0c46bc376ba71508ce604082075bec6faf068068482de79b2e0d8213765"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-5.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-5.png",
+      "sha256": "20ea35e51945164acc0a9338e5af38f83f434c4d59f2e89dbb5eea5e07002384"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-6.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-6.png",
+      "sha256": "d09852c86a993bc143f42be03588c5416f64cbc40f7f5b5594ebfd6c073fbe3a"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/defeat-rest-7.png",
+      "exported": "dist/assets/combat-v6-frames/defeat-rest-7.png",
+      "sha256": "7b77a3d75ff200807d9223617a3848a480758e01653c003a515356050d91ec59"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-0.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-0.png",
+      "sha256": "e47ec6a5050933a846c0318df36475c718a9c85a3bdf73f6f534228676bcf19e"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-1.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-1.png",
+      "sha256": "870e425ad6652188256ab0276fd77ab168805e39f18a53c38e110c10e8c24ef0"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-2.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-2.png",
+      "sha256": "1e8a7af7f55b8947ed66147431c76756891cc0c3b257a6928557e901ee4cf74d"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-3.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-3.png",
+      "sha256": "39afefd6cb9b11d6998de6cfedcb625acfed1cbcf01279f32851b3af9b6ec6bc"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-4.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-4.png",
+      "sha256": "ac4f6a1d77e05365fd892629c0949875a6e3f70e790dced7b78fbceb16d62d50"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-5.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-5.png",
+      "sha256": "96747821769219ab25335b9eb977550203c9495f207dcc0617e293f910b1b23b"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-6.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-6.png",
+      "sha256": "d9a642a31f0da4cfba6635be627d336b50b8427b34e9787ba5894dced6411a7d"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-ring-7.png",
+      "exported": "dist/assets/combat-v6-frames/fire-ring-7.png",
+      "sha256": "4699515f5ca3c85b882865f9dd616887457c9b010e6a95bc3872e39a54db307b"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-0.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-0.png",
+      "sha256": "a8d277bb0241db57b64c71ae2cb53de193752b5c374ae4a776b54ea1e9483dfa"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-1.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-1.png",
+      "sha256": "97821b721e18932a2aa41e79e69639f10cf9c42c9fe8a75b1796b517cb2c7dc1"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-2.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-2.png",
+      "sha256": "ebe88df5f1ee9ffbe8d26498a76db589c0f44aa5d5348fd253214c18eb59b8c3"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-3.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-3.png",
+      "sha256": "778e5fd828a45ebbcea857ff976af58c01f9022bf1b35db9cd28a601b199fbbc"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-4.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-4.png",
+      "sha256": "a905f53e8e3c0d39e62dafa4b362d223c044dc12ca6215bf368662db8ea642de"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-5.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-5.png",
+      "sha256": "30953883028837c45d32d66787c52d5092d85531b16869c0af7683f691941ee3"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-6.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-6.png",
+      "sha256": "2117b154871e62c1e46977ce821397bae1a8744a3a84ebc6f7450ed7d3141637"
+    },
+    {
+      "original": "dist/assets/combat-v6-frames/fire-wave-7.png",
+      "exported": "dist/assets/combat-v6-frames/fire-wave-7.png",
+      "sha256": "770b53ea0ce1f7bddaf22d3bf3f38e6ffb2af8049e65c58d97012e71539022c9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-atlas.json",
+      "exported": "dist/assets/corrected-v8-atlas.json",
+      "sha256": "fe8202cf884e0f1b78dfab8a2b2995791b4553d9b63dd38c42b2b942fc46ab4c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-0.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-0.png",
+      "sha256": "dcd4b8ecd7d4590d09791767f67cc3589226cce6080f37b2f3ebbd583dcaeb7b"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-1.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-1.png",
+      "sha256": "3add5a2c11619d8ec9c95e835676f817e8771f603b96ef7651b5645dadb4578d"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-10.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-10.png",
+      "sha256": "6b8744f5f82b4172bcf24fdaf4f745963b753c1f7a54238435410f74b8c6d76a"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-11.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-11.png",
+      "sha256": "bd2836cc2272ecec0557d8525e92638b44d060408be9e87bd4899f2fb114d46c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-12.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-12.png",
+      "sha256": "0de75c86a1848dec6a1929a91845a5b9dac717220760afc715ae17af6b7e5231"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-13.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-13.png",
+      "sha256": "7b56896df5fdfc743dcc71305b2e7a05a6cca441e5ff2e1b39334b7c9cd9b3a9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-14.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-14.png",
+      "sha256": "f752a8aee82e7b58093cab9f59279fc09171b116177853aac1f2ba7ea4a1e2b2"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-15.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-15.png",
+      "sha256": "c94bc0cf20565a90da3b634982ef04957f695d8f75bd2a79a920973415702168"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-2.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-2.png",
+      "sha256": "0c95a45c407e51b5ec0b0d2407aef21dbddeb8ffa44d362d0d13357631d60117"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-3.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-3.png",
+      "sha256": "3558e841cc899a2cd4599dd46e0219b03b59ce22fac625066cdab5a6bf6c3c35"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-4.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-4.png",
+      "sha256": "ccae5c06eb9c0cf9ec8917073d3ed10000a58a54184088dfd74fe31660296eb2"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-5.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-5.png",
+      "sha256": "19b62659136549cf1fc61f74b94ce806139b104d53868c0b13e4760e9da4c12d"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-6.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-6.png",
+      "sha256": "e4d0edfbaa78f39c78cd1e8b50c0dbfa632b9fc44a52c21ccc41b09cee68c42a"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-7.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-7.png",
+      "sha256": "627bc491ca1576ccdbf584b08bbb232a836752cc13a135ec492dad48ca6117ac"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-8.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-8.png",
+      "sha256": "cc5b18c6813c3f52a99d499f2c8667bbc97a4235faa23980543df63749b47172"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-cheer-9.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-cheer-9.png",
+      "sha256": "af2db1d82a07b25ab5f65648745d61b3809ab74de183a2d6718da395ca587b1d"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-0.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-0.png",
+      "sha256": "86835300df7a80e6bdc99cffd6ab91ea6745f721be01ce0890353db3095f6052"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-1.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-1.png",
+      "sha256": "817011737cdf894b02eefae7096cca6f82c249151d7dcf720800e32883f3ba2c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-10.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-10.png",
+      "sha256": "017358adde1fdee8813094a6e1328cd69dda8150353eea229007b33f5979fe72"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-11.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-11.png",
+      "sha256": "0e39b023120ef4713575799d879c8bd8c064a09d286f3f96afcdc2bf3e79427c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-12.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-12.png",
+      "sha256": "1e0540c24eb582b34671be52d8f75a7ce6f76b4f29d3cfdbf25ea6cb2b66e7d0"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-13.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-13.png",
+      "sha256": "64cef30e5caea05971da8da49c1c3ac763a7edda5dc54ea1fdeb4d522fa98eb9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-14.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-14.png",
+      "sha256": "877ec7b1cc47e76e78c4c697904ec89e4c430fc0f7925dfa470f112b935f06b3"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-15.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-15.png",
+      "sha256": "7fb710dc75ce791b489691b70a08072ef5fadf875cc66ec975a54fc1fc16e6a3"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-2.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-2.png",
+      "sha256": "703da25f905ee3f914044c953e2348d66e28287674189d0e70f8a65745f96e87"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-3.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-3.png",
+      "sha256": "3c2effd2d5a2fbe1c2e48745b12a6a6f539483c08ac0b3ae63f5b13352881609"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-4.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-4.png",
+      "sha256": "a8866cd1a7caf0f5076d2f6145eb36e0a22f6ed4ce9ba9c1cf563e7b8b3de15d"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-5.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-5.png",
+      "sha256": "bf0d8e6f15b82bc34e43fa6443f4bf8d126f541be17e612490c5055aef2258e7"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-6.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-6.png",
+      "sha256": "0c75ddb9c8c0d89ee486e9fdcd8eaae9db3a6b0b6a9d40735702d23cf6cfd039"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-7.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-7.png",
+      "sha256": "f724808019d82a2a643bf4ca6ef1a1e099c80b2d0d878410c489486837e8112f"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-8.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-8.png",
+      "sha256": "53b25248d56b44ff1449ff1bcef8ab18a601eb65725ab599e9e561d02952d087"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-fetch-9.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-fetch-9.png",
+      "sha256": "fe83b55d309113342889ab1c5c6bf8db23ffb67a5969031ff62136e0d6488323"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-item-0.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-item-0.png",
+      "sha256": "ea65c371a41c68b63716475fad5211a1f3d13598beb6c0d0be01b42862024cce"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-item-1.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-item-1.png",
+      "sha256": "43763b39ca40f96d91b1abd88831d87a1c55aa2d23b249ea9cd6a1697c0b0c64"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-item-2.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-item-2.png",
+      "sha256": "e84d52699a29d1f965b1030b1363ea5b8a2f853b854b2b70d9e4176baaf204e9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-item-3.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-item-3.png",
+      "sha256": "4c8a93da24adda099cfb1fc96901af66708cbc88f3a8372c069418f41cd6ed65"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-0.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-0.png",
+      "sha256": "70bdff2bb36c3ba7dde1a42035d1abd7ee2dd571287cb6e4d64cfda3e51d96e4"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-1.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-1.png",
+      "sha256": "bc43aafd38bfff2a5b3021cbb2870de1165ea127128e0daae1fb10f857f6b7c8"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-10.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-10.png",
+      "sha256": "98fbe644bb0298237670ca8dbb8195721ec6d9316c46d66e51f03cacb525fe46"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-11.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-11.png",
+      "sha256": "18ed870dec0b701fba1058de7f0ab11ddbf11dbcc8582f6ea41e6deb309029f0"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-12.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-12.png",
+      "sha256": "25bc83873607b384afe1305286d654e3990336950d4552e05b7d81afc878e506"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-13.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-13.png",
+      "sha256": "287d0148c727f3b3b47119ace300f4f719004d2818c51771912e690126e9b286"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-14.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-14.png",
+      "sha256": "397c0273a338d9ebb907175c7a9bc1761e998eb11654fe18b7e3f1bdb13d39fa"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-15.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-15.png",
+      "sha256": "4afa9bc7c7f5d056d4d074aad98cbfea2a4a16b7ead65a6a6905360b8c1b5994"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-2.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-2.png",
+      "sha256": "a90644beb2b45c29d1c530e9787a472448302e189015e7d2266ccb047a54c726"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-3.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-3.png",
+      "sha256": "b7efbd92c45892b2552c726b1b2a8ac36155a1eecaed230223dd68e481ba1177"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-4.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-4.png",
+      "sha256": "f2d88ed27f8b6ea14a20665fe7f0de836c909a7e9c2e9e0331a222425589d4a9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-5.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-5.png",
+      "sha256": "0d0b9c117ff15d0e2b9526c0bed98d14abae3758c3705a5de5b5c893493d4d3e"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-6.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-6.png",
+      "sha256": "18b2ed06630e169c57b71fb01bae7b548eb79df97b2827d3b9a837421c2f9b79"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-7.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-7.png",
+      "sha256": "0bcdca71c7e845ba7ffebc8d09f67c99a8ffbe63e99497c10d3aaa53a215819c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-8.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-8.png",
+      "sha256": "c00777f59125014d0fb1251129457b7742715168b338071c3b9fc43400a5381c"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/nitro-sip-9.png",
+      "exported": "dist/assets/corrected-v8-frames/nitro-sip-9.png",
+      "sha256": "773e953af6266248c914ca1915994badc8e6d32f0d6ff26bf373b14ef6ec0045"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/projectile-0.png",
+      "exported": "dist/assets/corrected-v8-frames/projectile-0.png",
+      "sha256": "6a133b101399e13fa2056e37dd482b329ba646763fdc3ce727f7ba578db71ded"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/projectile-1.png",
+      "exported": "dist/assets/corrected-v8-frames/projectile-1.png",
+      "sha256": "190b51d73fde1459221670b4c22f7058778b7c00c09b4c97f7be903e803fc6d9"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/projectile-2.png",
+      "exported": "dist/assets/corrected-v8-frames/projectile-2.png",
+      "sha256": "bf1e25bacd13e246231403c595395198552a2acf90f53f06da3d0d9d5205a6be"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/projectile-3.png",
+      "exported": "dist/assets/corrected-v8-frames/projectile-3.png",
+      "sha256": "722f367a23b6bb50a54af533de7fe3e36dca02e49cba1bf724c16c507de958d1"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-fire-0.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-fire-0.png",
+      "sha256": "53699bd5214bfb4feebc35cf10aeca19826f231dc0763937a6200f8280b5acde"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-fire-1.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-fire-1.png",
+      "sha256": "99b88c66061170862b3523e0909752b7b80fd70e4ce4b06a020af20692af49d3"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-fire-2.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-fire-2.png",
+      "sha256": "757133153f6cdc105aa33986f52108ffa41c749a1c9d66430172ba3faad303ab"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-fire-3.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-fire-3.png",
+      "sha256": "3f1220eca0e0b778562c4276d316063b9c9d1c6cbcddea3237676d1b8b0565d2"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-idle-0.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-idle-0.png",
+      "sha256": "e8c7a9fc337b4d74b2474c09cf6d766c9c2e71751c654d9b5e9add2028647954"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-idle-1.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-idle-1.png",
+      "sha256": "df9acb0f1e54c78ece52f686fec091dcc6300d8ee501e6281516b20ee1348ef4"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-idle-2.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-idle-2.png",
+      "sha256": "f84abf506d353afe5b6d986b28e5d4124c0a914f2fe4b12695b16a8a84d109c8"
+    },
+    {
+      "original": "dist/assets/corrected-v8-frames/shooter-idle-3.png",
+      "exported": "dist/assets/corrected-v8-frames/shooter-idle-3.png",
+      "sha256": "198b58b96e4640ca17c473dce4e467369dbea24b78c1966814ed6be00899a80e"
+    },
+    {
+      "original": "dist/assets/defeat-collapse-atlas.png",
+      "exported": "dist/assets/defeat-collapse-atlas.png",
+      "sha256": "267de9b1d1d886d6bd9630a74e6967cd4e56afb75c4547933492df1586c7f445"
+    },
+    {
+      "original": "dist/assets/defeat-rest-atlas.png",
+      "exported": "dist/assets/defeat-rest-atlas.png",
+      "sha256": "d7c2d007cba4c9c31c1b9395b14f3d5b447c844c9ed3aa5d1ed6f3739d10805e"
+    },
+    {
+      "original": "dist/assets/defeat-rest-v6-atlas.png",
+      "exported": "dist/assets/defeat-rest-v6-atlas.png",
+      "sha256": "b1fbe6c3532e454bac0ccbfbfe100a423dab4447c665e0da048008f0db0308a8"
+    },
+    {
+      "original": "dist/assets/defeat-spin-atlas.png",
+      "exported": "dist/assets/defeat-spin-atlas.png",
+      "sha256": "e67d7cda3e7b81725b481d1da6d9c52e25427f503e67152125f035edda35ccff"
+    },
+    {
+      "original": "dist/assets/defeat-stars-atlas.png",
+      "exported": "dist/assets/defeat-stars-atlas.png",
+      "sha256": "5e795d4a4cc5b97c021bc28cad4d7c070e21fb176343d5c2865c7c482d9c08c2"
+    },
+    {
+      "original": "dist/assets/defeat-v5-atlas.json",
+      "exported": "dist/assets/defeat-v5-atlas.json",
+      "sha256": "e7ce1acc3a9a5eee5bf7e9df572c68da5926ecc2cbec6c24a32aa466ce088fdc"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-0.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-0.png",
+      "sha256": "11b3a3a1d5aebdb21607aefd5773cad9f39008b78d2e82b98fe7a333fc6b06a5"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-1.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-1.png",
+      "sha256": "4fa611c5b5c65be6b86df575bf9d5aae72f62b9afbe76010126ce164fa99723d"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-10.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-10.png",
+      "sha256": "7a0d6c184499805cede83ce7c0af0e0d3d92f5537561a82b2560abd5ef811bf7"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-11.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-11.png",
+      "sha256": "85c26e1c6b779518cd257c241003da596cfc18895023d21e8ca1617c867ecdda"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-12.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-12.png",
+      "sha256": "2720a1735782586c1c547914c39a74d41ef346403edd6f2899506ca90773e048"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-13.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-13.png",
+      "sha256": "cf927e7d3311ff9329de3b8921040a035809e9c44ae8937988131e29e06080e0"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-14.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-14.png",
+      "sha256": "556b3886f1a1d6c6539f3145676ef6055244b3ae85a934a261b6e009f6fb1353"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-15.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-15.png",
+      "sha256": "2564ec1dbf33b27e0679b59558467b5556b6a158fd5e28434ef963aed219ab14"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-2.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-2.png",
+      "sha256": "bbcd80bc65dd7d1ea951f8cd4a05276db37e365b2b01466d30c187bcb09971c8"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-3.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-3.png",
+      "sha256": "cccbbe092c2d63c2aa7da6485460a8cbe2bf84cf3a8a017549583664e4e29a12"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-4.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-4.png",
+      "sha256": "0025e88bfb54ace885dfbddaaa85adb96dd1711138079d0472a8d5761d391a46"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-5.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-5.png",
+      "sha256": "f2db1f1e33a588e2a6ceb5d74950634f1892ec59815db2366c9b8295019383f8"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-6.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-6.png",
+      "sha256": "c5c44a1cb645eb4f27e7e914e06ef0024b063582830052c4119d7c4cba50dbe7"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-7.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-7.png",
+      "sha256": "6a3f5812c25ef6ca0574062acce575cf9f1d428fe48e87be425d52d4d90320a2"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-8.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-8.png",
+      "sha256": "7ccbfa59933abf8b3723e3f4c140a96650b8ccc76552b4c69a8e4f2d87bdec5e"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-collapse-9.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-collapse-9.png",
+      "sha256": "b2245376a7d0a850c7c5705aa32dfa8ca8ddf27eeec450c89fde9d891254cf82"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-0.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-0.png",
+      "sha256": "c027037ffb87fc7b84fda0feb1fd1f125295e8871a25526a7544a7c6ad1f44e1"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-1.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-1.png",
+      "sha256": "d0c222ccf98b0aa379d88880d971b0224b94345c54f89d5de41475e195c8e554"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-2.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-2.png",
+      "sha256": "2f8b4baa7ee26727a0727aa43e99fb58d74ee24f3e7cbf453077c2804c1a370e"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-3.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-3.png",
+      "sha256": "937180690eecb334a39ec11610b03181ac4ee0acf3b8e9b64d2cae1ff86ef814"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-4.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-4.png",
+      "sha256": "38bc0a43d4df0a61a2cd936c72fbae091d55ae2ac09ace2052f62a070295fa44"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-5.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-5.png",
+      "sha256": "072fc55b6488aeedf334e9f65cd8a858ed734e6fa8dac1fa07bac30d505e979f"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-6.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-6.png",
+      "sha256": "bdfc134c12365b17331c1b07768663b642ad4ce188e0b0c78fefe65d77e85e0e"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-rest-7.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-rest-7.png",
+      "sha256": "c9ef180f788d85b35c0cc81a2aee9ce8084a0f2a31c2da9cd81e5eb03895ca07"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-0.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-0.png",
+      "sha256": "34a4ec52bcfc82ba458d3b186b95dd63b13bcb4dcc1a66b372dcf35dc168b933"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-1.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-1.png",
+      "sha256": "6c2ef350bc642f22c87c6c128b9d94cb93bcd35d8cb23342ee91155fff42c31a"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-10.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-10.png",
+      "sha256": "e888bf6ca3510336adedc19a68d02642ff534a6711164336e2b15dce94a648ce"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-11.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-11.png",
+      "sha256": "6a052a019e7d5145ac01287bb1eb09f3e937ce3b2ce997300bf0c78b3d0e3c0e"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-12.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-12.png",
+      "sha256": "2afe23a39a13b2d26915d3b874424e513400123030e6740b562e28604bb6eabb"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-13.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-13.png",
+      "sha256": "2dcc54ce6dc3959232d8516bb21b7c087616329bc8a5426f30808f4b6099ecd6"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-14.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-14.png",
+      "sha256": "dc52260e132d78191dd097fdf96b0f05899d0ec1077aefe99338c3a628fbc000"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-15.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-15.png",
+      "sha256": "38b32c522d55474829cf7b5722e738079f039c8beda652d921ad69a72a7e8132"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-2.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-2.png",
+      "sha256": "c8587bda5d033f9b7436a83ecd9836ba696abc1a0d19d75fc4e145837c09dfc2"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-3.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-3.png",
+      "sha256": "42ce0beb79cbe96b88f734fb370ca13316a055c5a994c9441aa82b5a574471b4"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-4.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-4.png",
+      "sha256": "6e5f3a05d01daf54156d1f1055ef702b1c3d3a26d99efa55f1039fbdaf77eac4"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-5.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-5.png",
+      "sha256": "8afa29bb753ccbcac1cd3275779ec7071398c8c6b119f3e3fd4f526f962c89a2"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-6.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-6.png",
+      "sha256": "b5c5e6e9723fbe569c11e0fa33cea5dda0b14145c834b89647a0d3ef310d192f"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-7.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-7.png",
+      "sha256": "006898b5169822e17e132b5f1017ce407daa794b89bab1ded29461883c13de98"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-8.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-8.png",
+      "sha256": "6b2919db34484385d8bb568aaa9078eee7d0491627d8a3b4aaba41549a1985e4"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-spin-9.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-spin-9.png",
+      "sha256": "1de62b128c0336fee0fa7848b57991d168cb39140457206798384294a54efafd"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-stars-0.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-stars-0.png",
+      "sha256": "431d9ff0ea2de8ea93fa45c4041c297b51a65d4c7f97b96aaf6132d2eaf661fa"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-stars-1.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-stars-1.png",
+      "sha256": "d44cb4981d4621b2f4e1a241371d10f33e5c5ab05712f59a7b58a3b5cf20945f"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-stars-2.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-stars-2.png",
+      "sha256": "852250eedad3cd02027079527d795017949e3c4c6fd911da78ffd2eff78cd62e"
+    },
+    {
+      "original": "dist/assets/defeat-v5-frames/defeat-stars-3.png",
+      "exported": "dist/assets/defeat-v5-frames/defeat-stars-3.png",
+      "sha256": "3d8e63bae44de0b0b99de9536f7e56805e9d25f933e3bb06b45a6ce86589bda2"
+    },
+    {
+      "original": "dist/assets/dummy-atlas.png",
+      "exported": "dist/assets/dummy-atlas.png",
+      "sha256": "3333681991fc467c395d690915ef8d8d26e34f26eb785dff4d45638b7ae86b51"
+    },
+    {
+      "original": "dist/assets/dummy-generated.png",
+      "exported": "dist/assets/dummy-generated.png",
+      "sha256": "385dc03c479b4789ec55607610be3587573bc03ee2eb7ee5aea7ecef79cc463b"
+    },
+    {
+      "original": "dist/assets/fire-ring-v6-atlas.png",
+      "exported": "dist/assets/fire-ring-v6-atlas.png",
+      "sha256": "5b6b85e8c411bdbdecaae645a7b4dcd3669ecab750d3ea1436299dd2df1364f7"
+    },
+    {
+      "original": "dist/assets/fire-ring-v6-generated.png",
+      "exported": "dist/assets/fire-ring-v6-generated.png",
+      "sha256": "11b31cc53fa24b30a9445443ff82f5a69be41f76f55e9e9bbb746e8d868e5017"
+    },
+    {
+      "original": "dist/assets/fire-wave-v6-atlas.png",
+      "exported": "dist/assets/fire-wave-v6-atlas.png",
+      "sha256": "53fd9e7b80b200093b23e9a59bb07d59c1ebf77eeddebfe85f41ff2eb0917b82"
+    },
+    {
+      "original": "dist/assets/fire-wave-v6-generated.png",
+      "exported": "dist/assets/fire-wave-v6-generated.png",
+      "sha256": "a0b062aabbbaa18910c093905c99a8757de8a57e6f9959e53d1d20e418c2d874"
+    },
+    {
+      "original": "dist/assets/frames/down-idle-0.png",
+      "exported": "dist/assets/frames/down-idle-0.png",
+      "sha256": "b84061c48c61874288b0d2f47146d6e913002b801138f583a682d1badd25c24e"
+    },
+    {
+      "original": "dist/assets/frames/down-idle-1.png",
+      "exported": "dist/assets/frames/down-idle-1.png",
+      "sha256": "d756f68d39d023f1122af8d5b4ca6d4edbee8e0ce39114a0b8aff4cbc463f5a7"
+    },
+    {
+      "original": "dist/assets/frames/down-walk-0.png",
+      "exported": "dist/assets/frames/down-walk-0.png",
+      "sha256": "1720fdd72f6f316db6bd17426fae5343755a3396e11a862bf7dd65a955d38054"
+    },
+    {
+      "original": "dist/assets/frames/down-walk-1.png",
+      "exported": "dist/assets/frames/down-walk-1.png",
+      "sha256": "0a434e9c25483f401451dda3fdb3d348189293b6b5d32724989165501a783517"
+    },
+    {
+      "original": "dist/assets/frames/down-walk-2.png",
+      "exported": "dist/assets/frames/down-walk-2.png",
+      "sha256": "1931a845dad135d2f92c7facccb0d12ca097afa83372ba38a2b45e337b954565"
+    },
+    {
+      "original": "dist/assets/frames/down-walk-3.png",
+      "exported": "dist/assets/frames/down-walk-3.png",
+      "sha256": "5a8ba6b5a3c879a4323cf2d4507a3a5a8182cc8ad0cce85b370a45be6e660f01"
+    },
+    {
+      "original": "dist/assets/frames/left-idle-0.png",
+      "exported": "dist/assets/frames/left-idle-0.png",
+      "sha256": "13b16c1ab06504870c93adcf739d75b895055c5824e0474291f13619cb72253f"
+    },
+    {
+      "original": "dist/assets/frames/left-idle-1.png",
+      "exported": "dist/assets/frames/left-idle-1.png",
+      "sha256": "9e9a2bc1880f633ad4dac93415439829dc3fd6bfd9e6099531056160f77fec58"
+    },
+    {
+      "original": "dist/assets/frames/left-walk-0.png",
+      "exported": "dist/assets/frames/left-walk-0.png",
+      "sha256": "d0f269dd67a76ddd16e303ba294c2f7f07d81eaeb8705c154518b559a841293d"
+    },
+    {
+      "original": "dist/assets/frames/left-walk-1.png",
+      "exported": "dist/assets/frames/left-walk-1.png",
+      "sha256": "18c633cd1be9c7fbafa6d85880f4eedae1022c5b9d3279f970a870989e3ea63a"
+    },
+    {
+      "original": "dist/assets/frames/left-walk-2.png",
+      "exported": "dist/assets/frames/left-walk-2.png",
+      "sha256": "857ad3eca311068d77eeba8736888cb195e7857c4698696ef88492171d111849"
+    },
+    {
+      "original": "dist/assets/frames/left-walk-3.png",
+      "exported": "dist/assets/frames/left-walk-3.png",
+      "sha256": "1b61d177b93bd08affd6575c5a1b81d21a8591168c117c8d2a1810d91d32e031"
+    },
+    {
+      "original": "dist/assets/frames/right-idle-0.png",
+      "exported": "dist/assets/frames/right-idle-0.png",
+      "sha256": "cfe54323022606aadd2604870ae2780a8380c691ddb8cc59cad3d1e0d613ada2"
+    },
+    {
+      "original": "dist/assets/frames/right-idle-1.png",
+      "exported": "dist/assets/frames/right-idle-1.png",
+      "sha256": "90af055f5beb3b36a696b9deb484f8be66ea1245228a37ab90a2d2724cc3b008"
+    },
+    {
+      "original": "dist/assets/frames/right-walk-0.png",
+      "exported": "dist/assets/frames/right-walk-0.png",
+      "sha256": "a0acec8748f1dcf99d82c392d1b2827786a2a853982d75c56db33f289f806bb2"
+    },
+    {
+      "original": "dist/assets/frames/right-walk-1.png",
+      "exported": "dist/assets/frames/right-walk-1.png",
+      "sha256": "02233bf0b6573e5cf4a0dc49909faa65b8c1c2d68cdac4d24c3ff7a2716be6b6"
+    },
+    {
+      "original": "dist/assets/frames/right-walk-2.png",
+      "exported": "dist/assets/frames/right-walk-2.png",
+      "sha256": "ce9ce6bda5b055c2c0fbbe883abdc2d7813b2bc8a6f79146e743b055d9dd0fd9"
+    },
+    {
+      "original": "dist/assets/frames/right-walk-3.png",
+      "exported": "dist/assets/frames/right-walk-3.png",
+      "sha256": "51536f6b72802a003e91493603991058b983c05e90e6163bfc26faf2cdf044a1"
+    },
+    {
+      "original": "dist/assets/frames/up-idle-0.png",
+      "exported": "dist/assets/frames/up-idle-0.png",
+      "sha256": "b7b770cf057343a142897c3547992c24a87b95757936df7609253b3181faead0"
+    },
+    {
+      "original": "dist/assets/frames/up-idle-1.png",
+      "exported": "dist/assets/frames/up-idle-1.png",
+      "sha256": "a0b73141be2b7391766211b336f01d00f69fd6bb13f76af5adc7ecb3bbb4d1a5"
+    },
+    {
+      "original": "dist/assets/frames/up-walk-0.png",
+      "exported": "dist/assets/frames/up-walk-0.png",
+      "sha256": "5e092032f84e9df2da1b1ed9f39b3c59b1387d19048ca4476883467c72b8d74f"
+    },
+    {
+      "original": "dist/assets/frames/up-walk-1.png",
+      "exported": "dist/assets/frames/up-walk-1.png",
+      "sha256": "75469ab031b517602f5de42960725ed6bb94f65f346f441c6ecbb4834fc92909"
+    },
+    {
+      "original": "dist/assets/frames/up-walk-2.png",
+      "exported": "dist/assets/frames/up-walk-2.png",
+      "sha256": "e1f36ec0f059a5c7e531da6055994060f09aa3712e71d659c5d3959a3a69bb2a"
+    },
+    {
+      "original": "dist/assets/frames/up-walk-3.png",
+      "exported": "dist/assets/frames/up-walk-3.png",
+      "sha256": "80f671244453f49d31832fc0edc52dd1b0f72330b4d8603253e6c3f8138ceaa8"
+    },
+    {
+      "original": "dist/assets/health-v4-atlas.json",
+      "exported": "dist/assets/health-v4-atlas.json",
+      "sha256": "8c75fe0333c891939bf51051fd6140e49344c781ef877cce9c6dc31448e590cb"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-down-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-down-0.png",
+      "sha256": "33c4b174b6097f4145dd931baef2c4232d423263820cc9603c59c1fd46671e09"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-down-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-down-1.png",
+      "sha256": "56cef5765aad35e54b9e87fa28e0b445c558206aed34c626e99f0e196bc5dcc1"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-left-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-left-0.png",
+      "sha256": "44f3e277160abfc37c4ffd85de1dc52b039d50bddbfac2e3c9ce042f88ef5aca"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-left-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-left-1.png",
+      "sha256": "13c460f1ffacc439348e71e4c39cd117a27b0179139b26fd6ed8cdd3bda4ffa0"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-right-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-right-0.png",
+      "sha256": "886ec3e43813839fa227af8634a27a537c88050b6233f22b198a9416ebf2c859"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-right-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-right-1.png",
+      "sha256": "6656461abf51253e292b8a3bf1cb0bf2fc936c78ec3cb4126ad90c7e04abc080"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-up-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-up-0.png",
+      "sha256": "c676feed7c7b386c7c3b01ec3ada1c0d39ca87f78062fdeedf795695c96896a5"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-up-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-up-1.png",
+      "sha256": "7d2fb54fa22226a723a757a5acd17b7769088470c3929297895f6c9f79e1da8b"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-down-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-down-0.png",
+      "sha256": "71215a3754603baefe758129a2218eedc61eac9a12e7f880382b4a32063b3a77"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-down-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-down-1.png",
+      "sha256": "d69a0eaad32964aa05b96161a55694f483643f4300729af3c2b83eda95fc3594"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-down-2.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-down-2.png",
+      "sha256": "0e51ee9169742bd5d747a2c553ce3a9c6169097bc048470502fd5881016cfdf0"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-down-3.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-down-3.png",
+      "sha256": "6f3edeb9bf6f4b00ca87a34719bb2ee798cfa4af1c79d15735f7236a11189b6f"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-left-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-left-0.png",
+      "sha256": "67f4cc47fdf4eadbdd13411acf9220873835d2e21597dd3b19dc9641d373fc4d"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-left-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-left-1.png",
+      "sha256": "c9d76ecc8cd0c0d8625189bc0c21d5e0a23f0bbaac25dee6e274709580b8f764"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-left-2.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-left-2.png",
+      "sha256": "a68573ee8b4de8dc7be3d41dde61b19535d7bb1ec930d2a4f4377a5414e50513"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-left-3.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-left-3.png",
+      "sha256": "6a5a0a40364bb720ac4d30f46edf1e3d528044f013395163e36308dc03c2f6c3"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-right-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-right-0.png",
+      "sha256": "eb7cd0daa536160e7dd1c3ea119b89833297083aa8a9afaa88b6a88338197adb"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-right-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-right-1.png",
+      "sha256": "ecf44f7432f716f6afaea40f97ac25f0d593fbf37d15bd2a09c6982993147837"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-right-2.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-right-2.png",
+      "sha256": "3445a85cf1acc39438bc7e7cb6ca27f823efa0acd6d07c02aac2e625c2cdf3e1"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-right-3.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-right-3.png",
+      "sha256": "65e4da7878cb84c2531f64265432a866b52b31d41ed4864a44befd1d89aaecb9"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-up-0.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-up-0.png",
+      "sha256": "ea3dcd9b795a8d14cf8a1574be24644d20d65e23b05bbb3d951818f15d6b5ba4"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-up-1.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-up-1.png",
+      "sha256": "9d70d59268dac0cc6eaff8552ccbf5c2b174d044580d12516cedd5f6f2ddab2e"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-up-2.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-up-2.png",
+      "sha256": "8b3f9401aacf3d1ec55c5aeeb3864a1c7629dbad9a206ae44458909f7817b736"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/charge-walk-up-3.png",
+      "exported": "dist/assets/health-v4-frames/charge-walk-up-3.png",
+      "sha256": "bc84fc33fda999f0f13809c04bfcbfaafa3c9cdf6bba2333ea7d42a27e04cb24"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-hit-0.png",
+      "exported": "dist/assets/health-v4-frames/dummy-hit-0.png",
+      "sha256": "0be6238b443a05523973e684e846490f02c1e20e34283133051a2e3fbdca9a2b"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-hit-1.png",
+      "exported": "dist/assets/health-v4-frames/dummy-hit-1.png",
+      "sha256": "85e1398171db99724c0a051de2ad89b062692aebb368a162fdb6cab18ccb5659"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-hit-2.png",
+      "exported": "dist/assets/health-v4-frames/dummy-hit-2.png",
+      "sha256": "da873f6878a0291d0bb99ebd4fca5f562039bda5e334a4bdeceb0b5414d3429d"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-hit-3.png",
+      "exported": "dist/assets/health-v4-frames/dummy-hit-3.png",
+      "sha256": "e04b09237869bc958b76eab59df3d3b4025b2ed3a909d962b8d3b3b7f78ae5d4"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-idle-0.png",
+      "exported": "dist/assets/health-v4-frames/dummy-idle-0.png",
+      "sha256": "d62d74036378394e588b5ce6f0767418a4b5faaa073a6ae503204aa473975736"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-idle-1.png",
+      "exported": "dist/assets/health-v4-frames/dummy-idle-1.png",
+      "sha256": "e1f3c9cf937a6697edb49ca64480572c739bbbd90499db3c9d2bc4ef93d2aa89"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-idle-2.png",
+      "exported": "dist/assets/health-v4-frames/dummy-idle-2.png",
+      "sha256": "634b006554fb2e09c33646f5b37627c5a025c4bfdfea4ff0daf75c26c2ad44c3"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/dummy-idle-3.png",
+      "exported": "dist/assets/health-v4-frames/dummy-idle-3.png",
+      "sha256": "3744605ce3b20eba1e00ca96f4f22357e1287271fa8cf0ec05754253a4f794f8"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-down-0.png",
+      "exported": "dist/assets/health-v4-frames/hurt-down-0.png",
+      "sha256": "5f466eac9d1707ebd8e8aa66f539e2e8c73315eba9b5b31687bfdaaed423dae2"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-down-1.png",
+      "exported": "dist/assets/health-v4-frames/hurt-down-1.png",
+      "sha256": "82dbdcccfbaa4ff3378af2180d4822cb8eff93c1adaa933e856005de09633175"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-down-2.png",
+      "exported": "dist/assets/health-v4-frames/hurt-down-2.png",
+      "sha256": "cf3c766054885ff9d406401b28f5521d6e2eaf0b2d6d947c6d21323f8a00408a"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-down-3.png",
+      "exported": "dist/assets/health-v4-frames/hurt-down-3.png",
+      "sha256": "4c27f5fd55eeeb0aae27c27b5a696f043a3024a5e87e13dd9c42fa1c15921839"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-left-0.png",
+      "exported": "dist/assets/health-v4-frames/hurt-left-0.png",
+      "sha256": "9dbf11f80133ea6a30ca6cbcca4f093ff39b8b9de5657b0a29631e93d41123c5"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-left-1.png",
+      "exported": "dist/assets/health-v4-frames/hurt-left-1.png",
+      "sha256": "751ff6b9bc4d9533bf437b48d2f1c293b9ff1c8a4eef20f02865910380ec2024"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-left-2.png",
+      "exported": "dist/assets/health-v4-frames/hurt-left-2.png",
+      "sha256": "45718c940907405bf11721d50d2f8723831757b259670634051b7e9e2234e68f"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-left-3.png",
+      "exported": "dist/assets/health-v4-frames/hurt-left-3.png",
+      "sha256": "2c6ec9ad7d56c6790104f1b5489ea09ccbbee93a20345778a16e0c08c76e808d"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-right-0.png",
+      "exported": "dist/assets/health-v4-frames/hurt-right-0.png",
+      "sha256": "045bc03a9a25eccd2af9c48095108d88b8a7f05027ea36df66d39bb66c4a0974"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-right-1.png",
+      "exported": "dist/assets/health-v4-frames/hurt-right-1.png",
+      "sha256": "6db71c49c91062f4b3831f325049574058b7d8c191dc51d2c70b922aa27fde6c"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-right-2.png",
+      "exported": "dist/assets/health-v4-frames/hurt-right-2.png",
+      "sha256": "736d9b4018d11fd29f1e93949e6b3d243483650deae9ab4d030432241c86e976"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-right-3.png",
+      "exported": "dist/assets/health-v4-frames/hurt-right-3.png",
+      "sha256": "f52fb7515d5a27ab14647c320988513f423b023121c967d68fb51aec906a3ee9"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-up-0.png",
+      "exported": "dist/assets/health-v4-frames/hurt-up-0.png",
+      "sha256": "53b433bf0189c515cec6f213171486524cf525fc157dc8c661e502eabdcaeec2"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-up-1.png",
+      "exported": "dist/assets/health-v4-frames/hurt-up-1.png",
+      "sha256": "ddd2ea1e92d6f54a1ea7a9337f78767db752742b5f9f72b52b2cef5547cfc1de"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-up-2.png",
+      "exported": "dist/assets/health-v4-frames/hurt-up-2.png",
+      "sha256": "fb3c6670e043efe576ab4a0b44927d73da3625533bd641f81a7814b04b0a3aa8"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/hurt-up-3.png",
+      "exported": "dist/assets/health-v4-frames/hurt-up-3.png",
+      "sha256": "0d395e500948bda856859dc8e18a1e38e40f1632c597440bd8af0d854ee968e1"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/projectile-0.png",
+      "exported": "dist/assets/health-v4-frames/projectile-0.png",
+      "sha256": "93b60049b2d04ee9399808ed891cdf96a689d74d733ee6810af444d4d698ce38"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/projectile-1.png",
+      "exported": "dist/assets/health-v4-frames/projectile-1.png",
+      "sha256": "a6f6f8b33b1278c025f149ded9bdf381dff6b048c80771fe7ffb04ceadf3ef12"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/projectile-2.png",
+      "exported": "dist/assets/health-v4-frames/projectile-2.png",
+      "sha256": "0a391f4f31905b38416de04b97ff58e5b52e550185d4987f852708818be88913"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/projectile-3.png",
+      "exported": "dist/assets/health-v4-frames/projectile-3.png",
+      "sha256": "b965708f3cde4c301854fbd1e2ad0d2fe47fb9db0135a72c6a3f1d700d8049aa"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-fire-0.png",
+      "exported": "dist/assets/health-v4-frames/shooter-fire-0.png",
+      "sha256": "b01cd34a35619d4a5a44b7f54cac5f615d3817770916c532141a27000add6d16"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-fire-1.png",
+      "exported": "dist/assets/health-v4-frames/shooter-fire-1.png",
+      "sha256": "c952ef9f6bbc27c426d7fe979e17a08b6b23befe4ccc83dc49da5c8fff1cc321"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-fire-2.png",
+      "exported": "dist/assets/health-v4-frames/shooter-fire-2.png",
+      "sha256": "8aeb74b4e9865830e56e01fa5e0fe69d2e7381db1a2549bd34ea578f4e19a522"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-fire-3.png",
+      "exported": "dist/assets/health-v4-frames/shooter-fire-3.png",
+      "sha256": "05807ced47bd4517811c6c648f2774135be86f380b768c97bf5171e59c2996e0"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-idle-0.png",
+      "exported": "dist/assets/health-v4-frames/shooter-idle-0.png",
+      "sha256": "4027030a85c3d6e1558cfe28463069c4cea283ef8a647442611e3254e40da4ef"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-idle-1.png",
+      "exported": "dist/assets/health-v4-frames/shooter-idle-1.png",
+      "sha256": "ff5d733d55cd23f878d8f0b495f98f9b74545bc8b88e349db1251a287d45bccc"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-idle-2.png",
+      "exported": "dist/assets/health-v4-frames/shooter-idle-2.png",
+      "sha256": "a1a2bbfc5e7e4b8addad25b9acb529707d025940aeef9f5d60c968c058dd418b"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/shooter-idle-3.png",
+      "exported": "dist/assets/health-v4-frames/shooter-idle-3.png",
+      "sha256": "a2efd2b4a6d5a6d6581f36242cd42445c0886abb70dfd7acef06661d3e73ce37"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-down-0.png",
+      "exported": "dist/assets/health-v4-frames/slash-down-0.png",
+      "sha256": "0fdca53da3fcbd343949474e8b53b52f36d1ebec7e998b14d7ee3069c57595d8"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-down-1.png",
+      "exported": "dist/assets/health-v4-frames/slash-down-1.png",
+      "sha256": "2156ec302248da64b7873e35aac6a649fb9cc32337338d17319fbeec9972ceb3"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-down-2.png",
+      "exported": "dist/assets/health-v4-frames/slash-down-2.png",
+      "sha256": "1240c9bf0493a575583fa9292244893e46dae3c7b5c85fd959c29c16df3c5fde"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-down-3.png",
+      "exported": "dist/assets/health-v4-frames/slash-down-3.png",
+      "sha256": "5cb655d4c6e2e699442767e4a64b88dabc944e6c1551861f12e67a6e4e6ea3e8"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-left-0.png",
+      "exported": "dist/assets/health-v4-frames/slash-left-0.png",
+      "sha256": "66251acf8770911f4a649e699fc5eeca807675552677a9e402c5a360c137f47c"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-left-1.png",
+      "exported": "dist/assets/health-v4-frames/slash-left-1.png",
+      "sha256": "120073fb2faa5dda3a731f4864304f5b8430ce2dda90ea146c83de47dff8d065"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-left-2.png",
+      "exported": "dist/assets/health-v4-frames/slash-left-2.png",
+      "sha256": "556e77cc2d45d1fc6f1498e999066ffd507d2b32df3e4ddb317a7eb03424855b"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-left-3.png",
+      "exported": "dist/assets/health-v4-frames/slash-left-3.png",
+      "sha256": "4ea3a87f070209c3d37ba19c12368d5ff79a15647dbac92b0ac383a09ec7f4fd"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-right-0.png",
+      "exported": "dist/assets/health-v4-frames/slash-right-0.png",
+      "sha256": "6cb3060d555e68c3e6ca73ca1d4c18b0e06c414cfdba8f7d88f85c80dbfe5380"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-right-1.png",
+      "exported": "dist/assets/health-v4-frames/slash-right-1.png",
+      "sha256": "3d2e43380a07752a67088ee6a8e3a69aad00d8c75de96d4e33fcf666c38a0ade"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-right-2.png",
+      "exported": "dist/assets/health-v4-frames/slash-right-2.png",
+      "sha256": "19d3bce8f83bf78fecbcf5c6d942d93b038654dc3de97b85cd26209eb9dab976"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-right-3.png",
+      "exported": "dist/assets/health-v4-frames/slash-right-3.png",
+      "sha256": "670607eb3a8d07e1aab5815382cd8593af324d2a76cd57790b1ff59d325b2a8e"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-up-0.png",
+      "exported": "dist/assets/health-v4-frames/slash-up-0.png",
+      "sha256": "9ba84d788ed7c0e0284b488174fc851e72f9d4c640e5615c49ada1f604bcd616"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-up-1.png",
+      "exported": "dist/assets/health-v4-frames/slash-up-1.png",
+      "sha256": "19233d5cc3b8d941d3f1b7ade202fa894c9b826c2764f892eaa871fe17de14d7"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-up-2.png",
+      "exported": "dist/assets/health-v4-frames/slash-up-2.png",
+      "sha256": "647dd806904e62dba83b68de9d37c8a3cc4caa38152dad400a8385be28a46d37"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/slash-up-3.png",
+      "exported": "dist/assets/health-v4-frames/slash-up-3.png",
+      "sha256": "75061e56c8c7302aa717750a6554a9012d0a243bc3463ba5260212ba4fbc9aa6"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-0.png",
+      "exported": "dist/assets/health-v4-frames/spin-0.png",
+      "sha256": "f9c520d90cbc5d0f06c715e86bb2411bba00a6158cc9e936c360489bc55d75ba"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-1.png",
+      "exported": "dist/assets/health-v4-frames/spin-1.png",
+      "sha256": "1c8bf033e6c05d7d7947a91bbf3fb0009ebc9aeb5779e326ac01aa0d6a6a7808"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-2.png",
+      "exported": "dist/assets/health-v4-frames/spin-2.png",
+      "sha256": "726312c71e18f9e1340c1d453e102a37b64ebcd6ded495592c23ba915148def4"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-3.png",
+      "exported": "dist/assets/health-v4-frames/spin-3.png",
+      "sha256": "c10a4132e630849cba19bfbc7d972a1bf258c454162350d77189e3da3185ea4b"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-4.png",
+      "exported": "dist/assets/health-v4-frames/spin-4.png",
+      "sha256": "8d2edc035708f9de8dbfba3451278ad634587cf26d2f2328eace3024c6a15b8d"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-5.png",
+      "exported": "dist/assets/health-v4-frames/spin-5.png",
+      "sha256": "51f55e31407bd9a70954cef13ed7dbcd927ecb6050504359c66af98cb09f0bd9"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-6.png",
+      "exported": "dist/assets/health-v4-frames/spin-6.png",
+      "sha256": "87c7f62541b3b10d544540df3535bd6e84494a1a71a220469d3132571214f4b2"
+    },
+    {
+      "original": "dist/assets/health-v4-frames/spin-7.png",
+      "exported": "dist/assets/health-v4-frames/spin-7.png",
+      "sha256": "9dd01902096c584312124de80381137380a8721a08b4c2cf94688fe78fbebcb0"
+    },
+    {
+      "original": "dist/assets/nitro-cheer-v7-atlas.png",
+      "exported": "dist/assets/nitro-cheer-v7-atlas.png",
+      "sha256": "860c964a15f05b1af8c3549ec6aaf6a072c1650257920654ab27f78e9c44a39c"
+    },
+    {
+      "original": "dist/assets/nitro-cheer-v8-atlas.png",
+      "exported": "dist/assets/nitro-cheer-v8-atlas.png",
+      "sha256": "ee2e96bdaab0250bad35d38da7a4b10767e824b33fcff68a285eac50e3089016"
+    },
+    {
+      "original": "dist/assets/nitro-fetch-v7-atlas.png",
+      "exported": "dist/assets/nitro-fetch-v7-atlas.png",
+      "sha256": "ddd0ea932bb6ddfc0e9229ade47c3cc761278acd68ead475249909c2d3f1b6e3"
+    },
+    {
+      "original": "dist/assets/nitro-fetch-v8-atlas.png",
+      "exported": "dist/assets/nitro-fetch-v8-atlas.png",
+      "sha256": "7b0be098e4413e3cb7a556b5a0a4f4fe2a6f812b488b6d3b51e1c7995ab9bbb1"
+    },
+    {
+      "original": "dist/assets/nitro-item-v7-atlas.png",
+      "exported": "dist/assets/nitro-item-v7-atlas.png",
+      "sha256": "73a6f4140f102c78047eb9c4d5757c30d82d6bac7ce76edf2d692a1cd714d4eb"
+    },
+    {
+      "original": "dist/assets/nitro-item-v7-generated.png",
+      "exported": "dist/assets/nitro-item-v7-generated.png",
+      "sha256": "4571c8d5cbe317398cc87f0e5c7deeec91c13df7443f7f4e732e9cd49abee226"
+    },
+    {
+      "original": "dist/assets/nitro-item-v8-atlas.png",
+      "exported": "dist/assets/nitro-item-v8-atlas.png",
+      "sha256": "49116d04a8ad0c49e34220365158e58caf55226e7ed10e812352d0aa3f52289f"
+    },
+    {
+      "original": "dist/assets/nitro-item-v8-generated.png",
+      "exported": "dist/assets/nitro-item-v8-generated.png",
+      "sha256": "0a646f722eaa00838a8070329b01b403bd6a744c6b0544db8946344f744be444"
+    },
+    {
+      "original": "dist/assets/nitro-sip-v7-atlas.png",
+      "exported": "dist/assets/nitro-sip-v7-atlas.png",
+      "sha256": "64f23f01b8a58e0ca80334b5bea6abe0073b265ba5bd36e9cdedfb7ba7563be6"
+    },
+    {
+      "original": "dist/assets/nitro-sip-v8-atlas.png",
+      "exported": "dist/assets/nitro-sip-v8-atlas.png",
+      "sha256": "622e3200163b16284522e83824f2c6fb9c1224f78ab4a99a8971a96e74e8ea01"
+    },
+    {
+      "original": "dist/assets/nitro-sparkle-v7-atlas.png",
+      "exported": "dist/assets/nitro-sparkle-v7-atlas.png",
+      "sha256": "b700b8f3a8504fc37b6d930f66a2583d620bebc62d60e0bbc484488328471e9c"
+    },
+    {
+      "original": "dist/assets/nitro-v7-atlas.json",
+      "exported": "dist/assets/nitro-v7-atlas.json",
+      "sha256": "d4e164e30c94d7331042f399bff9db6f0ab1b6481526e829f63c42b80439734d"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-0.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-0.png",
+      "sha256": "90912193427f4af354152afdc9b390aabe6fc8c750fb233e8fe16c4a92659da7"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-1.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-1.png",
+      "sha256": "ca4c88c4c14b055f42868ab4a78cd80eee60f383aa85d3aaa0970d725abd2a43"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-10.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-10.png",
+      "sha256": "95bd005a1159bcf43bee7b19ab0e7f1a0cd64d4b2ba0ce021412aa6ce77038d0"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-11.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-11.png",
+      "sha256": "4f951326c45ea9be937ce967827b9815075a0b093b4680ed830bb0c4fdf729e9"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-12.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-12.png",
+      "sha256": "9620ef5c742d4203144997af0c559aab1fe00decc0759c04b205c043cb11a8c0"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-13.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-13.png",
+      "sha256": "2e0912fa271c750c5f2d7ae244fd0adf8b7da18e95f6144cea4a9e939f2e0ff2"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-14.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-14.png",
+      "sha256": "d7c5af862dab3631cc8ac15254c4e3c448f49b78fb13406f4fe94be3fc986df8"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-15.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-15.png",
+      "sha256": "b79adac88542512fadb3dc33d3a70f0fd68bba6cd609c76cf5b9b252b8c74163"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-2.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-2.png",
+      "sha256": "746843d469a4bd17924f625824cd0dfbfb14bde62136973d79b93e60c71f2a59"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-3.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-3.png",
+      "sha256": "95446e848872eea44673d20285ad6d54b2ccdd5a5a0f40ecc1690bd9cf52f518"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-4.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-4.png",
+      "sha256": "d000517fb4d44047075bf95d4c22f54b4bf3b04e57964d265b91c6782ef559de"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-5.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-5.png",
+      "sha256": "3a90a95862bbf289bff34c748b2fe176cb8b5a5a6b6289fa08496b07f2cca363"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-6.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-6.png",
+      "sha256": "4f0118d1c23c4ea035873e2d5ee3e2f26f01dc384d48246fd06196d3ec6cb8ac"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-7.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-7.png",
+      "sha256": "d5db39084f05a35f03d9951049c4e238bd24b88febc1584dec9763c566bd8514"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-8.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-8.png",
+      "sha256": "b0413760cb4b89d5911efffc9f6cde210b201b0521c2c68840ee0b3a0062c1e8"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-cheer-9.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-cheer-9.png",
+      "sha256": "38b06b75b0c4c3fc1b73887bef93040bf020405bd5ba1739ad55ae7f7af8aace"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-0.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-0.png",
+      "sha256": "60de9178879297b338da07fe2186e042e457a5ad7e2a00dc36d88dad0146e8e5"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-1.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-1.png",
+      "sha256": "37bf5f8cb5b5fc01e73f894d29cfc5bec46b55feb7758af4124a1e91d6af8222"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-10.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-10.png",
+      "sha256": "eaf72136fbc054f221f670791155159377d5de8aa95398ff41a416f27c0fdceb"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-11.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-11.png",
+      "sha256": "239864a7edece55340dab416ac289223e7a630e5e44682778fe7fe70f35215ec"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-12.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-12.png",
+      "sha256": "af6f5f84823cc9b0d8ad8998bd7407c3683c3f4ba17aa812d8a80ed804698693"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-13.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-13.png",
+      "sha256": "d257f05810397d050dcc5d25ffe7d3a5bfe574c59f1557be20c967fbb9253712"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-14.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-14.png",
+      "sha256": "33b01392cffa394302045127b2bc606a372fbe470709cd4a473d00de620ad725"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-15.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-15.png",
+      "sha256": "9caccf9b103c886900210694f2ed793fa1c1a9e0098abb40fc7e01b9a2cb73f6"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-2.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-2.png",
+      "sha256": "f1daf0cf9b086e3cf253b53ab97ec838716082acb66f655a8d5e2a75e700c8a5"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-3.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-3.png",
+      "sha256": "6640d17fb6d421a859375b4789e14aca6425ab3f9a9e1ad32e901b0ec0ff47ef"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-4.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-4.png",
+      "sha256": "5710fc0d96c3a3519661f6f663a24ea6ae1ec8f1d8cebaaf649821c652304570"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-5.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-5.png",
+      "sha256": "6a3125dc81772d407853fcc0a1a903d1609a55fe260f93700fe59bf605164c3e"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-6.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-6.png",
+      "sha256": "5dd298fd096d4181e3d64b947e8c4bc6a84b3baa34c49b5d7fd908932252f273"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-7.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-7.png",
+      "sha256": "c522e6a3a3811a948b581939cc85cb29d16dc61ac415daa7eb6b19efced9aa22"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-8.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-8.png",
+      "sha256": "7c4cfefbae2a6f40c06b4336259d44f6edfb3f9ab2243d4d036e25160fc5bf6b"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-fetch-9.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-fetch-9.png",
+      "sha256": "d9fd0c55508d62e3effd1f9857dc517d4d1e9ab422fd522c19a10d4d5c50312c"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-item-0.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-item-0.png",
+      "sha256": "b705a4ff83203fd23a2db8e6fe5bc333d4950518c967c8b3a40c8065398d81e8"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-item-1.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-item-1.png",
+      "sha256": "9e1b3b44479f9697e1b0d3414117aae1d2c7a473b1dc682b4e5d15fd0c493373"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-item-2.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-item-2.png",
+      "sha256": "1fef8a0b8de8e125a25ab3ec0b564e66850efe1cbf89da30e392803cc51d3d64"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-item-3.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-item-3.png",
+      "sha256": "78f5d9c0fe1f5d4a363d68f9912ab9d2060c34ee16321343ce53e45478e5e982"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-0.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-0.png",
+      "sha256": "bf7350e1666646b84072062cff8ab747e5500e13b9443689c160ccb5e401cda6"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-1.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-1.png",
+      "sha256": "04bb548da2f26636d5a019aed402da0e1ed685d3d4251acf0fc22344a73f725d"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-10.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-10.png",
+      "sha256": "627e080fb72ab1cc151092c34483b914e7ba5ceff92ad1de4da35d23aede86e3"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-11.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-11.png",
+      "sha256": "63408fcb9d67153a0ff6e2206c843156dd03db1f6292e4a1266df72c5de7243c"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-12.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-12.png",
+      "sha256": "27ed6d4c15222767a2194861df29e1f6a44aeb73223f7d2cacfbb942b116c5ef"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-13.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-13.png",
+      "sha256": "22b003e9dd6adff617e7b4939d7c1781604b74583757b006b311295b32a376ff"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-14.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-14.png",
+      "sha256": "1d12974b96179a4bef06eb6470b7371eb9e72f682279cdf624d61356bc745527"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-15.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-15.png",
+      "sha256": "c1761aa3369933094f8437dc900eb33e1af89653283bef7463ea11d9cb8c1d28"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-2.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-2.png",
+      "sha256": "2dadc136e9377c8dbddee9dbc2c9cf5ebbe9881fe8c6c8c8338ff65f2cfd97f4"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-3.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-3.png",
+      "sha256": "923f5323c04eb670784f6177fbfe3f8882df69d61c724391c5550210986bd1ff"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-4.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-4.png",
+      "sha256": "dab3bd9322e76e73c9b2363904fec6f73cfcbda83ee8772be27522487759cf94"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-5.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-5.png",
+      "sha256": "e27d81288bfa5742d79758b8ec6d444f651fd7ff2743c699d301876c0c828e49"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-6.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-6.png",
+      "sha256": "ddc5c9f12d5517818560925a6e04f88951e3947627801dc1ea3a0e0ec9f27d70"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-7.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-7.png",
+      "sha256": "be313f067b211fb58e008d1f5fd6a7e498a4ff6bbb1286223abb2926a9988509"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-8.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-8.png",
+      "sha256": "a0b51006c41a0daed80a787c9e53e3cf8bd4738b2bf2bd8a700aa1ef40c7d34e"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sip-9.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sip-9.png",
+      "sha256": "a60c88f45f6152e9e1c920ba09f8d431d536897d07e7ba9b8c94fbd95dcf3806"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sparkle-0.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sparkle-0.png",
+      "sha256": "b6fd07e5784e15213e60d170e4d0fe12fa8e5b27e230c06346055f9a87783be5"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sparkle-1.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sparkle-1.png",
+      "sha256": "52ba96f56060d77b7f1c2bca6614f1cce044f5f316cc8b750741d56e8de05f68"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sparkle-2.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sparkle-2.png",
+      "sha256": "a9d5d8505f6b2ee367c0c752e6a2885f1602076806a0d9cfe6646f6cf572190e"
+    },
+    {
+      "original": "dist/assets/nitro-v7-frames/nitro-sparkle-3.png",
+      "exported": "dist/assets/nitro-v7-frames/nitro-sparkle-3.png",
+      "sha256": "142ad227123e1d75a9119c14d70e1bf0abcbe97b139b56c030e389a6f9bfd7ac"
+    },
+    {
+      "original": "dist/assets/projectile-atlas.png",
+      "exported": "dist/assets/projectile-atlas.png",
+      "sha256": "22fd144d2e84c40502335757f44c1acf7931c68c9e3ca297f04e827b5c6a2244"
+    },
+    {
+      "original": "dist/assets/projectile-v8-atlas.png",
+      "exported": "dist/assets/projectile-v8-atlas.png",
+      "sha256": "c7907f809e9599f05a109e88db308599679116e5aa7630ebc959144682e2c45e"
+    },
+    {
+      "original": "dist/assets/shooter-atlas.png",
+      "exported": "dist/assets/shooter-atlas.png",
+      "sha256": "7e39873997544f02211fc3a19ac80af0ec31a107afb545940963cc495d458872"
+    },
+    {
+      "original": "dist/assets/shooter-projectile-generated.png",
+      "exported": "dist/assets/shooter-projectile-generated.png",
+      "sha256": "a547f503f2b1f4cabb9c47dc4cdd58d35e955620be6f4bc366335c127bd88b97"
+    },
+    {
+      "original": "dist/assets/shooter-v8-atlas.png",
+      "exported": "dist/assets/shooter-v8-atlas.png",
+      "sha256": "903c5f6de89541a8608ba9404c6845fe6cd115156acd5c08360607e1eb7535a0"
+    },
+    {
+      "original": "dist/combat.mjs",
+      "exported": "dist/combat.mjs",
+      "sha256": "44bb4b24321003b2aacf6c439d8452a73cf28ab1174780a1b572c1cb9dd29ef7"
+    },
+    {
+      "original": "dist/core.mjs",
+      "exported": "dist/core.mjs",
+      "sha256": "39391b6a73a3d0869432eeb31d2a49b09af1658d6e7e1a5b1251cc490bcd6ac6"
+    },
+    {
+      "original": "dist/defeat.mjs",
+      "exported": "dist/defeat.mjs",
+      "sha256": "959294ece1beb4446880e3802ee432af2f6b537ab5c631d48206bddffa2f4800"
+    },
+    {
+      "original": "dist/fire.mjs",
+      "exported": "dist/fire.mjs",
+      "sha256": "d9aace7d58306c94dc3b1bd15855c49279c9f3794d0396e140ff240e55ecb6de"
+    },
+    {
+      "original": "dist/game.mjs",
+      "exported": "dist/game.mjs",
+      "sha256": "8dc341f26a5aa991b29e4d7127205a20f2b4f8683d17ef393eb129ac44e704f0"
+    },
+    {
+      "original": "dist/health.mjs",
+      "exported": "dist/health.mjs",
+      "sha256": "9f25c8849f7ae59cad6d79fa4361e818790d51b4c2606d6e0fe242c16d9c5bbc"
+    },
+    {
+      "original": "dist/index.html",
+      "exported": "dist/index.html",
+      "sha256": "59fb710c3fa838af7281bb6e6807409543ba47d517071102d35d2ee4f67c7784"
+    },
+    {
+      "original": "dist/nitro.mjs",
+      "exported": "dist/nitro.mjs",
+      "sha256": "6214d7f76b04cfc4d61af95a5f00b567ca917486876a1d7dcfd4f78c95cf2146"
+    },
+    {
+      "original": "dist/style.css",
+      "exported": "dist/style.css",
+      "sha256": "d9370d0b08c7c1fdcab130d537e53d93d66a6e70862d89608cf7de533f61d6f6"
+    },
+    {
+      "original": "dist/visuals.mjs",
+      "exported": "dist/visuals.mjs",
+      "sha256": "963cd6493bf6097f73f32cb63bedd071aa94a57901b961e5ed27695b09ab8f07"
+    },
+    {
+      "original": "tests/combat.test.mjs",
+      "exported": "tests/combat.test.mjs",
+      "sha256": "1ca3213ef44a449514a6047507e343cebb55246813828f72ac8c8e063cbe5cbb"
+    },
+    {
+      "original": "tests/defeat.test.mjs",
+      "exported": "tests/defeat.test.mjs",
+      "sha256": "91202300d3ba4b38be7b125e2ebd22cace6e17c2c024ec3964c87a7fa66a773a"
+    },
+    {
+      "original": "tests/fire.test.mjs",
+      "exported": "tests/fire.test.mjs",
+      "sha256": "b472dc84e5f7726c20ce10274b10661a31c5949ba4c4b0387fc4f5c0cd3c4f38"
+    },
+    {
+      "original": "tests/health.test.mjs",
+      "exported": "tests/health.test.mjs",
+      "sha256": "555f9364953bc431550d2d042c29666910e1ffe598ef7cad6f158aeaba5aa8b5"
+    },
+    {
+      "original": "tests/nitro.test.mjs",
+      "exported": "tests/nitro.test.mjs",
+      "sha256": "c5f306c31fe6e6423c049a9294da2ad5a9d162e26dc97f3a5269614a90cb4990"
+    },
+    {
+      "original": "tests/visuals.test.mjs",
+      "exported": "tests/visuals.test.mjs",
+      "sha256": "ef857f25ed09711cc6ad22ea300d3816288d16eb42dff8b893177cd10638f237"
+    },
+    {
+      "original": "tools/prepare_defeat_assets.py",
+      "exported": "tools/prepare_defeat_assets.py",
+      "sha256": "dc39dbb90865b10149501fa1d69d64992caa42cae987da62fb9272638b00be6f"
+    },
+    {
+      "original": "tools/prepare_fire_assets.py",
+      "exported": "tools/prepare_fire_assets.py",
+      "sha256": "d3d05d767c5296295140ec19e24077889795971c9528591c9cd1edfe8c14960c"
+    },
+    {
+      "original": "tools/prepare_health_assets.py",
+      "exported": "tools/prepare_health_assets.py",
+      "sha256": "8c087f1cd8bab9e0860257240fed1419858a844d28342c2bcd1fedac3bc9cfd0"
+    },
+    {
+      "original": "tools/prepare_nitro_assets.py",
+      "exported": "tools/prepare_nitro_assets.py",
+      "sha256": "21e8cb3733ffaef0f7a41459e02e8b63bb6afac61177ff3a5647720e1d3ec688"
+    },
+    {
+      "original": "tools/repair_sprites_v8.py",
+      "exported": "tools/repair_sprites_v8.py",
+      "sha256": "c16e504b7fe25c502509a34da5a15e747e4325360e477b148262a24499604e05"
+    },
+    {
+      "original": "tools/slice_combat.py",
+      "exported": "tools/slice_combat.py",
+      "sha256": "62f934f682d38530b1c7e03bc1616b1baca1444403e9211ff82aec0b8056ebad"
+    },
+    {
+      "original": "tools/slice_combat_v3.py",
+      "exported": "tools/slice_combat_v3.py",
+      "sha256": "f86a0e14b3a698adf646c30ed5054fda821d0e2697cb03369ddf0ea28bfb3508"
+    },
+    {
+      "original": "tools/slice_sprites.py",
+      "exported": "tools/slice_sprites.py",
+      "sha256": "ea573b8eb881d8b88a999bf760207f3b9705ba5a3069c5e37040ce658974d844"
+    }
+  ]
+}
