@@ -39,19 +39,27 @@ test('a filling projectile cancels every windup immediately and all Mummies retr
  }
 });
 
-test('first tier upgrades at exactly eight seconds, resetting progress and giving eight new seconds',()=>{
+test('first timeout holds tierI and progress during all24 wrapping frames before starting tierII',()=>{
  const s=createMummifield(),h=createHealth();addMummifield(s,100);for(let i=0;i<20;i++)struggleMummifield(s,h);
- assert.equal(advanceMummifield(s,7.99,h).upgraded,false);assert.equal(s.tier,1);assert.equal(s.presses,20);
- assert.equal(advanceMummifield(s,.01,h).upgraded,true);assert.equal(s.tier,2);assert.equal(s.remaining,8);assert.equal(s.presses,0);assert.ok(Math.abs(s.time)<1e-9);assert.equal(h.dead,false);
+ assert.equal(advanceMummifield(s,7.99,h).wrapping,false);assert.equal(s.tier,1);assert.equal(s.presses,20);
+ const start=advanceMummifield(s,.01,h);assert.equal(start.wrapping,true);assert.equal(start.upgraded,false);assert.equal(s.tier,1);assert.equal(s.remaining,0);assert.equal(s.transitioning,true);
+ const poseFrames=[];
+ for(let i=0;i<24;i++){
+  assert.equal(s.tier,1);assert.equal(s.presses,20);assert.equal(s.remaining,0);assert.equal(struggleMummifield(s,h),false);assert.equal(h.dead,false);
+  const pose=mummifieldPose(s);assert.equal(pose.sequence,'transition');poseFrames.push(pose.frame);
+  if(i<23)assert.equal(advanceMummifield(s,1/12,h).upgraded,false);
+ }
+ assert.deepEqual(poseFrames,Array.from({length:24},(_,i)=>i));assert.equal(s.presses,20);
+ assert.equal(advanceMummifield(s,1/12,h).upgraded,true);assert.equal(s.tier,2);assert.equal(s.transitioning,false);assert.ok(Math.abs(s.remaining-8)<1e-9);assert.equal(s.presses,0);assert.ok(Math.abs(s.time)<1e-9);
  assert.equal(mummyEscapePresses(s),64);assert.equal(mummifieldPose(s).sequence,'second');
 });
 test('second tier requires 64 distinct presses and escape clears both deadlines',()=>{
- const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,8,h);advanceMummifield(s,7.9,h);
+ const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,10,h);advanceMummifield(s,7.9,h);
  for(let i=0;i<63;i++){assert.equal(struggleMummifield(s,h,{repeat:true}),false);assert.equal(struggleMummifield(s,h),false);}
  assert.equal(s.bound,true);assert.equal(struggleMummifield(s,h),true);assert.deepEqual(s,createMummifield());advanceMummifield(s,20,h);assert.equal(h.dead,false);assert.ok(h.invulnerable>=1.5);
 });
-test('timeout defeats at sixteen seconds without HP damage; falling plays once before Game Over',()=>{
- const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,15.99,h);assert.equal(h.dead,false);
+test('timeout defeats after eight seconds per tier plus the two-second transition without HP damage; falling plays once before Game Over',()=>{
+ const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,17.99,h);assert.equal(h.dead,false);
  assert.equal(advanceMummifield(s,.01,h).failed,true);assert.equal(s.failed,true);assert.equal(h.dead,true);assert.equal(h.hp,6);assert.equal(s.remaining,0);assert.equal(h.knockTime,0);
  assert.deepEqual(mummifieldPose(s),{sequence:'fall',frame:0,gameOver:false});assert.equal(struggleMummifield(s,h),false);
  for(let i=1;i<8;i++){advanceMummifield(s,.125,h);assert.equal(mummifieldPose(s).frame,i);assert.equal(mummifieldPose(s).gameOver,false);}
@@ -59,8 +67,8 @@ test('timeout defeats at sixteen seconds without HP damage; falling plays once b
 });
 test('timer overflow and frame subdivision agree, including a delayed update crossing both deadlines',()=>{
  const make=()=>{const s=createMummifield();addMummifield(s,100);return s;};
- const a=make(),b=make(),ha=createHealth(),hb=createHealth();advanceMummifield(a,8.25,ha);assert.equal(a.tier,2);assert.equal(a.remaining,7.75);assert.equal(a.time,.25);
- advanceMummifield(a,8,ha);advanceMummifield(b,16.25,hb);assert.equal(a.failed,true);assert.equal(b.failed,true);assert.equal(a.time,.25);assert.equal(b.time,.25);
- const c=make(),hc=createHealth();for(let i=0;i<320;i++)advanceMummifield(c,.05,hc);assert.equal(c.failed,true);assert.equal(hc.dead,true);
+ const a=make(),b=make(),ha=createHealth(),hb=createHealth();advanceMummifield(a,10.25,ha);assert.equal(a.tier,2);assert.equal(a.remaining,7.75);assert.equal(a.time,.25);
+ advanceMummifield(a,8,ha);advanceMummifield(b,18.25,hb);assert.equal(a.failed,true);assert.equal(b.failed,true);assert.equal(a.time,.25);assert.equal(b.time,.25);
+ const c=make(),hc=createHealth();for(let i=0;i<360;i++)advanceMummifield(c,.05,hc);assert.equal(c.failed,true);assert.equal(hc.dead,true);
  const frozen=JSON.stringify(c);advanceMummifield(c,-1,hc);assert.equal(JSON.stringify(c),frozen);
 });

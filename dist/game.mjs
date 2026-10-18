@@ -1,4 +1,4 @@
-import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame,mummyEscapePresses,mummifieldPose} from './mummifield.mjs?v=28';
+import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame,mummyEscapePresses,mummifieldPose} from './mummifield.mjs?v=29';
 import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,MUMMY_ZONE,updatePlayer,animationFrame} from './core.mjs?v=18';
 import {COMBAT,createCombat,pressAttack,releaseAttack,cancelAttack,advanceCombat,chargeRatio,attackFrame,createDummies,dummyObstacles,resolveHits,updateDummies} from './combat.mjs?v=12';
 import {chargeWalkFrame,chargeAuraAlpha,bladeZone} from './visuals.mjs?v=8';
@@ -10,7 +10,7 @@ import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advance
 import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimesAfterDefeat,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=23';
 import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterDefeat,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=23';
 
-import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummiesAfterDefeat,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=28';
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummiesAfterDefeat,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=29';
 
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
@@ -29,7 +29,7 @@ const bombs=createBombs();
 const slimes=createSlimes(),sticky=createSticky();
 const spiders=createSpiders(),webbed=createWebbed();
 const mummifield=createMummifield(),mummifieldAtlas=new Image();
-const mummifieldAtlases={first:mummifieldAtlas,second:new Image(),fall:new Image()};
+const mummifieldAtlases={first:mummifieldAtlas,second:new Image(),fall:new Image(),transition:new Image()};
 const mummyGameOver=()=>health.dead&&mummifield.failed;
 const bound=()=>sticky.bound||webbed.bound||mummifield.bound;
 const spiderAtlases={weaver:new Image(),hunter:new Image()},webShotAtlas=new Image(),webbedAtlas=new Image();
@@ -372,22 +372,22 @@ function updateUI(){
   $('nitroProgress').style.width=`${nitro.active?nitro.time/NITRO.duration*100:0}%`;
   $('resetDummies').disabled=nitro.active||bound();
   const inArena=insideTraining(player),inSpider=insideSpiderYard(player),inMummy=insideMummyYard(player),showMummy=mummifield.bound||(!sticky.bound&&!webbed.bound&&(inMummy||(!inArena&&!inSpider&&mummifield.amount>0))),showWeb=webbed.bound||(!sticky.bound&&(inSpider||(!inArena&&webbed.amount>0))),status=showMummy?mummifield:showWeb?webbed:sticky,presses=showMummy?mummyEscapePresses(mummifield):showWeb?webEscapePresses(webbed):SLIME.escapePresses,gooPercent=status.bound?Math.round(status.presses/presses*100):Math.round(status.amount);
-  $('slimeHud').hidden=health.dead||(!inArena&&!inSpider&&!inMummy&&sticky.amount<=0&&webbed.amount<=0&&mummifield.amount<=0);$('struggleButton').hidden=!bound()||health.dead;
+  $('slimeHud').hidden=health.dead||(!inArena&&!inSpider&&!inMummy&&sticky.amount<=0&&webbed.amount<=0&&mummifield.amount<=0);$('struggleButton').hidden=!bound()||health.dead;$('struggleButton').disabled=mummifield.transitioning||health.dead;
   viewport.classList.toggle('has-slime-hud',!$('slimeHud').hidden);viewport.classList.toggle('slime-bound',bound()&&!health.dead);viewport.classList.toggle('web-bound',webbed.bound&&!health.dead);
   $('slimeHud').classList.toggle('mummy-status',showMummy);viewport.classList.toggle('mummy-bound',mummifield.bound&&!health.dead);$('slimeHud').classList.toggle('web-status',!showMummy&&showWeb);$('slimeHud').classList.toggle('bound',status.bound);$('slimeMeterFill').style.width=`${gooPercent}%`;$('slimeMeter').setAttribute('aria-valuenow',gooPercent);$('slimeMeter').setAttribute('aria-label',showMummy?'Mummifield และการดิ้นหลุด':showWeb?'ใยแมงมุมและการดิ้นหลุด':'เมือกเหนียวและการสลัดออก');
-  $('slimeStatus').textContent=status.bound?`${showMummy?mummifield.tier===2?'Mummifield II! ดิ้น':'Mummifield! ดิ้น':showWeb?webbed.tier===2?'Webbed II! ดิ้น':'Webbed! ดิ้น':'ติดเมือก! สลัด'} ${status.presses}/${presses}`:`${showMummy?'Mummifield':showWeb?'ใย Webbed':'เมือกเหนียว'} ${Math.round(status.amount)}%`;
+  $('slimeStatus').textContent=showMummy&&mummifield.transitioning?'Mummifield I · ผ้ากำลังพันเพิ่ม…':status.bound?`${showMummy?mummifield.tier===2?'Mummifield II! ดิ้น':'Mummifield! ดิ้น':showWeb?webbed.tier===2?'Webbed II! ดิ้น':'Webbed! ดิ้น':'ติดเมือก! สลัด'} ${status.presses}/${presses}`:`${showMummy?'Mummifield':showWeb?'ใย Webbed':'เมือกเหนียว'} ${Math.round(status.amount)}%`;
   const mummyTimer=mummifield.bound&&!health.dead;
   $('webPressure').hidden=(!webbed.bound&&!mummyTimer)||health.dead;const pressure=mummyTimer?mummifield.remaining/8*100:webbed.tier===2?webbed.remaining/WEB.secondDuration*100:webbed.reinforcement;
-  $('webPressureLabel').textContent=mummyTimer?`Mummifield ${mummifield.tier===2?'II':'I'} · เหลือ ${mummifield.remaining.toFixed(1)} วินาที`:webbed.tier===2?`เหลือ ${webbed.remaining.toFixed(1)} วินาที`:`ใยขั้นสอง ${Math.round(webbed.reinforcement)}%`;
+  $('webPressureLabel').textContent=mummyTimer&&mummifield.transitioning?'พักเวลา · กำลังพันใบหน้าและปลายเท้า':mummyTimer?`Mummifield ${mummifield.tier===2?'II':'I'} · เหลือ ${mummifield.remaining.toFixed(1)} วินาที`:webbed.tier===2?`เหลือ ${webbed.remaining.toFixed(1)} วินาที`:`ใยขั้นสอง ${Math.round(webbed.reinforcement)}%`;
   $('webPressureFill').style.width=`${pressure}%`;$('webPressureMeter').setAttribute('aria-valuenow',Math.round(pressure));$('webPressureMeter').setAttribute('aria-label',mummyTimer?'เวลาที่เหลือสำหรับดิ้นหลุดจากผ้ามัมมี่':webbed.tier===2?'เวลาที่เหลือสำหรับดิ้นหลุด':'ใย Webbed ขั้นสอง');
   viewport.classList.toggle('has-web-pressure',(webbed.bound||mummifield.bound)&&!health.dead);$('slimeHud').classList.toggle('second-web',showWeb&&webbed.tier===2);
-  $('struggleButton').querySelector('strong').textContent=mummifield.bound?mummifield.tier===2?'ดิ้นสุดแรง!':'ดิ้นให้ผ้าขาด!':webbed.bound?webbed.tier===2?'ฉีกใยขั้นสอง!':'ดิ้นให้ใยขาด!':'สลัดเมือก!';
+  $('struggleButton').querySelector('strong').textContent=mummifield.transitioning?'ผ้ากำลังพันเพิ่ม…':mummifield.bound?mummifield.tier===2?'ดิ้นสุดแรง!':'ดิ้นให้ผ้าขาด!':webbed.bound?webbed.tier===2?'ฉีกใยขั้นสอง!':'ดิ้นให้ใยขาด!':'สลัดเมือก!';
   $('slimePopulation').textContent=slimes.entities.filter(s=>s.hp>0).length;
   $('spiderPopulation').textContent=spiderPopulation(spiders);
   $('mummyPopulation').textContent=mummyPopulation(mummies);
   document.querySelector('.scene-caption span').textContent=insideMummyYard(player)?'ลานฝึก Mummy':inSpider?'ลานฝึกแมงมุม':inArena?'ลานฝึก Slime':'ลานฝึก Nitro';
   $('walkHint').lastChild.textContent=insideMummyYard(player)?' หลบกรงเล็บและสายผ้าพันแผล!':inSpider?' ระวังใยสีขาว!':inArena?' ลองฟัน Slime ดูสิ!':' ลองฟัน Dummy ดูสิ!';$('walkHint').classList.toggle('gone',hintGone||bound());
-  if(mummifield.bound&&!health.dead)$('stateLabel').textContent=`Mummifield ${mummifield.tier===2?'II':'I'}! เหลือ ${mummifield.remaining.toFixed(1)} วิ`;
+  if(mummifield.bound&&!health.dead)$('stateLabel').textContent=mummifield.transitioning?'Mummifield I · ผ้ากำลังพันเพิ่ม…':`Mummifield ${mummifield.tier===2?'II':'I'}! เหลือ ${mummifield.remaining.toFixed(1)} วิ`;
   if(sticky.bound&&!health.dead)$('stateLabel').textContent='ติดเมือก! กดทิศทางรัว ๆ';
   if(webbed.bound&&!health.dead)$('stateLabel').textContent=webbed.tier===2?`Webbed II! เหลือ ${webbed.remaining.toFixed(1)} วิ`:'Webbed! กดทิศทางรัว ๆ';
   $('itemNotice').textContent=noticeText;$('itemNotice').hidden=noticeTime<=0;
@@ -404,11 +404,12 @@ function updateUI(){
 const defeatPreviews={dizzy:{stage:'spin',count:16,fps:16},fall:{stage:'collapse',count:16,fps:16},rest:{stage:'rest',count:8,fps:8}};
 const mummyPreviews={mummyWalk:0,mummyScratch:4,mummyCast:8,mummyBandage:12};
 const spiderPreviews={weaverWalk:{type:'weaver',attack:false},weaverAttack:{type:'weaver',attack:true},hunterWalk:{type:'hunter',attack:false},hunterAttack:{type:'hunter',attack:true}};
-function previewCount(){if(previewAction==='mummifield2')return 16;if(previewAction==='mummifieldFall')return 8;if(previewAction==='mummifield')return MUMMIFIELD.frames;if(previewAction==='trees')return 1;if(spiderPreviews[previewAction])return 4;return ['slimes','spiders','webStatus'].includes(previewAction)?12:previewAction==='bombs'?8:previewAction==='nitro'?48:defeatPreviews[previewAction]?.count??(['spin','fireWave','fireSpin'].includes(previewAction)?8:['idle','charge'].includes(previewAction)?2:4);}
-function previews(){if($('spriteLab').hidden)return;const count=previewCount(),defeat=defeatPreviews[previewAction],fps=defeat?.fps??(previewAction==='mummifield2'?MUMMIFIELD.secondFPS:previewAction==='mummifieldFall'?8:previewAction==='mummifield'?MUMMIFIELD.fps:Object.hasOwn(mummyPreviews,previewAction)?6:spiderPreviews[previewAction]||previewAction==='webStatus'?WEB.fps:previewAction==='spiders'?WEB.fps:previewAction==='slimes'?SLIME.stickyFPS:previewAction==='fireWave'?16:['fireSpin','bombs'].includes(previewAction)?12.5:previewAction==='hurt'?10:previewAction==='spin'||previewAction==='slash'?12:['walk','chargeWalk'].includes(previewAction)?8:2);const np=nitroPose(previewTime%NITRO.duration),frame=previewPaused?Number($('frameSlider').value):previewAction==='nitro'?['fetch','sip','cheer'].indexOf(np.stage)*16+np.frame:Math.floor(previewTime*fps)%count;for(const c of document.querySelectorAll('.preview')){
+function previewCount(){if(previewAction==='mummifieldTransition')return MUMMIFIELD.transitionFrames;if(previewAction==='mummifield2')return 16;if(previewAction==='mummifieldFall')return 8;if(previewAction==='mummifield')return MUMMIFIELD.frames;if(previewAction==='trees')return 1;if(spiderPreviews[previewAction])return 4;return ['slimes','spiders','webStatus'].includes(previewAction)?12:previewAction==='bombs'?8:previewAction==='nitro'?48:defeatPreviews[previewAction]?.count??(['spin','fireWave','fireSpin'].includes(previewAction)?8:['idle','charge'].includes(previewAction)?2:4);}
+function previews(){if($('spriteLab').hidden)return;const count=previewCount(),defeat=defeatPreviews[previewAction],fps=defeat?.fps??(previewAction==='mummifieldTransition'?MUMMIFIELD.transitionFPS:previewAction==='mummifield2'?MUMMIFIELD.secondFPS:previewAction==='mummifieldFall'?8:previewAction==='mummifield'?MUMMIFIELD.fps:Object.hasOwn(mummyPreviews,previewAction)?6:spiderPreviews[previewAction]||previewAction==='webStatus'?WEB.fps:previewAction==='spiders'?WEB.fps:previewAction==='slimes'?SLIME.stickyFPS:previewAction==='fireWave'?16:['fireSpin','bombs'].includes(previewAction)?12.5:previewAction==='hurt'?10:previewAction==='spin'||previewAction==='slash'?12:['walk','chargeWalk'].includes(previewAction)?8:2);const np=nitroPose(previewTime%NITRO.duration),frame=previewPaused?Number($('frameSlider').value):previewAction==='nitro'?['fetch','sip','cheer'].indexOf(np.stage)*16+np.frame:Math.floor(previewTime*fps)%count;for(const c of document.querySelectorAll('.preview')){
   if(c.width!==160){c.width=160;c.height=160;}const p=c.getContext('2d'),r=row[c.dataset.direction],facing=c.dataset.direction;
   p.clearRect(0,0,160,160);p.imageSmoothingEnabled=false;
-  if(previewAction==='mummifield2')drawMummifield(p,80,112,(frame+.001)/MUMMIFIELD.secondFPS,{tier:2});
+  if(previewAction==='mummifieldTransition')drawMummifield(p,80,112,(frame+.001)/MUMMIFIELD.transitionFPS,{tier:1,transitioning:true});
+  else if(previewAction==='mummifield2')drawMummifield(p,80,112,(frame+.001)/MUMMIFIELD.secondFPS,{tier:2});
   else if(previewAction==='mummifieldFall')drawMummifield(p,80,112,(frame+.001)/8,{failed:true});
   else if(previewAction==='mummifield')drawMummifield(p,80,112,(frame+.001)/MUMMIFIELD.fps);
   else if(Object.hasOwn(mummyPreviews,previewAction)){
@@ -466,6 +467,7 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   }else if(!health.dead){
   const rocks=rockObstacles(bombs),obstacles=[...dummyObstacles(dummies),...rocks];
   const mummyStatus=advanceMummifield(mummifield,dt,health);
+  if(mummyStatus.wrapping){resetInput();noticeTime=0;}
   if(mummyStatus.upgraded&&!mummyStatus.failed)enterRestraint('Mummifield II! ดิ้น 64 ครั้งภายใน 8 วินาที!');
   if(mummyStatus.failed)finishWebDefeat();
   advanceSticky(sticky,dt);if(advanceWebbed(webbed,dt,health))finishWebDefeat();
@@ -564,7 +566,8 @@ for(const button of document.querySelectorAll('#animTabs button'))button.addEven
   const labels=['↓ ด้านหน้า','← ด้านซ้าย','→ ด้านขวา','↑ ด้านหลัง'],short=['DOWN','LEFT','RIGHT','UP'];
   document.querySelectorAll('.direction-cards article').forEach((card,i)=>{
     const sequence=defeatPreviews[previewAction];let label=labels[i],detail=short[i];
-    if(['mummifield2','mummifieldFall'].includes(previewAction)){label=previewAction==='mummifield2'?'Mummifield II · ดิ้น':'Mummifield II · ล้ม';detail=previewAction==='mummifield2'?'16 FRAMES · 16 FPS':'8 FRAMES · 8 FPS';}
+    if(previewAction==='mummifieldTransition'){label='Mummifield I → II · พันผ้า';detail='24 FRAMES · 12 FPS';}
+    else if(['mummifield2','mummifieldFall'].includes(previewAction)){label=previewAction==='mummifield2'?'Mummifield II · ดิ้น':'Mummifield II · ล้ม';detail=previewAction==='mummifield2'?'16 FRAMES · 16 FPS':'8 FRAMES · 8 FPS';}
     else if(previewAction==='mummifield'){label=`Mummifield · ดิ้น ${i+1}`;detail='16 FRAMES · 10 FPS';}
     else if(Object.hasOwn(mummyPreviews,previewAction)){detail=`${{mummyWalk:'WALK',mummyScratch:'SCRATCH',mummyCast:'CAST',mummyBandage:'BANDAGE'}[previewAction]} · 4 FRAMES`;if(previewAction==='mummyBandage')label=['→ ขวา','↓ ลง','← ซ้าย','↑ ขึ้น'][i];}
     else if(previewAction==='trees'){label=['ต้นไม้ทรงกลม','ต้นไม้ทรงสูง','ต้นไม้พุ่มกว้าง','ต้นไม้พุ่มซ้อน'][i];detail='STATIC · 1 FRAME';}
@@ -602,6 +605,7 @@ const imageSources=[
   [slimePopAtlas,'assets/slime-pop-v10-atlas.png'],[stickyAtlas,'assets/sticky-struggle-v11-atlas.png'],
   ...Object.entries(spiderAtlases).map(([name,image])=>[image,`assets/spider-${name}-v13-atlas.png`]),
   [webShotAtlas,'assets/web-shot-v12-atlas.png'],[webbedAtlas,'assets/burnice-webbed-v12-atlas.png'],
+  [mummifieldAtlases.transition,'assets/burnice-mummifield-transition-v29-atlas.png'],
   [mummifieldAtlases.second,'assets/burnice-mummifield2-v28-atlas.png'],[mummifieldAtlases.fall,'assets/burnice-mummifield-fall-v28-atlas.png'],
   [mummifieldAtlas,'assets/burnice-mummifield-v27-atlas.png'],
   [webbedAtlases.second,'assets/burnice-webbed2-v14-atlas.png'],[webbedAtlases.rest,'assets/burnice-webbed-rest-v14-atlas.png'],
