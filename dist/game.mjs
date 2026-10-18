@@ -45,7 +45,7 @@ const attackSources=new Set();
 const row={down:0,left:1,right:2,up:3};
 const names={down:'หันลง',left:'หันซ้าย',right:'หันขวา',up:'หันขึ้น'};
 const player={...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0};
-let ready=false, camera={x:0,y:0}, keys=new Set(), joy={x:0,y:0}, previewAction='walk', previewPaused=false, previewTime=0;
+let ready=false, camera={x:0,y:0}, cameraZoom=1, keys=new Set(), joy={x:0,y:0}, previewAction='walk', previewPaused=false, previewTime=0;
 let previousTime=0, uiTime=0, hintGone=false;
 const world=document.createElement('canvas');world.width=WORLD.width;world.height=WORLD.height;
 const g=world.getContext('2d');g.imageSmoothingEnabled=false;g.translate(-WORLD.left,-WORLD.top);
@@ -159,7 +159,7 @@ add(354,()=>{rect(ctx,65,325,4,30,'#715b37');rect(ctx,32,307,100,27,'#614d35');r
 add(144,()=>{rect(ctx,312,112,5,28,'#715b37');rect(ctx,300,89,109,27,'#614d35');rect(ctx,303,92,103,21,'#d2bb80');ctx.fillStyle='#433c31';ctx.font='bold 8px monospace';ctx.textAlign='center';ctx.fillText('↑ MUMMY YARD',354,106);ctx.textAlign='left';});
 
 function resize(){const r=viewport.getBoundingClientRect();canvas.width=r.width<700?384:640;canvas.height=Math.round(canvas.width*r.height/r.width);ctx.imageSmoothingEnabled=false;snapCamera();}
-function targetCamera(){return{x:Math.max(WORLD.left,Math.min(WORLD.left+WORLD.width-canvas.width,player.x-canvas.width/2)),y:Math.max(WORLD.top,Math.min(WORLD.top+WORLD.height-canvas.height,player.y-canvas.height*.55))};}
+function targetCamera(){const w=canvas.width/cameraZoom,h=canvas.height/cameraZoom;return{x:Math.max(WORLD.left,Math.min(WORLD.left+WORLD.width-w,player.x-w/2)),y:Math.max(WORLD.top,Math.min(WORLD.top+WORLD.height-h,player.y-h*.55))};}
 function snapCamera(){camera=targetCamera();}
 new ResizeObserver(resize).observe(viewport);
 function makeAura(image,sx,sy,size,facing,ax,ay){
@@ -326,10 +326,18 @@ function drawDummy(d){
   if(shooting){ctx.fillStyle='#ffe09a';ctx.font='bold 8px monospace';ctx.textAlign='center';ctx.fillText('FIRE ↓',d.x,d.y+33);ctx.textAlign='left';}
 }
 function render(dt){
+  const oldZoom=cameraZoom,zoomTarget=bound()&&!health.dead?1.65:1;
+  cameraZoom+=(zoomTarget-cameraZoom)*(1-Math.exp(-dt*10));
+  if(Math.abs(cameraZoom-zoomTarget)<.0001)cameraZoom=zoomTarget;
+  // Preserve the player's screen anchor as the visible world rectangle changes.
+  camera.x+=canvas.width*(1/oldZoom-1/cameraZoom)/2;
+  camera.y+=canvas.height*(1/oldZoom-1/cameraZoom)*.55;
   const target=targetCamera(), blend=1-Math.exp(-dt*9);camera.x+=(target.x-camera.x)*blend;camera.y+=(target.y-camera.y)*blend;
-  const cx=Math.round(camera.x),cy=Math.round(camera.y);
+  camera.x=Math.max(WORLD.left,Math.min(WORLD.left+WORLD.width-canvas.width/cameraZoom,camera.x));
+  camera.y=Math.max(WORLD.top,Math.min(WORLD.top+WORLD.height-canvas.height/cameraZoom,camera.y));
+  const cx=Math.round(camera.x*cameraZoom)/cameraZoom,cy=Math.round(camera.y*cameraZoom)/cameraZoom;
   const wobble=shake>0?Math.round(Math.sin(sceneTime*110)*shake*3):0;
-  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.translate(-cx+wobble,-cy);ctx.drawImage(world,WORLD.left,WORLD.top);
+  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.scale(cameraZoom,cameraZoom);ctx.translate(-cx+wobble,-cy);ctx.drawImage(world,WORLD.left,WORLD.top);
   const gunner=dummies.find(d=>d.kind==='shooter');
   if(gunner){for(let y=gunner.y+40;y<704;y+=18)rect(ctx,gunner.x-1,y,2,6,'#b56c4459');}
   drawSlimePads();drawSpiderPads();drawMummyPads();
@@ -535,7 +543,7 @@ $('attackButton').addEventListener('keydown',e=>{if(e.code==='Enter'){e.preventD
 $('attackButton').addEventListener('keyup',e=>{if(e.code==='Enter'){e.preventDefault();letGoAttack('Enter');}});
 function resetTraining(){dummies=createDummies();projectiles=[];Object.assign(swordFire,createSwordFire());damageEvents=[];Object.assign(combat.stats,{hits:0,total:0,last:0,lastKind:'',spins:0});}
 $('resetDummies').addEventListener('click',()=>{if(nitro.active||bound())return;resetInput();resetTraining();updateUI();});
-function restartGame(){resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(mummies,createMummies());Object.assign(webbed,createWebbed());Object.assign(mummifield,createMummifield());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});snapCamera();updateUI();}
+function restartGame(){resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(mummies,createMummies());Object.assign(webbed,createWebbed());Object.assign(mummifield,createMummifield());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});cameraZoom=1;snapCamera();updateUI();}
 $('resetButton').addEventListener('click',restartGame);$('retryButton').addEventListener('click',restartGame);
 $('fullscreenButton').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(viewport.requestFullscreen)await viewport.requestFullscreen();else{viewport.classList.toggle('expanded');$('fullscreenButton').textContent=viewport.classList.contains('expanded')?'×':'⛶';}}catch{viewport.classList.toggle('expanded');}resize();});
 $('spriteButton').addEventListener('click',()=>{const lab=$('spriteLab');lab.hidden=!lab.hidden;$('spriteButton').innerHTML=lab.hidden?'ดู Sprite <span>↗</span>':'ซ่อน Sprite <span>↙</span>';if(!lab.hidden)lab.scrollIntoView({behavior:'smooth',block:'start'});});
