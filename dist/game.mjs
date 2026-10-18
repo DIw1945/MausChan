@@ -1,3 +1,4 @@
+import {createMummyVoice} from './mummy-voice.mjs?v=31';
 import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame,mummyEscapePresses,mummifieldPose} from './mummifield.mjs?v=30';
 import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,MUMMY_ZONE,updatePlayer,animationFrame} from './core.mjs?v=18';
 import {COMBAT,createCombat,pressAttack,releaseAttack,cancelAttack,advanceCombat,chargeRatio,attackFrame,createDummies,dummyObstacles,resolveHits,updateDummies} from './combat.mjs?v=12';
@@ -29,6 +30,7 @@ const bombs=createBombs();
 const slimes=createSlimes(),sticky=createSticky();
 const spiders=createSpiders(),webbed=createWebbed();
 const mummifield=createMummifield(),mummifieldAtlas=new Image();
+const mummyVoice=createMummyVoice();
 const mummifieldAtlases={first:mummifieldAtlas,second:new Image(),fall:new Image(),transition:new Image(),capture:new Image()};
 const mummyGameOver=()=>health.dead&&mummifield.failed;
 const bound=()=>sticky.bound||webbed.bound||mummifield.bound;
@@ -516,8 +518,12 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   }
   damageEvents=damageEvents.filter(e=>(e.age+=dt)<.85);shake=Math.max(0,shake-dt*5);
   if(combat.stats.hits&&!hintGone){hintGone=true;$('walkHint').classList.add('gone');}
+  mummyVoice.update(mummifield,health,dt);
   render(dt);if(!previewPaused)previewTime+=dt;previews();uiTime+=dt;if(uiTime>.06){updateUI();uiTime=0;}
 }requestAnimationFrame(tick);}
+document.addEventListener('pointerdown',()=>{void mummyVoice.unlock();},{capture:true,passive:true});
+document.addEventListener('keydown',()=>{void mummyVoice.unlock();},{capture:true});
+$('soundButton').addEventListener('click',()=>{mummyVoice.setMuted(!mummyVoice.muted);const muted=mummyVoice.muted;$('soundButton').textContent=muted?'🔇':'🔊';$('soundButton').setAttribute('aria-pressed',String(!muted));$('soundButton').setAttribute('aria-label',muted?'เปิดเสียงพูด':'ปิดเสียงพูด');$('soundButton').title=muted?'เปิดเสียงพูด':'ปิดเสียงพูด';});
 const movementCodes=['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowLeft','ArrowDown','ArrowRight'];
 const attackCodes=['KeyJ','KeyZ','Space'];
 function holdAttack(source){if(!ready||health.dead||health.hurtTime>0||nitro.active||bound())return;const first=attackSources.size===0;attackSources.add(source);if(first)pressAttack(combat,player.facing);updateUI();}
@@ -544,7 +550,7 @@ function useBomb(){
 $('bombButton').addEventListener('click',useBomb);
 function useNitro(){if(!ready||bound()||!startNitro(nitro,health))return;resetInput();player.facing='down';player.moving=false;player.actualMoving=false;updateUI();}
 $('nitroButton').addEventListener('click',useNitro);
-window.addEventListener('blur',resetInput);document.addEventListener('visibilitychange',()=>{if(document.hidden){resetInput();previousTime=0;}});
+window.addEventListener('blur',()=>{resetInput();mummyVoice.silence();});document.addEventListener('visibilitychange',()=>{if(document.hidden){resetInput();mummyVoice.silence();previousTime=0;}});
 const joystick=$('joystick');
 function moveJoystick(e){if(e.pointerId!==joyPointer)return;e.preventDefault();const r=joystick.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2,length=Math.hypot(x,y),clamp=Math.min(37,length);const angle=Math.atan2(y,x);$('joyKnob').style.transform=`translate(${Math.cos(angle)*clamp}px,${Math.sin(angle)*clamp}px)`;if(length<11){joy={x:0,y:0};gooGesture='';return;}const a=Math.round(angle/(Math.PI/4))*(Math.PI/4),direction={x:Math.round(Math.cos(a)),y:Math.round(Math.sin(a))};if(bound()){const gesture=`${direction.x},${direction.y}`;joy={x:0,y:0};if(gesture!==gooGesture){gooGesture=gesture;struggle();}return;}joy=direction;}
 joystick.addEventListener('pointerdown',e=>{if(joyPointer!==null)return;joyPointer=e.pointerId;joystick.setPointerCapture(e.pointerId);moveJoystick(e);});
@@ -557,7 +563,7 @@ $('attackButton').addEventListener('keydown',e=>{if(e.code==='Enter'){e.preventD
 $('attackButton').addEventListener('keyup',e=>{if(e.code==='Enter'){e.preventDefault();letGoAttack('Enter');}});
 function resetTraining(){dummies=createDummies();projectiles=[];Object.assign(swordFire,createSwordFire());damageEvents=[];Object.assign(combat.stats,{hits:0,total:0,last:0,lastKind:'',spins:0});}
 $('resetDummies').addEventListener('click',()=>{if(nitro.active||bound())return;resetInput();resetTraining();updateUI();});
-function restartGame(){resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(mummies,createMummies());Object.assign(webbed,createWebbed());Object.assign(mummifield,createMummifield());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});cameraZoom=1;snapCamera();updateUI();}
+function restartGame(){mummyVoice.reset();resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(mummies,createMummies());Object.assign(webbed,createWebbed());Object.assign(mummifield,createMummifield());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});cameraZoom=1;snapCamera();updateUI();}
 $('resetButton').addEventListener('click',restartGame);$('retryButton').addEventListener('click',restartGame);
 $('fullscreenButton').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(viewport.requestFullscreen)await viewport.requestFullscreen();else{viewport.classList.toggle('expanded');$('fullscreenButton').textContent=viewport.classList.contains('expanded')?'×':'⛶';}}catch{viewport.classList.toggle('expanded');}resize();});
 $('spriteButton').addEventListener('click',()=>{const lab=$('spriteLab');lab.hidden=!lab.hidden;$('spriteButton').innerHTML=lab.hidden?'ดู Sprite <span>↗</span>':'ซ่อน Sprite <span>↙</span>';if(!lab.hidden)lab.scrollIntoView({behavior:'smooth',block:'start'});});

@@ -1,0 +1,40 @@
+{
+  "provider": "Microsoft Edge online TTS via edge-tts7.3.1",
+  "voice": "ja-JP-NanamiNeural",
+  "synthetic": true,
+  "language": "ja-JP",
+  "pitch": "+8Hz",
+  "lines": [
+    {
+      "source": "sources/mummy-surprise-ja-nanami.mp3",
+      "text": "えっ、なにこれ！",
+      "rate": "+20%"
+    },
+    {
+      "source": "sources/mummy-murmur-ja-nanami.mp3",
+      "text": "んっ、んんっ！",
+      "rate": "+25%"
+    }
+  ],
+  "format": "MP3, mono,24kHz,64kbps",
+  "files": [
+    {
+      "file": "mummy-surprise-ja-v31.mp3",
+      "source": "sources/mummy-surprise-ja-nanami.mp3",
+      "duration": 0.912,
+      "filters": "silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,loudnorm=I=-19:TP=-2:LRA=7,afade=t=in:d=0.015"
+    },
+    {
+      "file": "mummy-muffled-ja-v31.mp3",
+      "source": "sources/mummy-murmur-ja-nanami.mp3",
+      "duration": 0.576,
+      "filters": "silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,highpass=f=160,lowpass=f=750,equalizer=f=380:t=q:w=0.9:g=3,loudnorm=I=-21:TP=-3:LRA=6,afade=t=in:d=0.025"
+    },
+    {
+      "file": "mummy-muffled-deep-ja-v31.mp3",
+      "source": "sources/mummy-murmur-ja-nanami.mp3",
+      "duration": 0.552,
+      "filters": "silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_duration=0.015:start_threshold=-45dB,areverse,atempo=1.08,highpass=f=170,lowpass=f=520,equalizer=f=300:t=q:w=0.9:g=3,loudnorm=I=-22:TP=-3:LRA=6,afade=t=in:d=0.025"
+    }
+  ]
+}
