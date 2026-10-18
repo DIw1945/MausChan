@@ -130,7 +130,7 @@ function chooseRoamTarget(e,home,p,obstacles){
   }
   e.roamTarget={x:e.x,y:e.y};e.roamTimer=.5;
 }
-// Only the Webbed timeout branch calls this: the arena stays alive after that defeat.
+// Keep the original export for older callers; this movement applies to any defeat.
 export function advanceSpidersAfterWebDefeat(s,dt,p,{obstacles=[]}={}){
   dt=Math.max(0,dt);s.shots=[];advanceSpiderEffects(s,dt);advanceSpiderSpawns(s,dt,p,{obstacles});
   for(const e of s.entities){
@@ -180,3 +180,5 @@ export function advanceSpiders(s,dt,p,h,w,{paused=false,restrained=false,obstacl
   }
   return result;
 }
+
+export const advanceSpidersAfterDefeat=advanceSpidersAfterWebDefeat;

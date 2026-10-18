@@ -6,10 +6,10 @@ import {DEFEAT_HEAD,advanceDefeat,defeatPose,starOrbit} from './defeat.mjs?v=8';
 import {FIRE,fullHearts,createSwordFire,emitSwordFire,updateSwordFire,waveFrame,ringPose} from './fire.mjs?v=18';
 import {NITRO,NITRO_CUP,createNitro,canUseNitro,startNitro,advanceNitro,nitroPose,collectNitro,rollNitroDrop,heartAmount} from './nitro.mjs?v=8';
 import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advanceBombs,advanceBombEffects,bombFuseFrame,bombBlastFrame,rockBreakFrame} from './bombs.mjs?v=12';
-import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimeEffects,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=12';
-import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterWebDefeat,advanceSpiderEffects,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=15';
+import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimesAfterDefeat,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=23';
+import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterDefeat,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=23';
 
-import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=22';
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummiesAfterDefeat,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=23';
 
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
@@ -477,11 +477,12 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   if(spiderAttack.upgraded)enterRestraint(`Webbed II! ดิ้น ${WEB.secondPresses} ครั้งใน ${WEB.secondDuration} วินาที!`);
   }
   }else{
-    advanceDefeat(health,dt);advanceBombEffects(bombs,dt);advanceMummyEffects(mummies,dt);
-    if(webbed.failed){
-      advanceWebbed(webbed,dt);const obstacles=[...dummyObstacles(dummies),...rockObstacles(bombs)];
-      advanceSpidersAfterWebDefeat(spiders,dt,player,{obstacles});advanceSlimes(slimes,dt,player,health,sticky,{obstacles});
-    }else{advanceSlimeEffects(slimes,dt);advanceSpiderEffects(spiders,dt);}
+    advanceDefeat(health,dt);advanceBombEffects(bombs,dt);
+    if(webbed.failed)advanceWebbed(webbed,dt);
+    const obstacles=[...dummyObstacles(dummies),...rockObstacles(bombs)];
+    advanceSpidersAfterDefeat(spiders,dt,player,{obstacles});
+    advanceSlimesAfterDefeat(slimes,dt,player,{obstacles});
+    advanceMummiesAfterDefeat(mummies,dt,player,{obstacles});
   }
   damageEvents=damageEvents.filter(e=>(e.age+=dt)<.85);shake=Math.max(0,shake-dt*5);
   if(combat.stats.hits&&!hintGone){hintGone=true;$('walkHint').classList.add('gone');}

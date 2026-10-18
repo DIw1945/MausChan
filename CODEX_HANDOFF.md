@@ -208,6 +208,12 @@ Post-export Nitro sparkle repair: the old v7 sparkle cells included bottoms of t
 - Removed the remaining idle hit-stagger branch in `advanceMummies`: it was repeatedly raising melee/cast cooldowns when hit before windup, preventing retaliation under spam. Damage still produces the normal visual flash, but no longer pauses movement or postpones attack initiation. Existing windups, cooldown lengths, damage, spawn grace and lethal cancellation remain in use.
 - Scoped validation: regression reproduced failure before the fix;14 Mummy tests now pass, including first-hit spam through initial melee and ranged cooldowns. Chromium verifies scaled/anchored draws at all2 coffin/4 nest points and real repeated J attacks:5 sword hits leave the Mummy at100HP while it retaliates for one heart. No page errors; no unrelated suite run. Entry and Mummy module cache versions22.
 
+### Owner behavior: living arenas after every Game Over (v23)
+
+- Every player-defeat branch now advances all three monster groups, both during the defeat pose and after the overlay appears. Spiders reuse the existing Webbed-timeout retreat/wander routine through the `advanceSpidersAfterDefeat` alias; the legacy export is retained. Slimes and Mummies use their own post-defeat entry points and the shared `dist/defeat-wander.mjs` helper, leaving living-combat AI separate.
+- Enemies cancel windups/recovery and clear ranged shots, retreat to92px from the player, then pick seeded random targets around their home with brief pauses. Wandering respects an80px body clearance, existing arena/collision shapes, exact overlap and corner escape. Movement facings/animation clocks, capped spawns and old death-effect cleanup continue. No further attacks or player damage; Retry replaces monster states as before. Entry and changed monster-module cache versions23.
+- Scoped checks:25 tests pass (4 post-defeat scenarios covering every species, existing7 Webbed-retreat tests and14 Mummy checks). Chromium covers HP defeat and Webbed timeout in each of the3 yards:all monster groups move, the body/HP stay fixed, attacks and shots stop, overlay remains visible and Retry resets. No page errors; no unrelated full-suite run.
+
 ## Art workflow
 
 1. Use existing `*-generated.png` sheets as identity/style/pose references with Image Generation.

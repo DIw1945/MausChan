@@ -1,3 +1,4 @@
+import {wanderAfterDefeat} from './defeat-wander.mjs?v=23';
 import {MUMMY_ZONE,SOLIDS,lineBlocked} from './core.mjs?v=18';
 import {receiveDamage} from './health.mjs?v=18';
 
@@ -106,4 +107,14 @@ export function advanceMummies(s,dt,p,h,{paused=false,restrained=false,obstacles
     move(e,mx,my,speed,dt,obstacles);
   }
   return result;
+}
+
+export function advanceMummiesAfterDefeat(s,dt,p,{obstacles=[]}={}){
+  dt=Math.max(0,dt);s.shots=[];advanceMummyEffects(s,dt);
+  // Reuse the existing spawn logic without advancing living-combat AI.
+  for(const point of s.points){
+    point.timer-=dt;if(point.timer>0)continue;
+    point.timer=mummyPopulation(s,point.id)<MUMMY.perPoint&&spawn(s,point,p,obstacles)?MUMMY.spawnInterval:.4;
+  }
+  for(const e of s.entities)if(e.hp>0)wanderAfterDefeat(e,dt,p,s.points[e.pointId],MUMMY_ZONE,MUMMY.speed,(x,y)=>blocked(x,y,e.radius,obstacles));
 }

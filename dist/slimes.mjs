@@ -1,3 +1,4 @@
+import {wanderAfterDefeat} from './defeat-wander.mjs?v=23';
 import {SOLIDS,TRAINING_ZONE} from './core.mjs?v=12';
 import {receiveDamage} from './health.mjs?v=12';
 
@@ -111,4 +112,9 @@ export function handleSlimeDefeats(state,events){
     }
   }
   return split;
+}
+
+export function advanceSlimesAfterDefeat(state,dt,p,{obstacles=[]}={}){
+  dt=Math.max(0,dt);advanceSlimeEffects(state,dt);advanceSlimeSpawns(state,dt,p,{obstacles});
+  for(const e of state.entities)if(e.hp>0)wanderAfterDefeat(e,dt,p,state.points[e.pointId],TRAINING_ZONE,SLIME_TYPES[e.type].speed,(x,y)=>blocked(x,y,e.radius,obstacles));
 }
