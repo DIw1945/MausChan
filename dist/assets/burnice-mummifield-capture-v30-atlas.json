@@ -1,0 +1,637 @@
+{
+  "image": "burnice-mummifield-capture-v30-atlas.png",
+  "source": "burnice-mummifield-capture-v30-generated.png",
+  "anchor": [
+    80,
+    112
+  ],
+  "fps": 12,
+  "loop": false,
+  "duration": 2,
+  "frames": [
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        11,
+        32,
+        263,
+        248
+      ],
+      "sourceBodyBounds": [
+        71,
+        32,
+        239,
+        248
+      ],
+      "visibleBounds": [
+        46,
+        58,
+        105,
+        112
+      ],
+      "sourceHeadPivotX": 155.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-1.png",
+      "x": 160,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        256,
+        31,
+        505,
+        248
+      ],
+      "sourceBodyBounds": [
+        300,
+        31,
+        465,
+        248
+      ],
+      "visibleBounds": [
+        50,
+        58,
+        108,
+        112
+      ],
+      "sourceHeadPivotX": 382.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-2.png",
+      "x": 320,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        520,
+        31,
+        769,
+        248
+      ],
+      "sourceBodyBounds": [
+        535,
+        31,
+        735,
+        248
+      ],
+      "visibleBounds": [
+        50,
+        58,
+        108,
+        112
+      ],
+      "sourceHeadPivotX": 651.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-3.png",
+      "x": 480,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        788,
+        32,
+        1016,
+        248
+      ],
+      "sourceBodyBounds": [
+        797,
+        32,
+        1016,
+        248
+      ],
+      "visibleBounds": [
+        54,
+        58,
+        107,
+        112
+      ],
+      "sourceHeadPivotX": 898.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-4.png",
+      "x": 0,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1040,
+        32,
+        1291,
+        248
+      ],
+      "sourceBodyBounds": [
+        1040,
+        32,
+        1291,
+        248
+      ],
+      "visibleBounds": [
+        51,
+        58,
+        108,
+        112
+      ],
+      "sourceHeadPivotX": 1166.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-5.png",
+      "x": 160,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1302,
+        32,
+        1525,
+        248
+      ],
+      "sourceBodyBounds": [
+        1302,
+        32,
+        1525,
+        248
+      ],
+      "visibleBounds": [
+        52,
+        58,
+        105,
+        112
+      ],
+      "sourceHeadPivotX": 1419.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-6.png",
+      "x": 320,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        18,
+        275,
+        271,
+        496
+      ],
+      "sourceBodyBounds": [
+        60,
+        275,
+        257,
+        496
+      ],
+      "visibleBounds": [
+        49,
+        58,
+        109,
+        112
+      ],
+      "sourceHeadPivotX": 151.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-7.png",
+      "x": 480,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        290,
+        275,
+        525,
+        496
+      ],
+      "sourceBodyBounds": [
+        290,
+        275,
+        525,
+        496
+      ],
+      "visibleBounds": [
+        58,
+        58,
+        112,
+        112
+      ],
+      "sourceHeadPivotX": 388.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-8.png",
+      "x": 0,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        546,
+        272,
+        760,
+        497
+      ],
+      "sourceBodyBounds": [
+        546,
+        272,
+        760,
+        497
+      ],
+      "visibleBounds": [
+        53,
+        58,
+        103,
+        112
+      ],
+      "sourceHeadPivotX": 662.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-9.png",
+      "x": 160,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        784,
+        272,
+        1024,
+        497
+      ],
+      "sourceBodyBounds": [
+        784,
+        272,
+        1024,
+        497
+      ],
+      "visibleBounds": [
+        48,
+        58,
+        106,
+        112
+      ],
+      "sourceHeadPivotX": 916.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-10.png",
+      "x": 320,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1050,
+        275,
+        1281,
+        500
+      ],
+      "sourceBodyBounds": [
+        1059,
+        275,
+        1255,
+        500
+      ],
+      "visibleBounds": [
+        51,
+        58,
+        106,
+        112
+      ],
+      "sourceHeadPivotX": 1173.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-11.png",
+      "x": 480,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1298,
+        275,
+        1507,
+        498
+      ],
+      "sourceBodyBounds": [
+        1298,
+        275,
+        1507,
+        497
+      ],
+      "visibleBounds": [
+        46,
+        58,
+        99,
+        112
+      ],
+      "sourceHeadPivotX": 1430.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-12.png",
+      "x": 0,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        53,
+        524,
+        247,
+        749
+      ],
+      "sourceBodyBounds": [
+        53,
+        524,
+        247,
+        749
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        103,
+        112
+      ],
+      "sourceHeadPivotX": 141.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-13.png",
+      "x": 160,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        304,
+        525,
+        507,
+        749
+      ],
+      "sourceBodyBounds": [
+        304,
+        525,
+        476,
+        749
+      ],
+      "visibleBounds": [
+        58,
+        58,
+        107,
+        112
+      ],
+      "sourceHeadPivotX": 394.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-14.png",
+      "x": 320,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        546,
+        522,
+        791,
+        751
+      ],
+      "sourceBodyBounds": [
+        546,
+        522,
+        737,
+        751
+      ],
+      "visibleBounds": [
+        56,
+        58,
+        113,
+        112
+      ],
+      "sourceHeadPivotX": 650.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-15.png",
+      "x": 480,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        813,
+        525,
+        1031,
+        750
+      ],
+      "sourceBodyBounds": [
+        813,
+        525,
+        1031,
+        750
+      ],
+      "visibleBounds": [
+        59,
+        58,
+        109,
+        112
+      ],
+      "sourceHeadPivotX": 903.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-16.png",
+      "x": 0,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1057,
+        523,
+        1282,
+        750
+      ],
+      "sourceBodyBounds": [
+        1057,
+        523,
+        1282,
+        750
+      ],
+      "visibleBounds": [
+        54,
+        58,
+        108,
+        112
+      ],
+      "sourceHeadPivotX": 1165.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-17.png",
+      "x": 160,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1315,
+        525,
+        1496,
+        750
+      ],
+      "sourceBodyBounds": [
+        1315,
+        525,
+        1496,
+        750
+      ],
+      "visibleBounds": [
+        55,
+        58,
+        99,
+        112
+      ],
+      "sourceHeadPivotX": 1417.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-18.png",
+      "x": 320,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        54,
+        773,
+        234,
+        995
+      ],
+      "sourceBodyBounds": [
+        54,
+        773,
+        234,
+        995
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "sourceHeadPivotX": 144.0
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-19.png",
+      "x": 480,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        309,
+        773,
+        482,
+        996
+      ],
+      "sourceBodyBounds": [
+        309,
+        773,
+        482,
+        996
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "sourceHeadPivotX": 395.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-20.png",
+      "x": 0,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        564,
+        776,
+        739,
+        998
+      ],
+      "sourceBodyBounds": [
+        564,
+        776,
+        739,
+        998
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "sourceHeadPivotX": 653.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-21.png",
+      "x": 160,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        813,
+        776,
+        984,
+        998
+      ],
+      "sourceBodyBounds": [
+        813,
+        776,
+        984,
+        998
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "sourceHeadPivotX": 898.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-22.png",
+      "x": 320,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1075,
+        775,
+        1252,
+        997
+      ],
+      "sourceBodyBounds": [
+        1075,
+        775,
+        1252,
+        997
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "sourceHeadPivotX": 1163.5
+    },
+    {
+      "file": "burnice-mummifield-capture-v30-frames/capture-23.png",
+      "x": 480,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1327,
+        776,
+        1497,
+        998
+      ],
+      "sourceBodyBounds": [
+        1327,
+        776,
+        1497,
+        998
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        99,
+        112
+      ],
+      "sourceHeadPivotX": 1412.5
+    }
+  ]
+}

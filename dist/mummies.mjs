@@ -1,4 +1,4 @@
-import {addMummifield} from './mummifield.mjs?v=29';
+import {addMummifield} from './mummifield.mjs?v=30';
 import {wanderAfterDefeat} from './defeat-wander.mjs?v=23';
 import {MUMMY_ZONE,SOLIDS,lineBlocked} from './core.mjs?v=18';
 import {receiveDamage} from './health.mjs?v=18';

@@ -5,6 +5,7 @@ import {START} from '../dist/core.mjs';
 import {createMummies,advanceMummies,fireBandage,advanceBandages} from '../dist/mummies.mjs';
 import {MUMMIFIELD,createMummifield,addMummifield,advanceMummifield,struggleMummifield,mummifieldFrame,mummyEscapePresses,mummifieldPose} from '../dist/mummifield.mjs';
 function setup(){const s=createMummies(),h=createHealth(),w=createMummifield();advanceMummies(s,.6,START,h);const e=s.entities[0];s.entities=[e];s.points.forEach(p=>p.timer=1e6);Object.assign(e,{x:430,y:-330,spawnShield:0,meleeCooldown:0,castCooldown:0});return{s,h,w,e,p:{x:540,y:-330,facing:'down'}};}
+function bindFirst(s,h){addMummifield(s,100);advanceMummifield(s,MUMMIFIELD.captureDuration,h);}
 function hit(a){fireBandage(a.s,a.e,a.p);return advanceBandages(a.s,1,a.p,a.h,{mummifield:a.w});}
 test('three damaging ranged hits fill Mummifield, clear knockback and remove all outstanding cloth',()=>{
  const a=setup();for(const value of [34,68,100]){a.h.invulnerable=0;assert.equal(hit(a),true);assert.equal(a.w.amount,value);}
@@ -22,7 +23,7 @@ test('scratch deals damage without filling Mummifield',()=>{
 });
 test('partial buildup decays after silence; first tier escapes with 28 distinct presses before timeout',()=>{
  const s=createMummifield(),h=createHealth();addMummifield(s);advanceMummifield(s,9);assert.equal(s.amount,29);advanceMummifield(s,20);assert.equal(s.amount,0);
- addMummifield(s,100);advanceMummifield(s,7);assert.equal(s.bound,true);assert.equal(struggleMummifield(s,h,{repeat:true}),false);assert.equal(s.presses,0);
+ bindFirst(s,h);advanceMummifield(s,7);assert.equal(s.bound,true);assert.equal(struggleMummifield(s,h,{repeat:true}),false);assert.equal(s.presses,0);
  for(let i=1;i<MUMMIFIELD.escapePresses;i++)assert.equal(struggleMummifield(s,h),false);
  assert.equal(struggleMummifield(s,h),true);assert.deepEqual(s,createMummifield());assert.ok(h.invulnerable>=1.5);
  assert.equal(mummifieldFrame(0),0);assert.equal(mummifieldFrame(MUMMIFIELD.frames/MUMMIFIELD.fps),0);assert.equal(new Set(Array.from({length:MUMMIFIELD.frames},(_,i)=>mummifieldFrame((i+.01)/MUMMIFIELD.fps))).size,MUMMIFIELD.frames);
@@ -40,7 +41,7 @@ test('a filling projectile cancels every windup immediately and all Mummies retr
 });
 
 test('first timeout holds tierI and progress during all24 wrapping frames before starting tierII',()=>{
- const s=createMummifield(),h=createHealth();addMummifield(s,100);for(let i=0;i<20;i++)struggleMummifield(s,h);
+ const s=createMummifield(),h=createHealth();bindFirst(s,h);for(let i=0;i<20;i++)struggleMummifield(s,h);
  assert.equal(advanceMummifield(s,7.99,h).wrapping,false);assert.equal(s.tier,1);assert.equal(s.presses,20);
  const start=advanceMummifield(s,.01,h);assert.equal(start.wrapping,true);assert.equal(start.upgraded,false);assert.equal(s.tier,1);assert.equal(s.remaining,0);assert.equal(s.transitioning,true);
  const poseFrames=[];
@@ -54,21 +55,38 @@ test('first timeout holds tierI and progress during all24 wrapping frames before
  assert.equal(mummyEscapePresses(s),64);assert.equal(mummifieldPose(s).sequence,'second');
 });
 test('second tier requires 64 distinct presses and escape clears both deadlines',()=>{
- const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,10,h);advanceMummifield(s,7.9,h);
+ const s=createMummifield(),h=createHealth();bindFirst(s,h);advanceMummifield(s,10,h);advanceMummifield(s,7.9,h);
  for(let i=0;i<63;i++){assert.equal(struggleMummifield(s,h,{repeat:true}),false);assert.equal(struggleMummifield(s,h),false);}
  assert.equal(s.bound,true);assert.equal(struggleMummifield(s,h),true);assert.deepEqual(s,createMummifield());advanceMummifield(s,20,h);assert.equal(h.dead,false);assert.ok(h.invulnerable>=1.5);
 });
 test('timeout defeats after eight seconds per tier plus the two-second transition without HP damage; falling plays once before Game Over',()=>{
- const s=createMummifield(),h=createHealth();addMummifield(s,100);advanceMummifield(s,17.99,h);assert.equal(h.dead,false);
+ const s=createMummifield(),h=createHealth();bindFirst(s,h);advanceMummifield(s,17.99,h);assert.equal(h.dead,false);
  assert.equal(advanceMummifield(s,.01,h).failed,true);assert.equal(s.failed,true);assert.equal(h.dead,true);assert.equal(h.hp,6);assert.equal(s.remaining,0);assert.equal(h.knockTime,0);
  assert.deepEqual(mummifieldPose(s),{sequence:'fall',frame:0,gameOver:false});assert.equal(struggleMummifield(s,h),false);
  for(let i=1;i<8;i++){advanceMummifield(s,.125,h);assert.equal(mummifieldPose(s).frame,i);assert.equal(mummifieldPose(s).gameOver,false);}
  advanceMummifield(s,.125,h);assert.equal(mummifieldPose(s).gameOver,true);advanceMummifield(s,20,h);assert.equal(mummifieldPose(s).frame,7);assert.equal(mummifieldPose(s).gameOver,true);
 });
 test('timer overflow and frame subdivision agree, including a delayed update crossing both deadlines',()=>{
- const make=()=>{const s=createMummifield();addMummifield(s,100);return s;};
+ const make=()=>{const s=createMummifield();bindFirst(s);return s;};
  const a=make(),b=make(),ha=createHealth(),hb=createHealth();advanceMummifield(a,10.25,ha);assert.equal(a.tier,2);assert.equal(a.remaining,7.75);assert.equal(a.time,.25);
  advanceMummifield(a,8,ha);advanceMummifield(b,18.25,hb);assert.equal(a.failed,true);assert.equal(b.failed,true);assert.equal(a.time,.25);assert.equal(b.time,.25);
  const c=make(),hc=createHealth();for(let i=0;i<360;i++)advanceMummifield(c,.05,hc);assert.equal(c.failed,true);assert.equal(hc.dead,true);
  const frozen=JSON.stringify(c);advanceMummifield(c,-1,hc);assert.equal(JSON.stringify(c),frozen);
+});
+
+test('capture plays24 frames before tierI and preserves its full eight seconds',()=>{
+ const s=createMummifield(),h=createHealth();assert.equal(addMummifield(s,100),true);assert.equal(s.tier,0);assert.equal(s.capturing,true);assert.equal(s.bound,true);
+ const frames=[];for(let i=0;i<24;i++){
+  assert.equal(s.tier,0);assert.equal(s.remaining,0);assert.equal(s.presses,0);assert.equal(struggleMummifield(s,h),false);assert.equal(h.dead,false);
+  const pose=mummifieldPose(s);assert.equal(pose.sequence,'capture');frames.push(pose.frame);
+  if(i<23)assert.equal(advanceMummifield(s,1/12,h).entered,false);
+ }
+ assert.deepEqual(frames,Array.from({length:24},(_,i)=>i));assert.equal(advanceMummifield(s,1/12,h).entered,true);
+ assert.equal(s.capturing,false);assert.equal(s.tier,1);assert.ok(Math.abs(s.remaining-8)<1e-9);assert.equal(mummifieldPose(s).sequence,'first');assert.equal(h.hp,6);
+});
+test('capture overflow agrees with small updates through capture, both tiers and wrapping',()=>{
+ const a=createMummifield(),b=createMummifield(),ha=createHealth(),hb=createHealth();addMummifield(a,100);addMummifield(b,100);
+ const result=advanceMummifield(a,2.25,ha);assert.equal(result.entered,true);assert.equal(a.tier,1);assert.equal(a.remaining,7.75);assert.equal(a.time,.25);
+ advanceMummifield(a,18,ha);advanceMummifield(b,20.25,hb);assert.equal(a.failed,true);assert.equal(b.failed,true);assert.equal(a.time,.25);assert.equal(b.time,.25);
+ const c=createMummifield(),hc=createHealth();addMummifield(c,100);for(let i=0;i<400;i++)advanceMummifield(c,.05,hc);assert.equal(c.failed,true);assert.equal(hc.dead,true);
 });
