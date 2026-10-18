@@ -1,0 +1,428 @@
+{
+  "image": "burnice-mummifield2-v28-atlas.png",
+  "source": "burnice-mummifield2-v28-generated.png",
+  "anchor": [
+    80,
+    112
+  ],
+  "fps": 16,
+  "loop": true,
+  "frames": [
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 2,
+      "sourceBounds": [
+        692,
+        62,
+        897,
+        320
+      ],
+      "visibleBounds": [
+        63,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        86,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-1.png",
+      "x": 160,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 1,
+      "sourceBounds": [
+        373,
+        62,
+        576,
+        320
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-2.png",
+      "x": 320,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 12,
+      "sourceBounds": [
+        57,
+        993,
+        264,
+        1252
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-3.png",
+      "x": 480,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 13,
+      "sourceBounds": [
+        368,
+        994,
+        576,
+        1251
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-4.png",
+      "x": 0,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 6,
+      "sourceBounds": [
+        682,
+        370,
+        889,
+        630
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-5.png",
+      "x": 160,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 11,
+      "sourceBounds": [
+        998,
+        682,
+        1207,
+        944
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-6.png",
+      "x": 320,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 5,
+      "sourceBounds": [
+        375,
+        370,
+        581,
+        630
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-7.png",
+      "x": 480,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 9,
+      "sourceBounds": [
+        372,
+        682,
+        581,
+        944
+      ],
+      "visibleBounds": [
+        59,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-8.png",
+      "x": 0,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 10,
+      "sourceBounds": [
+        690,
+        682,
+        900,
+        944
+      ],
+      "visibleBounds": [
+        59,
+        58,
+        98,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        86,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-9.png",
+      "x": 160,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 7,
+      "sourceBounds": [
+        991,
+        369,
+        1198,
+        630
+      ],
+      "visibleBounds": [
+        58,
+        58,
+        97,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-10.png",
+      "x": 320,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 4,
+      "sourceBounds": [
+        56,
+        369,
+        262,
+        630
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        98,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-11.png",
+      "x": 480,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 14,
+      "sourceBounds": [
+        685,
+        994,
+        893,
+        1251
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-12.png",
+      "x": 0,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 8,
+      "sourceBounds": [
+        51,
+        681,
+        260,
+        943
+      ],
+      "visibleBounds": [
+        59,
+        58,
+        97,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-13.png",
+      "x": 160,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 15,
+      "sourceBounds": [
+        995,
+        994,
+        1203,
+        1251
+      ],
+      "visibleBounds": [
+        60,
+        58,
+        99,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-14.png",
+      "x": 320,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 0,
+      "sourceBounds": [
+        61,
+        62,
+        262,
+        320
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummifield2-v28-frames/struggle-15.png",
+      "x": 480,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "sourceFrame": 3,
+      "sourceBounds": [
+        1007,
+        62,
+        1212,
+        320
+      ],
+      "visibleBounds": [
+        63,
+        58,
+        100,
+        112
+      ],
+      "bootBounds": [
+        73,
+        106,
+        87,
+        112
+      ]
+    }
+  ]
+}

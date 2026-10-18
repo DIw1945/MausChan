@@ -1,0 +1,173 @@
+{
+  "image": "burnice-mummifield-fall-v28-atlas.png",
+  "source": "burnice-mummifield-fall-v28-generated.png",
+  "anchor": [
+    80,
+    112
+  ],
+  "fps": 8,
+  "loop": false,
+  "holdLast": true,
+  "frames": [
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        41,
+        71,
+        293,
+        416
+      ],
+      "visibleBounds": [
+        61,
+        58,
+        100,
+        112
+      ],
+      "sourceGroundPivotX": 123.5
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-1.png",
+      "x": 160,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        511,
+        72,
+        758,
+        416
+      ],
+      "visibleBounds": [
+        69,
+        58,
+        108,
+        112
+      ],
+      "sourceGroundPivotX": 68.5
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-2.png",
+      "x": 320,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        981,
+        91,
+        1254,
+        421
+      ],
+      "visibleBounds": [
+        73,
+        60,
+        116,
+        112
+      ],
+      "sourceGroundPivotX": 47.0
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-3.png",
+      "x": 480,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1423,
+        126,
+        1724,
+        426
+      ],
+      "visibleBounds": [
+        73,
+        65,
+        120,
+        112
+      ],
+      "sourceGroundPivotX": 46.5
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-4.png",
+      "x": 0,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        84,
+        566,
+        410,
+        833
+      ],
+      "visibleBounds": [
+        70,
+        70,
+        121,
+        112
+      ],
+      "sourceGroundPivotX": 64.5
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-5.png",
+      "x": 160,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        500,
+        600,
+        853,
+        831
+      ],
+      "visibleBounds": [
+        69,
+        76,
+        124,
+        112
+      ],
+      "sourceGroundPivotX": 70.5
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-6.png",
+      "x": 320,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        909,
+        657,
+        1289,
+        867
+      ],
+      "visibleBounds": [
+        76,
+        79,
+        135,
+        112
+      ],
+      "sourceGroundPivotX": 24.7
+    },
+    {
+      "file": "burnice-mummifield-fall-v28-frames/fall-7.png",
+      "x": 480,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "sourceBounds": [
+        1372,
+        676,
+        1750,
+        867
+      ],
+      "visibleBounds": [
+        76,
+        82,
+        135,
+        112
+      ],
+      "sourceGroundPivotX": 24.57
+    }
+  ]
+}
