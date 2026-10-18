@@ -202,6 +202,12 @@ Post-export Nitro sparkle repair: the old v7 sparkle cells included bottoms of t
 - Playback is3fps ping-pong `[0,1,2,3,2,1]`, with a small phase offset between spawn points. No extra game state, spawn/AI/combat changes or historical-art rebuild. Prompt:`docs/art-prompts/mummy-coffin-v21.txt`; regenerate this atlas only with `tools/prepare_mummy_coffin_v21.py` (whole connected subjects, gold-body alignment, uniform nearest-neighbour scale).
 - Scoped validation:4 distinct transparent frames, uncropped bounds and exact frame/atlas bytes passed. Chromium verified both anchored draws and frame sequence0→1→2→3→2→1→0, no page errors or missing assets. No unrelated gameplay-suite run.
 
+### Owner tuning: larger spawn props / retaliation under first-hit spam (v22)
+
+- Render-only enlargement of spider nests and animated Mummy coffins by25%: nest source96×64 renders120×80 with anchor60,50; coffin source112×112 renders140×140 with anchor70,100. Original world spawn anchors and the4-frame coffin playback are retained; no artwork regeneration or collision changes.
+- Removed the remaining idle hit-stagger branch in `advanceMummies`: it was repeatedly raising melee/cast cooldowns when hit before windup, preventing retaliation under spam. Damage still produces the normal visual flash, but no longer pauses movement or postpones attack initiation. Existing windups, cooldown lengths, damage, spawn grace and lethal cancellation remain in use.
+- Scoped validation: regression reproduced failure before the fix;14 Mummy tests now pass, including first-hit spam through initial melee and ranged cooldowns. Chromium verifies scaled/anchored draws at all2 coffin/4 nest points and real repeated J attacks:5 sword hits leave the Mummy at100HP while it retaliates for one heart. No page errors; no unrelated suite run. Entry and Mummy module cache versions22.
+
 ## Art workflow
 
 1. Use existing `*-generated.png` sheets as identity/style/pose references with Image Generation.

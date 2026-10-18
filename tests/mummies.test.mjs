@@ -71,6 +71,22 @@ test('non-lethal hits cannot interrupt mummy scratch, cast or recovery, while a 
   }
 });
 
+test('spam hits before the first windup cannot postpone mummy scratch or ranged attacks',()=>{
+  for(const distance of [30,185]){
+    const a=setup(distance),stats=createCombat().stats;
+    Object.assign(a.e,{meleeCooldown:1,castCooldown:1.8});
+    let nextHit=0,retaliated=false;
+    for(let tick=0;tick<150&&a.e.hp>0;tick++){
+      const time=tick*.02;
+      if(time+1e-9>=nextHit){hitDummy(a.e,20,'slash',stats);nextHit+=.34;}
+      const result=advanceMummies(a.s,.02,a.p,a.h);
+      if(distance===30?result.playerHit:a.s.shots.length>0){retaliated=true;break;}
+    }
+    assert.ok(retaliated,`Mummy should retaliate while taking hits at distance ${distance}`);
+    assert.ok(a.e.hp>0,'retaliation must start before lethal spam damage');
+  }
+});
+
 test('linen projectiles are swept, non-homing, consume on hit, and respect invulnerability',()=>{
   const a=setup();const shot=fireBandage(a.s,a.e,a.p);assert.equal(Math.hypot(shot.vx,shot.vy),MUMMY.shotSpeed);
   assert.equal(advanceBandages(a.s,1,a.p,a.h),true);assert.equal(a.h.hp,5);assert.equal(a.s.shots.length,0);

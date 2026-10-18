@@ -9,7 +9,7 @@ import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advance
 import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimeEffects,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=12';
 import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterWebDefeat,advanceSpiderEffects,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=15';
 
-import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=19';
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=22';
 
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
@@ -236,7 +236,7 @@ function drawBandage(p,shot){
 function drawMummyPads(){
   for(const point of mummies.points){
     const phase=Math.floor(sceneTime*3+point.id*2)%6,frame=phase<4?phase:6-phase;
-    ctx.drawImage(mummyCoffinAtlas,frame*112,0,112,112,Math.round(point.x)-56,Math.round(point.y)-80,112,112);
+    ctx.drawImage(mummyCoffinAtlas,frame*112,0,112,112,Math.round(point.x)-70,Math.round(point.y)-100,140,140);
   }
   ctx.fillStyle='#efe1b3';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('MUMMY TRAINING',492,-610);ctx.font='7px monospace';ctx.fillText('HEAVY GUARDIANS · CLAWS & BANDAGES',492,-597);ctx.textAlign='left';
 }
@@ -255,7 +255,7 @@ function drawMummy(e){
   if(!dead&&e.hp<e.maxHP){rect(ctx,x-19,y-63,38,4,'#4b3f35');rect(ctx,x-18,y-62,Math.round(36*e.hp/e.maxHP),2,'#e1c38a');}
 }
 function drawSpiderPads(){
-  for(const point of spiders.points)ctx.drawImage(spiderNestAtlas,Math.round(point.x)-48,Math.round(point.y)-40);
+  for(const point of spiders.points)ctx.drawImage(spiderNestAtlas,0,0,96,64,Math.round(point.x)-60,Math.round(point.y)-50,120,80);
   ctx.fillStyle='#ded4f0';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('SPIDER TRAINING',-300,117);ctx.font='7px monospace';ctx.fillText('PURPLE WEAVER · ORANGE HUNTER',-300,131);ctx.textAlign='left';
 }
 function drawSpider(e){
