@@ -4,8 +4,7 @@
 
 ## เล่นผ่าน GitHub Pages
 
-เจ้าของอนุญาตให้กลับมาเผยแพร่เว็บเกมสาธารณะแล้ว โดยคงโค้ดใน Repo เป็น Private หากแพ็กเกจ GitHub รองรับ
-การใช้ GitHub Pages จาก Repo Private ต้องมีแพ็กเกจที่รองรับ; บัญชี Free อาจต้องเปลี่ยน Repo เป็น Public หรืออัปเกรดก่อน
+เจ้าของเลือกกลับมาใช้ Repo แบบ Public และเปิดเผยแพร่เว็บเกมผ่าน GitHub Pages แล้ว
 
 เวิร์กโฟลว์ `.github/workflows/pages.yml` เผยแพร่ `dist/` เมื่อ push การเปลี่ยนแปลงเกมเข้า `master`
 หรือกด Run workflow จากหน้า Actions โดยไม่ต้องติดตั้งแพ็กเกจหรือ build เกม

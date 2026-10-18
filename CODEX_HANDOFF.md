@@ -243,4 +243,4 @@ The root README, Codex instructions, optional Python requirements, Windows launc
 
 ## Latest hosting decision: return to public game hosting
 
-The owner explicitly selected public GitHub Pages hosting again. Codespaces configuration was reverted; the Pages workflow and automatic publishing configuration are restored. The source repository currently remains Private pending account Pages eligibility/settings. Do not assume a restored workflow proves that the site is live; check the deployment result. Do not change source visibility to Public merely to enable Pages without agreement from the owner.
+The owner explicitly selected public GitHub Pages hosting again. Codespaces configuration was reverted; the Pages workflow and automatic publishing configuration are restored. The owner then restored the repository to Public and enabled Pages in GitHub settings. Deployment run39138238653 succeeded, restoring the public site with the latest game. Both the source and playable website are public; public auto-deployment is authorized again.

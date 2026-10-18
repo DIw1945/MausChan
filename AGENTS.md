@@ -32,4 +32,4 @@ Read `CODEX_HANDOFF.md` before changing gameplay or assets. Reply to the owner i
 
 ## Hosting preference
 
-The owner has explicitly reauthorized public GitHub Pages game hosting and automatic publishing after pushes to master. The playable website is public. Keep repository visibility private where the GitHub plan supports Pages from private repositories; do not change source visibility to public without the owner's explicit agreement. Codespaces preview configuration has been removed at the owner's request.
+The owner has explicitly returned to public GitHub Pages hosting and restored the repository to Public in GitHub settings. Automatic publishing after game changes are pushed to master is authorized. Both the playable website and source repository are public. Codespaces preview configuration has been removed at the owner's request.
