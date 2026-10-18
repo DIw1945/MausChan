@@ -240,3 +240,7 @@ The map is drawn in `game.mjs` and collision shapes are in `core.mjs`; an editor
 All 485 tracked files from the source commit were retained byte-for-byte. Two were relocated: the original README is now `docs/DEVELOPMENT-HISTORY.md`; `.openai/hosting.json` is now `docs/original-site-hosting.json`, inactive reference data. No `.git` history or login credentials are included. `docs/SOURCE-MANIFEST.json` records per-file SHA-256.
 
 The root README, Codex instructions, optional Python requirements, Windows launcher, Node package/scripts and handoff documents were added for portability. Burnice White / Zenless Zone Zero belongs to HoYoverse; this is an unofficial fan prototype.
+
+## Latest hosting decision: return to public game hosting
+
+The owner explicitly selected public GitHub Pages hosting again. Codespaces configuration was reverted; the Pages workflow and automatic publishing configuration are restored. The source repository currently remains Private pending account Pages eligibility/settings. Do not assume a restored workflow proves that the site is live; check the deployment result. Do not change source visibility to Public merely to enable Pages without agreement from the owner.
