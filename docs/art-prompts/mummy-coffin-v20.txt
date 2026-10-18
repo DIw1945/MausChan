@@ -1,0 +1,3 @@
+Built-in Image Generation; single transparent Mummy spawn prop.
+
+undefined

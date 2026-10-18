@@ -1,0 +1,34 @@
+{
+  "sources": [
+    "mummy-coffin-v20-generated.png"
+  ],
+  "animated": false,
+  "selection": "complete alpha bounds; nearest-neighbour scale; retain lid and every cloth tip",
+  "placement": "ground layer at the two existing Mummy points; no new collision",
+  "sequences": {
+    "mummy-coffin": [
+      {
+        "image": "mummy-coffin-v20-atlas.png",
+        "file": "mummy-coffin-v20-frames/coffin-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 112,
+        "anchor": [
+          56,
+          80
+        ],
+        "sourceBounds": [
+          0,
+          19,
+          1253,
+          1254
+        ],
+        "visibleSize": [
+          85,
+          84
+        ]
+      }
+    ]
+  }
+}

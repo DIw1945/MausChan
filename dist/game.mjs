@@ -14,7 +14,7 @@ import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advan
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
 const atlas=new Image();
-const treeAtlas=new Image(),spiderNestAtlas=new Image(),mummyAtlas=new Image(),bandageAtlas=new Image();
+const treeAtlas=new Image(),spiderNestAtlas=new Image(),mummyCoffinAtlas=new Image(),mummyAtlas=new Image(),bandageAtlas=new Image();
 const mummies=createMummies();
 const slashAtlas=new Image(),chargeAtlas=new Image(),dummyAtlas=new Image();
 const chargeWalkAtlas=new Image(),auraFrames={idle:{},walk:{}};
@@ -234,10 +234,7 @@ function drawBandage(p,shot){
   p.drawImage(bandageAtlas,f*64,0,64,32,-32,-16,64,32);p.restore();
 }
 function drawMummyPads(){
-  for(const point of mummies.points){
-    rect(ctx,point.x-28,point.y-18,56,30,'#776346');rect(ctx,point.x-25,point.y-15,50,24,'#cebb8d');rect(ctx,point.x-19,point.y-10,38,14,'#88775a');
-    rect(ctx,point.x-3,point.y-7,6,12,'#decc9c');
-  }
+  for(const point of mummies.points)ctx.drawImage(mummyCoffinAtlas,Math.round(point.x)-56,Math.round(point.y)-80);
   ctx.fillStyle='#efe1b3';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('MUMMY TRAINING',492,-610);ctx.font='7px monospace';ctx.fillText('HEAVY GUARDIANS · CLAWS & BANDAGES',492,-597);ctx.textAlign='left';
 }
 // A single compact, text-free warning above the sprite, only during windup.
@@ -554,6 +551,7 @@ $('pausePreview').addEventListener('click',()=>{previewPaused=!previewPaused;$('
 $('frameSlider').addEventListener('input',previews);
 const loadImage=(image,src)=>new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;image.src=src;});
 const imageSources=[
+  [mummyCoffinAtlas,'assets/mummy-coffin-v20-atlas.png'],
   [mummyAtlas,'assets/mummy-v18-atlas.png'],[bandageAtlas,'assets/mummy-bandage-v18-atlas.png'],
   [spiderNestAtlas,'assets/spider-nest-v16-atlas.png'],
   [treeAtlas,'assets/trees-v15-atlas.png'],

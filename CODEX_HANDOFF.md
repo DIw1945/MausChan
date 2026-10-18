@@ -190,6 +190,12 @@ Post-export Nitro sparkle repair: the old v7 sparkle cells included bottoms of t
 - Slime, spider and Mummy windup rings are replaced by one small amber diamond warning above each monster, drawn without text or a label and only while winding up. Positions account for sprite height, including small split Slimes, and avoid HP bars.
 - Non-lethal hits no longer interrupt an active Mummy scratch, cast or recovery. Idle hit reactions remain; lethal damage, leaving the arena, restraint and player defeat still stop attacks. Entry/module cache versions advance to19. Validation scoped to the owner's request:13 Mummy tests pass, including repeated real hits through both windups/recovery and lethal cancellation. Chromium checks confirm one text-free icon and no attack ring for Mummy, spider, normal Slime and tiny split Slime, with no idle warnings or page errors. No full-suite run.
 
+### Owner art: open Egyptian Mummy sarcophagus (v20)
+
+- Replaced only the two procedural Mummy spawn pads with one static Image Generation sprite: an open gold/lapis Egyptian sarcophagus, lid beside it, and frayed linen tendrils reaching out of its dark interior. Source:`dist/assets/mummy-coffin-v20-generated.png`; runtime:`mummy-coffin-v20-atlas.png`; frame/metadata:`mummy-coffin-v20-frames/coffin-0.png`,`mummy-coffin-v20-atlas.json`. Prompt:`docs/art-prompts/mummy-coffin-v20.txt`; reproduce with `tools/prepare_mummy_coffin_v20.py` only.
+- One transparent112×112 frame, anchor56,80; complete alpha bounds scaled with nearest-neighbour, visible size85×84. Ground-layer placement uses the existing points(350,-370),(634,-370). Current art total442 frames; entry cache version20.
+- Scoped checks only: alpha margins, complete bounds and frame/atlas equality passed; Chromium verified both runtime draws at the original points, correct dimensions, no missing assets or page errors. No gameplay-suite run; no collision, spawning, AI or combat changes.
+
 ## Art workflow
 
 1. Use existing `*-generated.png` sheets as identity/style/pose references with Image Generation.
