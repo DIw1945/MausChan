@@ -1,4 +1,4 @@
-import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame} from './mummifield.mjs?v=24';
+import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame} from './mummifield.mjs?v=26';
 import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,MUMMY_ZONE,updatePlayer,animationFrame} from './core.mjs?v=18';
 import {COMBAT,createCombat,pressAttack,releaseAttack,cancelAttack,advanceCombat,chargeRatio,attackFrame,createDummies,dummyObstacles,resolveHits,updateDummies} from './combat.mjs?v=12';
 import {chargeWalkFrame,chargeAuraAlpha,bladeZone} from './visuals.mjs?v=8';
@@ -10,7 +10,7 @@ import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advance
 import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimesAfterDefeat,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=23';
 import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterDefeat,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=23';
 
-import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummiesAfterDefeat,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=24';
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummiesAfterDefeat,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=26';
 
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
@@ -353,7 +353,7 @@ function render(dt){
 }
 function updateUI(){
   const defeat=health.dead?(webGameOver()?{stage:'webbed',gameOver:true}:defeatPose(health.deathTime,health.facing)):null;
-  $('stateLabel').textContent=defeat?({spin:'หมุนเซ…',collapse:'หมดแรง…',rest:'นอนมึน…',webbed:'ติดใยแน่น…'}[defeat.stage]):health.hurtTime>0?'โดนโจมตี!':combat.state==='slash'?'ฟันดาบ':combat.state==='spin'?'หมุนฟัน!':combat.state==='charging'?(chargeRatio(combat)>=1?'พร้อมหมุนฟัน!':'กำลังชาร์จ'):player.moving?'กำลังเดิน':'ยืนพัก';$('stateDot').classList.toggle('walking',!health.dead&&(player.moving||combat.state!=='idle'));
+  $('stateLabel').textContent=defeat?({spin:'หมุนเซ…',collapse:'หมดแรง…',rest:'นอนมึน…',webbed:'ติดใยแน่น…'}[defeat.stage]):combat.state==='slash'?'ฟันดาบ':combat.state==='spin'?'หมุนฟัน!':combat.state==='charging'?(chargeRatio(combat)>=1?'พร้อมหมุนฟัน!':'กำลังชาร์จ'):player.moving?'กำลังเดิน':'ยืนพัก';$('stateDot').classList.toggle('walking',!health.dead&&(player.moving||combat.state!=='idle'));
   $('deathOverlay').hidden=!defeat?.gameOver;
   $('deathOverlay').querySelector('p').textContent=webGameOver()?'ดิ้นไม่ทันเวลา · ถูกใยขั้นสองพันไว้ ลองใหม่อีกครั้ง':'พักสักนิด แล้วลองหลบกระสุนกันใหม่';
   $('deathOverlay').querySelector('.eyebrow').textContent=webGameOver()?'WEBBED II · TIME OUT':'TAKE A BREATHER, BURNICE';
@@ -473,21 +473,21 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   const targets=[...dummies,...slimes.entities.filter(s=>s.hp>0),...spiders.entities.filter(s=>s.hp>0),...mummies.entities.filter(s=>s.hp>0)],hits=resolveHits(combat,player,targets,rocks);emitSwordFire(swordFire,combat,player,health);
   hits.push(...updateSwordFire(swordFire,dt,targets,combat.stats,rocks));
   for(const d of dummies)if(d.kind==='shooter')updateShooter(d,dt,projectiles);
-  if(updateProjectiles(projectiles,dt,player,health,rocks))playerDamaged('−½♥');
+  if(updateProjectiles(projectiles,dt,player,health,rocks))playerDamaged();
   const blast=advanceBombs(bombs,dt,targets,combat.stats,player,health);hits.push(...blast.hits);
   for(const hit of hits){rollNitroDrop(nitro,hit);damageEvents.push({...hit,age:0});shake=hit.kind==='bomb'?1.8:['spin','fireSpin'].includes(hit.kind)?1:.55;}
   handleSlimeDefeats(slimes,hits);handleSpiderDefeats(spiders,hits);handleMummyDefeats(mummies,hits);
   if(blast.exploded)shake=1.8;
   if(blast.broken.length)showNotice(`หินแตก ${blast.broken.length} ก้อน · เดินผ่านได้แล้ว!`);
-  if(blast.playerHit)playerDamaged('−1♥');
+  if(blast.playerHit)playerDamaged();
   const slimeAttack=advanceSlimes(slimes,dt,player,health,(webbed.bound||mummifield.bound)?{bound:true}:sticky,{obstacles});
-  if(slimeAttack.playerHit)playerDamaged('−½♥');
+  if(slimeAttack.playerHit)playerDamaged();
   if(slimeAttack.bound)enterRestraint('ติดเมือกเหนียว! กด WASD / ลูกศรรัว ๆ หรือปุ่มสลัด');
   const mummyAttack=advanceMummies(mummies,dt,player,health,{restrained:sticky.bound||webbed.bound,mummifield,obstacles});
-  if(mummyAttack.playerHit)playerDamaged('โดนโจมตี!');
+  if(mummyAttack.playerHit)playerDamaged();
   if(mummyAttack.bound)enterRestraint('Mummifield! กดทิศทางหรือแตะปุ่มรัว ๆ เพื่อดิ้นหลุด');
   const spiderAttack=advanceSpiders(spiders,dt,player,health,webbed,{restrained:sticky.bound||mummifield.bound,obstacles});
-  if(spiderAttack.playerHit)playerDamaged('−½♥');
+  if(spiderAttack.playerHit)playerDamaged();
   if(spiderAttack.bound)enterRestraint(`Webbed! กดทิศทางรัว ๆ ${WEB.escapePresses} ครั้งเพื่อดิ้นให้ใยขาด`);
   if(spiderAttack.reinforced&&!spiderAttack.upgraded)showNotice('ใยขั้นสองสะสมเพิ่ม! ดิ้นให้หลุดก่อนใยพันแน่นขึ้น');
   if(spiderAttack.upgraded)enterRestraint(`Webbed II! ดิ้น ${WEB.secondPresses} ครั้งใน ${WEB.secondDuration} วินาที!`);
@@ -518,8 +518,8 @@ function enterRestraint(notice){keys.clear();joy={x:0,y:0};gooGesture='';attackS
 function finishWebDefeat(){resetInput();projectiles=[];spiders.shots=[];mummies.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;noticeTime=0;}
 function struggle(){if(!ready||!bound()||health.dead)return;const isWeb=webbed.bound,isMummy=mummifield.bound;if(isMummy?struggleMummifield(mummifield,health):isWeb?struggleWebbed(webbed,health):struggleSticky(sticky,health)){resetInput();showNotice(isMummy?'ดิ้นหลุดจากผ้าพันมัมมี่แล้ว!':isWeb?'ดิ้นหลุดจากใยแล้ว!':'สลัดเมือกออกแล้ว!');}updateUI();}
 $('struggleButton').addEventListener('click',struggle);
-function playerDamaged(label){
-  cancelAttack(combat);attackSources.clear();shake=1;damageEvents.push({x:player.x,y:player.y-46,damage:label,kind:'player',age:0});
+function playerDamaged(){
+  cancelAttack(combat);attackSources.clear();shake=1;
   if(health.dead){projectiles=[];spiders.shots=[];mummies.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;resetJoystick();}
 }
 function useBomb(){
@@ -554,7 +554,7 @@ for(const button of document.querySelectorAll('#animTabs button'))button.addEven
   const labels=['↓ ด้านหน้า','← ด้านซ้าย','→ ด้านขวา','↑ ด้านหลัง'],short=['DOWN','LEFT','RIGHT','UP'];
   document.querySelectorAll('.direction-cards article').forEach((card,i)=>{
     const sequence=defeatPreviews[previewAction];let label=labels[i],detail=short[i];
-    if(previewAction==='mummifield'){label=`Mummifield · ดิ้น ${i+1}`;detail='8 FRAMES · 6 FPS';}
+    if(previewAction==='mummifield'){label=`Mummifield · ดิ้น ${i+1}`;detail='16 FRAMES · 10 FPS';}
     else if(Object.hasOwn(mummyPreviews,previewAction)){detail=`${{mummyWalk:'WALK',mummyScratch:'SCRATCH',mummyCast:'CAST',mummyBandage:'BANDAGE'}[previewAction]} · 4 FRAMES`;if(previewAction==='mummyBandage')label=['→ ขวา','↓ ลง','← ซ้าย','↑ ขึ้น'][i];}
     else if(previewAction==='trees'){label=['ต้นไม้ทรงกลม','ต้นไม้ทรงสูง','ต้นไม้พุ่มกว้าง','ต้นไม้พุ่มซ้อน'][i];detail='STATIC · 1 FRAME';}
     else if(spiderPreviews[previewAction])detail=`${spiderPreviews[previewAction].attack?'ATTACK':'WALK'} · 4 FRAMES`;
@@ -591,7 +591,7 @@ const imageSources=[
   [slimePopAtlas,'assets/slime-pop-v10-atlas.png'],[stickyAtlas,'assets/sticky-struggle-v11-atlas.png'],
   ...Object.entries(spiderAtlases).map(([name,image])=>[image,`assets/spider-${name}-v13-atlas.png`]),
   [webShotAtlas,'assets/web-shot-v12-atlas.png'],[webbedAtlas,'assets/burnice-webbed-v12-atlas.png'],
-  [mummifieldAtlas,'assets/burnice-mummifield-v24-atlas.png'],
+  [mummifieldAtlas,'assets/burnice-mummifield-v26-atlas.png'],
   [webbedAtlases.second,'assets/burnice-webbed2-v14-atlas.png'],[webbedAtlases.rest,'assets/burnice-webbed-rest-v14-atlas.png'],
 ];
 Promise.all(imageSources.map(([image,src])=>loadImage(image,src))).then(()=>{prepareAuras();ready=true;$('loading').hidden=true;resize();updateUI();}).catch(()=>{$('loading').querySelector('p').textContent='โหลด Sprite ไม่สำเร็จ กรุณารีเฟรชหน้าอีกครั้ง';});

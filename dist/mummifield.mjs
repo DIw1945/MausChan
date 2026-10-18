@@ -1,4 +1,4 @@
-export const MUMMIFIELD={max:100,buildup:34,escapePresses:28,decayDelay:8,decayRate:5,frames:8,fps:6};
+export const MUMMIFIELD={max:100,buildup:34,escapePresses:28,decayDelay:8,decayRate:5,frames:16,fps:10};
 export const createMummifield=()=>({amount:0,bound:false,presses:0,quiet:0,time:0});
 export function addMummifield(s,amount=MUMMIFIELD.buildup){
   if(s.bound)return false;

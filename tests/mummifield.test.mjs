@@ -25,7 +25,7 @@ test('partial buildup decays after silence; restraint loops indefinitely until 2
  addMummifield(s,100);advanceMummifield(s,100);assert.equal(s.bound,true);assert.equal(struggleMummifield(s,h,{repeat:true}),false);assert.equal(s.presses,0);
  for(let i=1;i<MUMMIFIELD.escapePresses;i++)assert.equal(struggleMummifield(s,h),false);
  assert.equal(struggleMummifield(s,h),true);assert.deepEqual(s,createMummifield());assert.ok(h.invulnerable>=1.5);
- assert.equal(mummifieldFrame(0),0);assert.equal(mummifieldFrame(8/6),0);assert.equal(new Set(Array.from({length:8},(_,i)=>mummifieldFrame((i+.01)/6))).size,8);
+ assert.equal(mummifieldFrame(0),0);assert.equal(mummifieldFrame(MUMMIFIELD.frames/MUMMIFIELD.fps),0);assert.equal(new Set(Array.from({length:MUMMIFIELD.frames},(_,i)=>mummifieldFrame((i+.01)/MUMMIFIELD.fps))).size,MUMMIFIELD.frames);
 });
 test('a filling projectile cancels every windup immediately and all Mummies retreat, including overlap and corners',()=>{
  for(const [x,y]of [[520,-330],[540,-330],[237,-553]]){
