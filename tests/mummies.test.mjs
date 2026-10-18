@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import {WORLD,START,MUMMY_ZONE,collides,updatePlayer} from '../dist/core.mjs';
 import {createHealth,updateProjectiles} from '../dist/health.mjs';
-import {createCombat,pressAttack,resolveHits} from '../dist/combat.mjs';
+import {createCombat,pressAttack,resolveHits,hitDummy} from '../dist/combat.mjs';
 import {createSwordFire,emitSwordFire,updateSwordFire} from '../dist/fire.mjs';
 import {createBombs,advanceBombs,BOMB} from '../dist/bombs.mjs';
 import {createNitro,rollNitroDrop} from '../dist/nitro.mjs';
@@ -50,10 +50,25 @@ test('the same mummy telegraphs ranged bandages and a close scratch; scratches c
   for(let i=0;i<20;i++)advanceMummies(a.s,.05,a.p,a.h);assert.equal(a.h.hp,4);
 });
 
-test('dodging scratch windup, leaving the zone, and interrupting a cast avoid the attack',()=>{
+test('dodging scratch windup and leaving the zone avoid the attack',()=>{
   const a=setup(30);advanceMummies(a.s,.01,a.p,a.h);a.p.y+=90;advanceMummies(a.s,.66,a.p,a.h);assert.equal(a.h.hp,6);
-  const b=setup();advanceMummies(b.s,.01,b.p,b.h);b.e.hitTime=0;advanceMummies(b.s,.05,b.p,b.h);assert.equal(b.e.windup,0);assert.equal(b.s.shots.length,0);
   const c=setup();advanceMummies(c.s,.01,c.p,c.h);advanceMummies(c.s,1,START,c.h);assert.equal(c.s.shots.length,0);assert.equal(c.e.windup,0);
+});
+
+test('non-lethal hits cannot interrupt mummy scratch, cast or recovery, while a lethal hit stops the attack',()=>{
+  for(const [distance,action,windup] of [[30,'scratch',MUMMY.meleeWindup],[110,'cast',MUMMY.castWindup]]){
+    const a=setup(distance),stats=createCombat().stats;advanceMummies(a.s,.01,a.p,a.h);assert.equal(a.e.action,action);
+    let elapsed=0;
+    while(a.e.windup>0){
+      hitDummy(a.e,1,'slash',stats);advanceMummies(a.s,.05,a.p,a.h);elapsed+=.05;
+      assert.ok(elapsed<=windup+.051,'damage must not restart the windup');
+    }
+    if(action==='scratch')assert.equal(a.h.hp,4);else assert.equal(a.s.shots.length,1);
+    assert.ok(a.e.hp>0);assert.ok(a.e.recoverTime>0);hitDummy(a.e,1,'slash',stats);
+    const recovery=a.e.recoverTime;advanceMummies(a.s,.05,a.p,a.h);assert.ok(a.e.recoverTime>0&&a.e.recoverTime<recovery);
+    const b=setup(distance);advanceMummies(b.s,.01,b.p,b.h);const kill=hitDummy(b.e,MUMMY.hp,'bomb',stats);handleMummyDefeats(b.s,[kill]);
+    advanceMummies(b.s,1,b.p,b.h);assert.equal(b.s.shots.length,0);assert.equal(b.h.hp,6);
+  }
 });
 
 test('linen projectiles are swept, non-homing, consume on hit, and respect invulnerability',()=>{

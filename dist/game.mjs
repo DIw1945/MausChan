@@ -9,7 +9,7 @@ import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advance
 import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimeEffects,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=12';
 import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterWebDefeat,advanceSpiderEffects,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=15';
 
-import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=18';
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=19';
 
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
@@ -240,12 +240,18 @@ function drawMummyPads(){
   }
   ctx.fillStyle='#efe1b3';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('MUMMY TRAINING',492,-610);ctx.font='7px monospace';ctx.fillText('HEAVY GUARDIANS · CLAWS & BANDAGES',492,-597);ctx.textAlign='left';
 }
+// A single compact, text-free warning above the sprite, only during windup.
+function drawAttackWarning(p,x,y){
+  x=Math.round(x);y=Math.round(y);p.save();p.fillStyle='#f2c579';p.strokeStyle='#493e32';p.lineWidth=1;
+  p.beginPath();p.moveTo(x,y-6);p.lineTo(x+5,y);p.lineTo(x,y+6);p.lineTo(x-5,y);p.closePath();p.fill();p.stroke();
+  p.fillStyle='#493e32';p.fillRect(x-1,y-3,2,4);p.fillRect(x-1,y+2,2,2);p.restore();
+}
 function drawMummy(e){
   const x=Math.round(e.x),y=Math.round(e.y),dead=e.hp<=0,f=mummyAtlasFrame(e);ctx.save();
   ctx.globalAlpha=dead?Math.max(0,1-e.deathAge/MUMMY.deathDuration):Math.min(1,e.age/.3)*(e.hitTime<.18?.5:1);
   ctx.fillStyle='#4b403a55';ctx.beginPath();ctx.ellipse(x,y,15,5,0,0,Math.PI*2);ctx.fill();
-  if(e.windup>0){ctx.strokeStyle=e.action==='cast'?'#fff3c5':'#edac78';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,y,22,8,0,0,Math.PI*2);ctx.stroke();}
   ctx.drawImage(mummyAtlas,f%4*160,Math.floor(f/4)*160,160,160,x-80,y-112,160,160);ctx.restore();
+  if(!dead&&e.windup>0)drawAttackWarning(ctx,x,y-76);
   if(!dead&&e.hp<e.maxHP){rect(ctx,x-19,y-63,38,4,'#4b3f35');rect(ctx,x-18,y-62,Math.round(36*e.hp/e.maxHP),2,'#e1c38a');}
 }
 function drawSpiderPads(){
@@ -255,8 +261,8 @@ function drawSpiderPads(){
 function drawSpider(e){
   const x=Math.round(e.x),y=Math.round(e.y),dead=e.hp<=0,f=dead?Math.max(0,SPIDER_DIRECTIONS.indexOf(e.facing))*8+7:spiderAtlasFrame(e);ctx.save();
   ctx.globalAlpha=dead?Math.max(0,1-e.deathAge/SPIDER.deathDuration):Math.min(1,e.age/.3)*(e.hitTime<.18?.5:1);
-  if(e.windup>0){ctx.strokeStyle=e.type==='weaver'?'#e9daff':'#ffbb80';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,y,e.radius+7,7,0,0,Math.PI*2);ctx.stroke();}
   ctx.drawImage(spiderAtlases[e.type],f%4*96,Math.floor(f/4)*96,96,96,x-48,y-64,96,96);ctx.restore();
+  if(!dead&&e.windup>0)drawAttackWarning(ctx,x,y-52);
   if(!dead&&e.hp<e.maxHP){rect(ctx,x-17,y-41,34,3,'#393044');rect(ctx,x-16,y-40,Math.round(32*e.hp/e.maxHP),1,'#efd3a3');}
 }
 function drawSlimePads(){
@@ -270,9 +276,9 @@ function drawSlime(e){
   const config=SLIME_TYPES[e.type],x=Math.round(e.x),y=Math.round(e.y);
   if(e.hp<=0){const f=slimePopFrame(e.deathAge);ctx.save();ctx.globalAlpha=1-e.deathAge/SLIME.popDuration;ctx.drawImage(slimePopAtlas,f*96,0,96,96,x-48,y-76,96,96);ctx.restore();return;}
   ctx.fillStyle='#284d3955';ctx.beginPath();ctx.ellipse(x,y,e.radius,4,0,0,Math.PI*2);ctx.fill();
-  if(e.windup>0){ctx.strokeStyle='#ffd38b';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,y,e.radius+7,7,0,0,Math.PI*2);ctx.stroke();}
   const f=slimeFrame(e),size=96*config.scale;ctx.save();ctx.globalAlpha=Math.min(1,e.age/.3);if(e.hitTime<.18)ctx.globalAlpha*=.5;
   ctx.drawImage(slimeAtlases[config.art],f%4*96,Math.floor(f/4)*96,96,96,x-48*config.scale,y-76*config.scale,size,size);ctx.restore();
+  if(e.windup>0)drawAttackWarning(ctx,x,y-(e.type==='big'?55:e.type==='tiny'?32:42));
   if(e.hp<e.maxHP){const w=e.type==='big'?36:24;rect(ctx,x-w/2,y-(e.type==='big'?44:30),w,3,'#2b4031');rect(ctx,x-w/2+1,y-(e.type==='big'?43:29),Math.round((w-2)*e.hp/e.maxHP),1,'#f4c281');}
 }
 function drawPlayer(){

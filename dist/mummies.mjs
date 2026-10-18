@@ -79,7 +79,7 @@ export function advanceMummies(s,dt,p,h,{paused=false,restrained=false,obstacles
     e.age+=dt;e.hitTime+=dt;e.spawnShield=Math.max(0,e.spawnShield-dt);e.moving=false;
     e.meleeCooldown=Math.max(0,e.meleeCooldown-dt);e.castCooldown=Math.max(0,e.castCooldown-dt);e.recoverTime=Math.max(0,e.recoverTime-dt);
     if(e.spawnShield>0)continue;
-    if(e.hitTime<.18){e.windup=0;e.recoverTime=0;e.meleeCooldown=Math.max(e.meleeCooldown,.4);e.castCooldown=Math.max(e.castCooldown,.5);continue;}
+    if(e.hitTime<.18&&e.windup<=0&&e.recoverTime<=0){e.windup=0;e.recoverTime=0;e.meleeCooldown=Math.max(e.meleeCooldown,.4);e.castCooldown=Math.max(e.castCooldown,.5);continue;}
     const home=s.points[e.pointId],dx=p.x-e.x,dy=p.y-e.y,distance=Math.hypot(dx,dy);
     const chase=!h.dead&&!restrained&&insideMummyYard(p)&&distance<MUMMY.aggro&&Math.hypot(p.x-home.x,p.y-home.y)<MUMMY.leash;
     const sight=!lineBlocked(e.x,e.y,p.x,p.y,[...SOLIDS,...obstacles]);
