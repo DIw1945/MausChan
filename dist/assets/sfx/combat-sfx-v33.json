@@ -1,0 +1,88 @@
+{
+  "source": "original deterministic layered synthesis",
+  "sampleRate": 44100,
+  "format": "mono16-bit PCM WAV",
+  "seed": 3301945,
+  "files": [
+    {
+      "name": "slash-a",
+      "file": "slash-a-v33.wav",
+      "duration": 0.2,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "b43fdd0d1dae8c67494a373d495ab5a540e93208e852975bc8d2c09e82851cbf"
+    },
+    {
+      "name": "slash-b",
+      "file": "slash-b-v33.wav",
+      "duration": 0.22,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "8760713b2877aeefd4e376853fe66841fc5e8321315d5f8d384651036ee48d13"
+    },
+    {
+      "name": "spin",
+      "file": "spin-v33.wav",
+      "duration": 0.64,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "89bf6960b67af43899c4c1c8013d6c35b4a6e25294492d67bbe8eed01e2ff594"
+    },
+    {
+      "name": "monster-hit",
+      "file": "monster-hit-v33.wav",
+      "duration": 0.18,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "5dff4af9c38a441523284ddd38ddcc1afa8867f769ca30c0abec7db935381808"
+    },
+    {
+      "name": "player-hit",
+      "file": "player-hit-v33.wav",
+      "duration": 0.28,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "e42dd6c8e5dfe632673913c557b83bc90ff16e13058fa178a7c34d02eb65d2bf"
+    },
+    {
+      "name": "charge-start",
+      "file": "charge-start-v33.wav",
+      "duration": 0.18,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "5d9686ce97ba7ed6c3f669fc3acfdc989fd8fc60fc79c64cb1c22422819f36a7"
+    },
+    {
+      "name": "charge-loop",
+      "file": "charge-loop-v33.wav",
+      "duration": 0.4,
+      "loop": true,
+      "peak": 0.72,
+      "sha256": "76fb8c8e0d069a3454e30ab75f51e885240815d73a778aa325309fd460e37336"
+    },
+    {
+      "name": "charge-ready",
+      "file": "charge-ready-v33.wav",
+      "duration": 0.35,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "24d525eeb526b9af86f07a26299818da274bc105805853adbee0d4b76153bf7a"
+    },
+    {
+      "name": "charged-loop",
+      "file": "charged-loop-v33.wav",
+      "duration": 0.8,
+      "loop": true,
+      "peak": 0.72,
+      "sha256": "f2d275cad49962db6be16a3d01c44de070801d844ff123982f454f882812fd54"
+    },
+    {
+      "name": "charge-cancel",
+      "file": "charge-cancel-v33.wav",
+      "duration": 0.12,
+      "loop": false,
+      "peak": 0.72,
+      "sha256": "73847f8e20b5544f36c7de8665134fb5eae7ebd451bb9999a0f6ecf8faf68d54"
+    }
+  ]
+}
