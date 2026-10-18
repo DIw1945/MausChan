@@ -591,7 +591,7 @@ const imageSources=[
   [slimePopAtlas,'assets/slime-pop-v10-atlas.png'],[stickyAtlas,'assets/sticky-struggle-v11-atlas.png'],
   ...Object.entries(spiderAtlases).map(([name,image])=>[image,`assets/spider-${name}-v13-atlas.png`]),
   [webShotAtlas,'assets/web-shot-v12-atlas.png'],[webbedAtlas,'assets/burnice-webbed-v12-atlas.png'],
-  [mummifieldAtlas,'assets/burnice-mummifield-v26-atlas.png'],
+  [mummifieldAtlas,'assets/burnice-mummifield-v27-atlas.png'],
   [webbedAtlases.second,'assets/burnice-webbed2-v14-atlas.png'],[webbedAtlases.rest,'assets/burnice-webbed-rest-v14-atlas.png'],
 ];
 Promise.all(imageSources.map(([image,src])=>loadImage(image,src))).then(()=>{prepareAuras();ready=true;$('loading').hidden=true;resize();updateUI();}).catch(()=>{$('loading').querySelector('p').textContent='โหลด Sprite ไม่สำเร็จ กรุณารีเฟรชหน้าอีกครั้ง';});
