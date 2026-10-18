@@ -214,6 +214,12 @@ Post-export Nitro sparkle repair: the old v7 sparkle cells included bottoms of t
 - Enemies cancel windups/recovery and clear ranged shots, retreat to92px from the player, then pick seeded random targets around their home with brief pauses. Wandering respects an80px body clearance, existing arena/collision shapes, exact overlap and corner escape. Movement facings/animation clocks, capped spawns and old death-effect cleanup continue. No further attacks or player damage; Retry replaces monster states as before. Entry and changed monster-module cache versions23.
 - Scoped checks:25 tests pass (4 post-defeat scenarios covering every species, existing7 Webbed-retreat tests and14 Mummy checks). Chromium covers HP defeat and Webbed timeout in each of the3 yards:all monster groups move, the body/HP stay fixed, attacks and shots stop, overlay remains visible and Retry resets. No page errors; no unrelated full-suite run.
 
+### Private mobile testing with GitHub Codespaces
+
+- Owner wants private development and mobile play-testing without public publishing. Repository visibility is Private; GitHub Pages is unpublished and the public deployment workflow remains disabled. Private Codespaces port forwarding with GitHub sign-in is authorized.
+- `.devcontainer/devcontainer.json` uses the official Node22 image, forwards4173 (Codespaces default visibility Private), and runs `.devcontainer/start-preview.sh`. The launcher uses `flock` to keep one `.devcontainer/preview.mjs` runner active. The runner starts the existing game server and fetches/fast-forwards clean `master` checkouts every20s; dirty trees, alternate branches or divergent history are preserved. Reload the game after a sync. No dependency installation or gameplay changes.
+- Local runner HTTP checks passed for the current game and animated art; the official image manifest/tag is available. The user's actual Codespace is not yet created/validated: the current GitHub integration returns403 for Codespaces access. The owner must open the private repository's Codespaces creation page once, review quota/billing, create/resume a Codespace and open port4173 while keeping it Private. Its forwarded link only works while the Codespace is running; do not present localhost as a mobile link.
+
 ## Art workflow
 
 1. Use existing `*-generated.png` sheets as identity/style/pose references with Image Generation.
