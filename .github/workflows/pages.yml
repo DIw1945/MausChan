@@ -1,11 +1,6 @@
 name: Publish game to GitHub Pages
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'dist/**'
-      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:

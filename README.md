@@ -2,15 +2,11 @@
 
 ซอร์สเกมเวอร์ชันล่าสุดสำหรับเปิดในเครื่องและพัฒนาต่อด้วย Codex
 
-## เล่นผ่าน GitHub Pages
+## การพัฒนาแบบส่วนตัว
 
-เวิร์กโฟลว์ `.github/workflows/pages.yml` เผยแพร่ `dist/` เมื่อ push การเปลี่ยนแปลงเกมเข้า `master`
-หรือกด Run workflow จากหน้า Actions โดยไม่ต้องติดตั้งแพ็กเกจหรือ build เกม
-
-การเปิดใช้ครั้งแรก: GitHub repository → Settings → Pages → Build and deployment → Source → GitHub Actions
-จากนั้นรัน **Publish game to GitHub Pages** ในหน้า Actions ถ้ายังไม่มี deployment สำเร็จ
-ที่อยู่เว็บไซต์เมื่อเผยแพร่สำเร็จคือ `https://diw1945.github.io/MausChan/`
-การแก้ไฟล์ในเครื่องหรือใน Codex จะขึ้นเว็บหลัง commit, push เข้า `master` และ workflow deploy สำเร็จแล้ว
+เจ้าของต้องการพัฒนาเกมโดยยังไม่เปิดให้คนทั่วไปเห็น ระบบเผยแพร่ GitHub Pages อัตโนมัติถูกปิดแล้ว
+การ commit/push ใช้เก็บโค้ดใน GitHub เท่านั้น ต้องตั้ง Repository เป็น **Private** ใน Settings ด้วย
+หากต้องการเปิดเว็บเกมต่อสาธารณะในอนาคต ให้เจ้าของสั่งเผยแพร่ใหม่อย่างชัดเจนก่อน
 
 ## เปิดเกมบน Windows
 

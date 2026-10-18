@@ -29,3 +29,7 @@ Read `CODEX_HANDOFF.md` before changing gameplay or assets. Reply to the owner i
 - `docs/DEVELOPMENT-HISTORY.md` is the original README/history. Its absolute `/workspace/...` paths describe the old environment; use this checkout's relative paths.
 - `docs/original-site-hosting.json` records the former Site binding for reference. This export intentionally has no active `.openai/hosting.json`.
 - Local edits do not publish to the original Site. Publish or alter hosting only when requested by the owner. Do not add account credentials to the project.
+
+## Privacy preference
+
+The owner wants to develop privately. Do not publish the game, enable GitHub Pages, re-enable deployment workflows, or change repository visibility to public without a new explicit request. Pushing game code to the owner's repository is separate from publishing a playable website. The public deployment workflow is disabled; keep it disabled.
