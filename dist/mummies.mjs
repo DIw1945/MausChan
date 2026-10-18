@@ -1,3 +1,4 @@
+import {addMummifield} from './mummifield.mjs?v=24';
 import {wanderAfterDefeat} from './defeat-wander.mjs?v=23';
 import {MUMMY_ZONE,SOLIDS,lineBlocked} from './core.mjs?v=18';
 import {receiveDamage} from './health.mjs?v=18';
@@ -45,21 +46,22 @@ export function fireBandage(s,e,p){
   const shot={id:`bandage-${s.nextShotId++}`,x:e.x+dx/length*18,y:e.y+dy/length*18,vx:dx/length*MUMMY.shotSpeed,vy:dy/length*MUMMY.shotSpeed,age:0,travelled:0,damage:1};
   s.shots.push(shot);return shot;
 }
-export function advanceBandages(s,dt,p,h,{paused=false,restrained=false,obstacles=[]}={}){
+export function advanceBandages(s,dt,p,h,{paused=false,restrained=false,mummifield=null,obstacles=[]}={}){
   if(paused)return false;
-  if(h.dead||restrained){s.shots=[];return false;}
+  if(h.dead||restrained||mummifield?.bound){s.shots=[];return false;}
   let hit=false;const alive=[];dt=Math.max(0,dt);
   for(const shot of s.shots){
+    if(mummifield?.bound)break;
     let removed=false;shot.age+=dt;
     const distance=Math.min(MUMMY.shotSpeed*dt,MUMMY.shotRange-shot.travelled),steps=Math.max(1,Math.ceil(distance/3));
     for(let i=0;i<steps;i++){
       const step=distance/steps;shot.x+=shot.vx/MUMMY.shotSpeed*step;shot.y+=shot.vy/MUMMY.shotSpeed*step;shot.travelled+=step;
       if(blocked(shot.x,shot.y,3,obstacles)){removed=true;break;}
-      if(((shot.x-p.x)/16)**2+((shot.y-p.y)/16)**2<=1){hit=receiveDamage(h,p,shot)||hit;removed=true;break;}
+      if(((shot.x-p.x)/16)**2+((shot.y-p.y)/16)**2<=1){const damaged=receiveDamage(h,p,shot);hit=damaged||hit;if(damaged&&!h.dead&&mummifield&&addMummifield(mummifield)){h.knockTime=0;h.hurtTime=0;}removed=true;break;}
     }
     if(!removed&&shot.travelled<MUMMY.shotRange-.001)alive.push(shot);
   }
-  s.shots=alive;return hit;
+  s.shots=mummifield?.bound?[]:alive;return hit;
 }
 export function advanceMummyEffects(s,dt){s.entities=s.entities.filter(e=>e.hp>0||(e.deathAge+=Math.max(0,dt))<MUMMY.deathDuration||!e.deathHandled);}
 export function handleMummyDefeats(s,events){
@@ -68,17 +70,29 @@ export function handleMummyDefeats(s,events){
     if(!e||e.hp>0||e.deathHandled)continue;e.deathHandled=true;e.deathAge=0;e.windup=0;e.recoverTime=0;s.kills++;
   }
 }
-export function advanceMummies(s,dt,p,h,{paused=false,restrained=false,obstacles=[]}={}){
+export function advanceMummies(s,dt,p,h,{paused=false,restrained=false,mummifield=null,obstacles=[]}={}){
   if(paused)return{playerHit:false};dt=Math.max(0,dt);advanceMummyEffects(s,dt);
   for(const point of s.points){
     point.timer-=dt;if(point.timer>0)continue;
     point.timer=mummyPopulation(s,point.id)<MUMMY.perPoint&&spawn(s,point,p,obstacles)?MUMMY.spawnInterval:.4;
   }
-  const result={playerHit:advanceBandages(s,dt,p,h,{restrained,obstacles})};
+  const wasBound=mummifield?.bound;
+  const result={playerHit:advanceBandages(s,dt,p,h,{restrained,mummifield,obstacles})};
+  result.bound=!wasBound&&!!mummifield?.bound;
   for(const e of s.entities){
     if(e.hp<=0)continue;
     e.age+=dt;e.hitTime+=dt;e.spawnShield=Math.max(0,e.spawnShield-dt);e.moving=false;
     e.meleeCooldown=Math.max(0,e.meleeCooldown-dt);e.castCooldown=Math.max(0,e.castCooldown-dt);e.recoverTime=Math.max(0,e.recoverTime-dt);
+    if(mummifield?.bound&&!h.dead){
+      e.windup=0;e.recoverTime=0;
+      // Separate motion state prevents restraint wandering from changing later defeat AI.
+      const motion=e.bindingMotion??(e.bindingMotion={...e});
+      motion.x=e.x;motion.y=e.y;
+      wanderAfterDefeat(motion,dt,p,s.points[e.pointId],MUMMY_ZONE,MUMMY.speed,(x,y)=>blocked(x,y,e.radius,obstacles));
+      for(const key of ['x','y','facing','moving','walkTime'])e[key]=motion[key];
+      continue;
+    }
+    delete e.bindingMotion;
     if(e.spawnShield>0)continue;
     const home=s.points[e.pointId],dx=p.x-e.x,dy=p.y-e.y,distance=Math.hypot(dx,dy);
     const chase=!h.dead&&!restrained&&insideMummyYard(p)&&distance<MUMMY.aggro&&Math.hypot(p.x-home.x,p.y-home.y)<MUMMY.leash;

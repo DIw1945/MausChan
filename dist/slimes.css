@@ -19,3 +19,5 @@
 @media(max-width:700px){.slime-hud{top:92px;left:10px;width:170px;font-size:9px;padding:6px 8px}.viewport.has-slime-hud .item-notice{top:145px}.struggle-button{right:14px;bottom:40px;width:128px}.struggle-button strong{font-size:14px}.struggle-button small{font-size:8px}.slime-note{font-size:10px;padding:10px 12px}.slime-note strong{display:block;margin:0 0 3px}}
 @media(max-width:390px){.slime-hud{width:124px;font-size:8px}}
 @media(max-width:700px){.viewport.has-web-pressure .item-notice{top:180px}.web-pressure{font-size:8px}}
+
+.slime-hud.mummy-status{border-color:#d9bd83;background:#3e3326ed;color:#f5e5c4}.slime-hud.mummy-status .slime-meter i{background:#ebcd91}.viewport.mummy-bound .struggle-button{border-color:#ebcd91;background:#574731;color:#fff0d1;box-shadow:0 4px 0 #34291d}.viewport.mummy-bound .struggle-button:active{background:#78613f}
