@@ -234,7 +234,10 @@ function drawBandage(p,shot){
   p.drawImage(bandageAtlas,f*64,0,64,32,-32,-16,64,32);p.restore();
 }
 function drawMummyPads(){
-  for(const point of mummies.points)ctx.drawImage(mummyCoffinAtlas,Math.round(point.x)-56,Math.round(point.y)-80);
+  for(const point of mummies.points){
+    const phase=Math.floor(sceneTime*3+point.id*2)%6,frame=phase<4?phase:6-phase;
+    ctx.drawImage(mummyCoffinAtlas,frame*112,0,112,112,Math.round(point.x)-56,Math.round(point.y)-80,112,112);
+  }
   ctx.fillStyle='#efe1b3';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('MUMMY TRAINING',492,-610);ctx.font='7px monospace';ctx.fillText('HEAVY GUARDIANS · CLAWS & BANDAGES',492,-597);ctx.textAlign='left';
 }
 // A single compact, text-free warning above the sprite, only during windup.
@@ -551,7 +554,7 @@ $('pausePreview').addEventListener('click',()=>{previewPaused=!previewPaused;$('
 $('frameSlider').addEventListener('input',previews);
 const loadImage=(image,src)=>new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;image.src=src;});
 const imageSources=[
-  [mummyCoffinAtlas,'assets/mummy-coffin-v20-atlas.png'],
+  [mummyCoffinAtlas,'assets/mummy-coffin-v21-atlas.png'],
   [mummyAtlas,'assets/mummy-v18-atlas.png'],[bandageAtlas,'assets/mummy-bandage-v18-atlas.png'],
   [spiderNestAtlas,'assets/spider-nest-v16-atlas.png'],
   [treeAtlas,'assets/trees-v15-atlas.png'],

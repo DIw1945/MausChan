@@ -196,6 +196,12 @@ Post-export Nitro sparkle repair: the old v7 sparkle cells included bottoms of t
 - One transparent112×112 frame, anchor56,80; complete alpha bounds scaled with nearest-neighbour, visible size85×84. Ground-layer placement uses the existing points(350,-370),(634,-370). Current art total442 frames; entry cache version20.
 - Scoped checks only: alpha margins, complete bounds and frame/atlas equality passed; Chromium verified both runtime draws at the original points, correct dimensions, no missing assets or page errors. No gameplay-suite run; no collision, spawning, AI or combat changes.
 
+### Owner art: animated coffin linen (v21)
+
+- Replaced the static spawn-prop texture with4 unique Image Generation frames based on the retained v20 source. Only the linen poses change; gold/lid bounds supply the fixed alignment. Runtime:`mummy-coffin-v21-atlas.png` (448×112); metadata:`mummy-coffin-v21-atlas.json`; source:`mummy-coffin-v21-generated.png`; individual112×112 frames:`mummy-coffin-v21-frames/`. Anchor remains56,80 at both existing points. Entry cache version21; selected art445 frames.
+- Playback is3fps ping-pong `[0,1,2,3,2,1]`, with a small phase offset between spawn points. No extra game state, spawn/AI/combat changes or historical-art rebuild. Prompt:`docs/art-prompts/mummy-coffin-v21.txt`; regenerate this atlas only with `tools/prepare_mummy_coffin_v21.py` (whole connected subjects, gold-body alignment, uniform nearest-neighbour scale).
+- Scoped validation:4 distinct transparent frames, uncropped bounds and exact frame/atlas bytes passed. Chromium verified both anchored draws and frame sequence0→1→2→3→2→1→0, no page errors or missing assets. No unrelated gameplay-suite run.
+
 ## Art workflow
 
 1. Use existing `*-generated.png` sheets as identity/style/pose references with Image Generation.

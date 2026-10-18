@@ -1,0 +1,143 @@
+{
+  "sources": [
+    "mummy-coffin-v21-generated.png"
+  ],
+  "reference": "mummy-coffin-v20-generated.png",
+  "animated": true,
+  "fps": 3,
+  "playback": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "scale": 0.14285714285714285,
+  "selection": "complete connected subjects by cell centre; whole bounds; gold-body alignment; nearest-neighbour",
+  "placement": "existing two Mummy spawn points; same 56,80 anchor; no collision changes",
+  "sequences": {
+    "mummy-coffin": [
+      {
+        "image": "mummy-coffin-v21-atlas.png",
+        "file": "mummy-coffin-v21-frames/coffin-0.png",
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 112,
+        "anchor": [
+          56,
+          80
+        ],
+        "sourceBounds": [
+          76,
+          62,
+          545,
+          581
+        ],
+        "goldBounds": [
+          6,
+          4,
+          438,
+          505
+        ],
+        "visibleBounds": [
+          16,
+          26,
+          83,
+          100
+        ]
+      },
+      {
+        "image": "mummy-coffin-v21-atlas.png",
+        "file": "mummy-coffin-v21-frames/coffin-1.png",
+        "x": 112,
+        "y": 0,
+        "w": 112,
+        "h": 112,
+        "anchor": [
+          56,
+          80
+        ],
+        "sourceBounds": [
+          647,
+          62,
+          1204,
+          581
+        ],
+        "goldBounds": [
+          6,
+          4,
+          435,
+          505
+        ],
+        "visibleBounds": [
+          16,
+          26,
+          96,
+          100
+        ]
+      },
+      {
+        "image": "mummy-coffin-v21-atlas.png",
+        "file": "mummy-coffin-v21-frames/coffin-2.png",
+        "x": 224,
+        "y": 0,
+        "w": 112,
+        "h": 112,
+        "anchor": [
+          56,
+          80
+        ],
+        "sourceBounds": [
+          75,
+          663,
+          627,
+          1184
+        ],
+        "goldBounds": [
+          7,
+          5,
+          439,
+          507
+        ],
+        "visibleBounds": [
+          16,
+          26,
+          95,
+          100
+        ]
+      },
+      {
+        "image": "mummy-coffin-v21-atlas.png",
+        "file": "mummy-coffin-v21-frames/coffin-3.png",
+        "x": 336,
+        "y": 0,
+        "w": 112,
+        "h": 112,
+        "anchor": [
+          56,
+          80
+        ],
+        "sourceBounds": [
+          647,
+          663,
+          1109,
+          1184
+        ],
+        "goldBounds": [
+          6,
+          3,
+          437,
+          507
+        ],
+        "visibleBounds": [
+          16,
+          26,
+          82,
+          100
+        ]
+      }
+    ]
+  }
+}
