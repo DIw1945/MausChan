@@ -1,0 +1,312 @@
+{
+  "image": "mummy-coffin-pull-v34-atlas.png",
+  "source": "mummy-coffin-pull-v34-generated.png",
+  "anchor": [
+    56,
+    80
+  ],
+  "fps": 10,
+  "loop": true,
+  "frames": [
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        22,
+        27,
+        319,
+        344
+      ],
+      "goldBounds": [
+        3,
+        0,
+        279,
+        307
+      ],
+      "visibleBounds": [
+        16,
+        28,
+        83,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-1.png",
+      "x": 112,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        355,
+        27,
+        678,
+        344
+      ],
+      "goldBounds": [
+        4,
+        3,
+        280,
+        308
+      ],
+      "visibleBounds": [
+        16,
+        28,
+        89,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-2.png",
+      "x": 224,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        716,
+        27,
+        1059,
+        346
+      ],
+      "goldBounds": [
+        4,
+        3,
+        282,
+        309
+      ],
+      "visibleBounds": [
+        16,
+        28,
+        94,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-3.png",
+      "x": 336,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        1074,
+        27,
+        1432,
+        346
+      ],
+      "goldBounds": [
+        4,
+        3,
+        277,
+        309
+      ],
+      "visibleBounds": [
+        16,
+        28,
+        97,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-4.png",
+      "x": 0,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        21,
+        371,
+        385,
+        696
+      ],
+      "goldBounds": [
+        3,
+        4,
+        364,
+        315
+      ],
+      "visibleBounds": [
+        6,
+        27,
+        88,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-5.png",
+      "x": 112,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        359,
+        372,
+        726,
+        694
+      ],
+      "goldBounds": [
+        4,
+        1,
+        283,
+        312
+      ],
+      "visibleBounds": [
+        16,
+        27,
+        99,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-6.png",
+      "x": 224,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        721,
+        372,
+        1083,
+        698
+      ],
+      "goldBounds": [
+        3,
+        3,
+        280,
+        316
+      ],
+      "visibleBounds": [
+        16,
+        26,
+        98,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-7.png",
+      "x": 336,
+      "y": 112,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        1076,
+        372,
+        1404,
+        697
+      ],
+      "goldBounds": [
+        4,
+        1,
+        280,
+        315
+      ],
+      "visibleBounds": [
+        16,
+        27,
+        90,
+        101
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-8.png",
+      "x": 0,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        20,
+        726,
+        375,
+        1055
+      ],
+      "goldBounds": [
+        3,
+        1,
+        286,
+        319
+      ],
+      "visibleBounds": [
+        15,
+        26,
+        95,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-9.png",
+      "x": 112,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        359,
+        727,
+        679,
+        1054
+      ],
+      "goldBounds": [
+        3,
+        1,
+        288,
+        317
+      ],
+      "visibleBounds": [
+        15,
+        26,
+        87,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-10.png",
+      "x": 224,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        719,
+        727,
+        1026,
+        1055
+      ],
+      "goldBounds": [
+        4,
+        3,
+        289,
+        319
+      ],
+      "visibleBounds": [
+        15,
+        26,
+        85,
+        100
+      ]
+    },
+    {
+      "file": "mummy-coffin-pull-v34-frames/pull-11.png",
+      "x": 336,
+      "y": 224,
+      "w": 112,
+      "h": 112,
+      "sourceBounds": [
+        1075,
+        727,
+        1365,
+        1056
+      ],
+      "goldBounds": [
+        5,
+        3,
+        284,
+        319
+      ],
+      "visibleBounds": [
+        15,
+        26,
+        81,
+        100
+      ]
+    }
+  ]
+}

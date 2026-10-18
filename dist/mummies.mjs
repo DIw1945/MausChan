@@ -1,4 +1,4 @@
-import {addMummifield} from './mummifield.mjs?v=30';
+import {addMummifield} from './mummifield.mjs?v=34';
 import {wanderAfterDefeat} from './defeat-wander.mjs?v=23';
 import {MUMMY_ZONE,SOLIDS,lineBlocked} from './core.mjs?v=18';
 import {receiveDamage} from './health.mjs?v=18';
@@ -130,5 +130,9 @@ export function advanceMummiesAfterDefeat(s,dt,p,{obstacles=[]}={}){
     point.timer-=dt;if(point.timer>0)continue;
     point.timer=mummyPopulation(s,point.id)<MUMMY.perPoint&&spawn(s,point,p,obstacles)?MUMMY.spawnInterval:.4;
   }
-  for(const e of s.entities)if(e.hp>0)wanderAfterDefeat(e,dt,p,s.points[e.pointId],MUMMY_ZONE,MUMMY.speed,(x,y)=>blocked(x,y,e.radius,obstacles));
+  for(const e of s.entities)if(e.hp>0){
+    // A coffin can move the defeated body into an already-wandering Mummy's path.
+    if(e.defeatRetreat===false&&Math.hypot(e.x-p.x,e.y-p.y)<80){e.defeatRetreat=true;e.defeatSlide=null;}
+    wanderAfterDefeat(e,dt,p,s.points[e.pointId],MUMMY_ZONE,MUMMY.speed,(x,y)=>blocked(x,y,e.radius,obstacles));
+  }
 }

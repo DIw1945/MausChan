@@ -1,0 +1,772 @@
+{
+  "image": "burnice-mummy-drag-v34-atlas.png",
+  "sources": [
+    "burnice-mummy-drag-v34-generated.png",
+    "burnice-mummy-drag-v34-supplement-generated.png"
+  ],
+  "anchor": [
+    80,
+    97
+  ],
+  "groundY": 112,
+  "fps": 12,
+  "loop": true,
+  "frames": [
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-0.png",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 0,
+      "sourceBounds": [
+        13,
+        75,
+        213,
+        194
+      ],
+      "visibleBounds": [
+        50,
+        82,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-1.png",
+      "x": 160,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 1,
+      "sourceBounds": [
+        229,
+        83,
+        435,
+        196
+      ],
+      "visibleBounds": [
+        49,
+        84,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-2.png",
+      "x": 320,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 4,
+      "sourceBounds": [
+        850,
+        89,
+        1046,
+        197
+      ],
+      "visibleBounds": [
+        51,
+        85,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-3.png",
+      "x": 480,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 5,
+      "sourceBounds": [
+        1058,
+        87,
+        1259,
+        196
+      ],
+      "visibleBounds": [
+        50,
+        85,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-4.png",
+      "x": 0,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 6,
+      "sourceBounds": [
+        15,
+        305,
+        210,
+        413
+      ],
+      "visibleBounds": [
+        51,
+        85,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-5.png",
+      "x": 160,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 7,
+      "sourceBounds": [
+        224,
+        297,
+        424,
+        414
+      ],
+      "visibleBounds": [
+        50,
+        83,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-6.png",
+      "x": 320,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 8,
+      "sourceBounds": [
+        437,
+        296,
+        629,
+        424
+      ],
+      "visibleBounds": [
+        51,
+        80,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-7.png",
+      "x": 480,
+      "y": 160,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 9,
+      "sourceBounds": [
+        637,
+        285,
+        837,
+        420
+      ],
+      "visibleBounds": [
+        50,
+        78,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-8.png",
+      "x": 0,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 10,
+      "sourceBounds": [
+        839,
+        305,
+        1037,
+        421
+      ],
+      "visibleBounds": [
+        51,
+        83,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-9.png",
+      "x": 160,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 12,
+      "sourceBounds": [
+        12,
+        521,
+        208,
+        636
+      ],
+      "visibleBounds": [
+        51,
+        83,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-10.png",
+      "x": 320,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 13,
+      "sourceBounds": [
+        226,
+        528,
+        430,
+        642
+      ],
+      "visibleBounds": [
+        50,
+        83,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-11.png",
+      "x": 480,
+      "y": 320,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 14,
+      "sourceBounds": [
+        437,
+        536,
+        634,
+        652
+      ],
+      "visibleBounds": [
+        51,
+        83,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-12.png",
+      "x": 0,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 15,
+      "sourceBounds": [
+        644,
+        527,
+        839,
+        642
+      ],
+      "visibleBounds": [
+        51,
+        83,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-13.png",
+      "x": 160,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 16,
+      "sourceBounds": [
+        847,
+        534,
+        1040,
+        644
+      ],
+      "visibleBounds": [
+        51,
+        84,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-14.png",
+      "x": 320,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 17,
+      "sourceBounds": [
+        1054,
+        527,
+        1256,
+        638
+      ],
+      "visibleBounds": [
+        50,
+        84,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-15.png",
+      "x": 480,
+      "y": 480,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 18,
+      "sourceBounds": [
+        10,
+        762,
+        210,
+        886
+      ],
+      "visibleBounds": [
+        50,
+        81,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-16.png",
+      "x": 0,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 19,
+      "sourceBounds": [
+        224,
+        764,
+        432,
+        886
+      ],
+      "visibleBounds": [
+        49,
+        81,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-17.png",
+      "x": 160,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 20,
+      "sourceBounds": [
+        451,
+        733,
+        642,
+        894
+      ],
+      "visibleBounds": [
+        52,
+        71,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-18.png",
+      "x": 320,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 21,
+      "sourceBounds": [
+        646,
+        755,
+        859,
+        893
+      ],
+      "visibleBounds": [
+        48,
+        77,
+        112,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-19.png",
+      "x": 480,
+      "y": 640,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 22,
+      "sourceBounds": [
+        864,
+        770,
+        1063,
+        895
+      ],
+      "visibleBounds": [
+        50,
+        80,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-20.png",
+      "x": 0,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 24,
+      "sourceBounds": [
+        10,
+        1008,
+        214,
+        1133
+      ],
+      "visibleBounds": [
+        50,
+        80,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-21.png",
+      "x": 160,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 25,
+      "sourceBounds": [
+        227,
+        1032,
+        431,
+        1144
+      ],
+      "visibleBounds": [
+        50,
+        84,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-22.png",
+      "x": 320,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 26,
+      "sourceBounds": [
+        446,
+        1028,
+        658,
+        1145
+      ],
+      "visibleBounds": [
+        48,
+        83,
+        112,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-23.png",
+      "x": 480,
+      "y": 800,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-generated.png",
+      "sourceFrame": 29,
+      "sourceBounds": [
+        1051,
+        1028,
+        1253,
+        1147
+      ],
+      "visibleBounds": [
+        50,
+        82,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-24.png",
+      "x": 0,
+      "y": 960,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 0,
+      "sourceBounds": [
+        38,
+        117,
+        368,
+        293
+      ],
+      "visibleBounds": [
+        50,
+        82,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-25.png",
+      "x": 160,
+      "y": 960,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 1,
+      "sourceBounds": [
+        414,
+        107,
+        713,
+        293
+      ],
+      "visibleBounds": [
+        53,
+        80,
+        107,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-26.png",
+      "x": 320,
+      "y": 960,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 2,
+      "sourceBounds": [
+        756,
+        115,
+        1074,
+        294
+      ],
+      "visibleBounds": [
+        51,
+        81,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-27.png",
+      "x": 480,
+      "y": 960,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 3,
+      "sourceBounds": [
+        1106,
+        114,
+        1413,
+        298
+      ],
+      "visibleBounds": [
+        52,
+        81,
+        108,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-28.png",
+      "x": 0,
+      "y": 1120,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 4,
+      "sourceBounds": [
+        43,
+        422,
+        364,
+        635
+      ],
+      "visibleBounds": [
+        51,
+        76,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-29.png",
+      "x": 160,
+      "y": 1120,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 5,
+      "sourceBounds": [
+        403,
+        455,
+        717,
+        654
+      ],
+      "visibleBounds": [
+        52,
+        78,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-30.png",
+      "x": 320,
+      "y": 1120,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 6,
+      "sourceBounds": [
+        763,
+        472,
+        1096,
+        653
+      ],
+      "visibleBounds": [
+        50,
+        81,
+        111,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-31.png",
+      "x": 480,
+      "y": 1120,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 7,
+      "sourceBounds": [
+        1122,
+        459,
+        1420,
+        646
+      ],
+      "visibleBounds": [
+        53,
+        81,
+        107,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-32.png",
+      "x": 0,
+      "y": 1280,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 8,
+      "sourceBounds": [
+        40,
+        813,
+        358,
+        1006
+      ],
+      "visibleBounds": [
+        51,
+        79,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-33.png",
+      "x": 160,
+      "y": 1280,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 9,
+      "sourceBounds": [
+        398,
+        834,
+        719,
+        1014
+      ],
+      "visibleBounds": [
+        51,
+        81,
+        109,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-34.png",
+      "x": 320,
+      "y": 1280,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 10,
+      "sourceBounds": [
+        755,
+        835,
+        1084,
+        1015
+      ],
+      "visibleBounds": [
+        50,
+        81,
+        110,
+        112
+      ]
+    },
+    {
+      "file": "burnice-mummy-drag-v34-frames/struggle-35.png",
+      "x": 480,
+      "y": 1280,
+      "w": 160,
+      "h": 160,
+      "source": "burnice-mummy-drag-v34-supplement-generated.png",
+      "sourceFrame": 11,
+      "sourceBounds": [
+        1114,
+        842,
+        1443,
+        1013
+      ],
+      "visibleBounds": [
+        50,
+        83,
+        110,
+        112
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 export const MUMMIFIELD={max:100,buildup:34,escapePresses:28,secondPresses:64,firstDuration:8,secondDuration:8,decayDelay:8,decayRate:5,frames:16,fps:10,secondFPS:16,fallFrames:8,fallFPS:8,fallDuration:1,transitionFrames:24,transitionFPS:12,transitionDuration:2,captureFrames:24,captureFPS:12,captureDuration:2};
-export const createMummifield=()=>({amount:0,bound:false,tier:0,presses:0,quiet:0,time:0,remaining:0,failed:false,transitioning:false,capturing:false});
+export const createMummifield=()=>({amount:0,bound:false,tier:0,presses:0,quiet:0,time:0,remaining:0,failed:false,transitioning:false,capturing:false,coffinDrag:null});
 export const mummyEscapePresses=s=>s.tier===2?MUMMIFIELD.secondPresses:MUMMIFIELD.escapePresses;
 export function addMummifield(s,amount=MUMMIFIELD.buildup){
   if(s.bound||s.failed)return false;
@@ -41,4 +41,4 @@ export function struggleMummifield(s,h,{repeat=false}={}){
   Object.assign(s,createMummifield());h.hurtTime=0;h.knockTime=0;h.invulnerable=Math.max(h.invulnerable,1.5);return true;
 }
 export const mummifieldFrame=time=>Math.floor(Math.max(0,time)*MUMMIFIELD.fps)%MUMMIFIELD.frames;
-export const mummifieldPose=s=>s.failed?{sequence:'fall',frame:Math.min(MUMMIFIELD.fallFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.fallFPS)),gameOver:s.time>=MUMMIFIELD.fallDuration}:s.capturing?{sequence:'capture',frame:Math.min(MUMMIFIELD.captureFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.captureFPS+1e-9)),gameOver:false}:s.transitioning?{sequence:'transition',frame:Math.min(MUMMIFIELD.transitionFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.transitionFPS+1e-9)),gameOver:false}:s.tier===2?{sequence:'second',frame:Math.floor(Math.max(0,s.time)*MUMMIFIELD.secondFPS)%MUMMIFIELD.frames,gameOver:false}:{sequence:'first',frame:mummifieldFrame(s.time),gameOver:false};
+export const mummifieldPose=s=>s.failed?{sequence:'fall',frame:Math.min(MUMMIFIELD.fallFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.fallFPS)),gameOver:s.time>=MUMMIFIELD.fallDuration&&(!s.coffinDrag||s.coffinDrag.done)}:s.capturing?{sequence:'capture',frame:Math.min(MUMMIFIELD.captureFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.captureFPS+1e-9)),gameOver:false}:s.transitioning?{sequence:'transition',frame:Math.min(MUMMIFIELD.transitionFrames-1,Math.floor(Math.max(0,s.time)*MUMMIFIELD.transitionFPS+1e-9)),gameOver:false}:s.tier===2?{sequence:'second',frame:Math.floor(Math.max(0,s.time)*MUMMIFIELD.secondFPS)%MUMMIFIELD.frames,gameOver:false}:{sequence:'first',frame:mummifieldFrame(s.time),gameOver:false};
