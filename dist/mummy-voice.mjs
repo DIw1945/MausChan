@@ -1,5 +1,5 @@
 // Bundled Japanese synthetic voice. Playback never calls a speech service.
-export const MUMMY_VOICE={mouthTime:1.5,interval:3.2,volume:.8,files:{surprise:'mummy-surprise-ja-v31.mp3',muffled:'mummy-muffled-ja-v31.mp3',deep:'mummy-muffled-deep-ja-v31.mp3'}};
+export const MUMMY_VOICE={mouthTime:1.5,interval:3.2,volume:.8,files:{surprise:'mummy-surprise-ja-v32.mp3',muffled:'mummy-muffled-ja-v32.mp3',deep:'mummy-muffled-deep-ja-v32.mp3'}};
 const phaseOf=(s,h)=>h.dead||!s.bound?'none':s.capturing?'capture':s.transitioning?'wrapping':s.tier===2?'second':'first';
 export function createMummyVoice({Context=globalThis.AudioContext??globalThis.webkitAudioContext,fetchAudio=globalThis.fetch}={}){
   let context=null,loading=null,muted=false,phase='none',clock=0,nextAt=0,mouthPlayed=false,current=null,pending=null;

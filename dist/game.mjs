@@ -1,4 +1,4 @@
-import {createMummyVoice} from './mummy-voice.mjs?v=31';
+import {createMummyVoice} from './mummy-voice.mjs?v=32';
 import {MUMMIFIELD,createMummifield,advanceMummifield,struggleMummifield,mummifieldFrame,mummyEscapePresses,mummifieldPose} from './mummifield.mjs?v=30';
 import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,MUMMY_ZONE,updatePlayer,animationFrame} from './core.mjs?v=18';
 import {COMBAT,createCombat,pressAttack,releaseAttack,cancelAttack,advanceCombat,chargeRatio,attackFrame,createDummies,dummyObstacles,resolveHits,updateDummies} from './combat.mjs?v=12';
