@@ -33,5 +33,3 @@ Read `CODEX_HANDOFF.md` before changing gameplay or assets. Reply to the owner i
 ## Privacy preference
 
 The owner wants to develop privately. Do not publish the game, enable GitHub Pages, re-enable deployment workflows, or change repository visibility to public without a new explicit request. Pushing game code to the owner's repository is separate from publishing a playable website. The public deployment workflow is disabled; keep it disabled.
-
-The owner authorizes a GitHub Codespaces preview behind GitHub sign-in with port4173 kept Private. `.devcontainer/` starts the game and fast-forwards clean `master` checkouts from GitHub every20s. Continue committing/pushing requested game changes to the private repository so that preview can refresh. Do not turn the preview port Public, create an unauthenticated tunnel, or re-enable Pages. A live Codespace must exist; local validation does not prove that the owner's private mobile link is active.
