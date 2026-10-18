@@ -1,4 +1,4 @@
-import {WORLD,SOLIDS} from './core.mjs?v=12';
+import {WORLD,SOLIDS} from './core.mjs?v=18';
 import {COMBAT,hitDummy} from './combat.mjs?v=12';
 
 export const FIRE={speed:240,range:300,spinRange:80,slashStart:.08,spinStart:.06,ringDuration:.64,waveFrames:8,ringFrames:8};
@@ -23,7 +23,7 @@ export function emitSwordFire(f,c,p,h){
   return true;
 }
 
-function blocked(x,y,obstacles){return x<WORLD.left+4||y<4||x>WORLD.left+WORLD.width-4||y>WORLD.height-4||[...SOLIDS,...obstacles].some(r=>x+4>r.x&&x-4<r.x+r.w&&y+4>r.y&&y-4<r.y+r.h);}
+function blocked(x,y,obstacles){return x<WORLD.left+4||y<WORLD.top+4||x>WORLD.left+WORLD.width-4||y>WORLD.top+WORLD.height-4||[...SOLIDS,...obstacles].some(r=>x+4>r.x&&x-4<r.x+r.w&&y+4>r.y&&y-4<r.y+r.h);}
 function touches(w,d){const dx=d.x-w.x,dy=d.y-w.y;return Math.abs(dx*w.dx+dy*w.dy)<=10+d.radius&&Math.abs(-dx*w.dy+dy*w.dx)<=18+d.radius;}
 export function updateSwordFire(f,dt,dummies,stats,obstacles=[]){
   const hits=[],alive=[];

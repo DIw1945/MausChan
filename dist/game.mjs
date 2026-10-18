@@ -1,18 +1,21 @@
-import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,updatePlayer,animationFrame} from './core.mjs?v=15';
+import {WORLD,START,SOLIDS,TREE_POSITIONS,TRAINING_ZONE,SPIDER_ZONE,MUMMY_ZONE,updatePlayer,animationFrame} from './core.mjs?v=18';
 import {COMBAT,createCombat,pressAttack,releaseAttack,cancelAttack,advanceCombat,chargeRatio,attackFrame,createDummies,dummyObstacles,resolveHits,updateDummies} from './combat.mjs?v=12';
 import {chargeWalkFrame,chargeAuraAlpha,bladeZone} from './visuals.mjs?v=8';
-import {createHealth,advanceHealth,updateShooter,updateProjectiles,hurtFrame,heartFill} from './health.mjs?v=12';
+import {createHealth,advanceHealth,updateShooter,updateProjectiles,hurtFrame,heartFill} from './health.mjs?v=18';
 import {DEFEAT_HEAD,advanceDefeat,defeatPose,starOrbit} from './defeat.mjs?v=8';
-import {FIRE,fullHearts,createSwordFire,emitSwordFire,updateSwordFire,waveFrame,ringPose} from './fire.mjs?v=17';
+import {FIRE,fullHearts,createSwordFire,emitSwordFire,updateSwordFire,waveFrame,ringPose} from './fire.mjs?v=18';
 import {NITRO,NITRO_CUP,createNitro,canUseNitro,startNitro,advanceNitro,nitroPose,collectNitro,rollNitroDrop,heartAmount} from './nitro.mjs?v=8';
 import {BOMB,createBombs,rockObstacles,canUseBomb,collectBombs,placeBomb,advanceBombs,advanceBombEffects,bombFuseFrame,bombBlastFrame,rockBreakFrame} from './bombs.mjs?v=12';
 import {SLIME,SLIME_TYPES,createSlimes,createSticky,insideTraining,pointPopulation,advanceSlimes,advanceSlimeEffects,handleSlimeDefeats,advanceSticky,struggleSticky,stickyFrame,slimeFrame,slimePopFrame} from './slimes.mjs?v=12';
 import {SPIDER,SPIDER_TYPES,SPIDER_DIRECTIONS,WEB,createSpiders,createWebbed,insideSpiderYard,spiderPopulation,advanceSpiders,advanceSpidersAfterWebDefeat,advanceSpiderEffects,handleSpiderDefeats,advanceWebbed,struggleWebbed,webEscapePresses,webbedPose,webShotFrame,spiderAtlasFrame} from './spiders.mjs?v=15';
 
+import {MUMMY,createMummies,mummyPopulation,insideMummyYard,advanceMummies,advanceMummyEffects,handleMummyDefeats,mummyAtlasFrame,mummyShotFrame} from './mummies.mjs?v=18';
+
 const $=id=>document.getElementById(id);
 const canvas=$('game'), ctx=canvas.getContext('2d',{alpha:false}), viewport=$('viewport');
 const atlas=new Image();
-const treeAtlas=new Image(),spiderNestAtlas=new Image();
+const treeAtlas=new Image(),spiderNestAtlas=new Image(),mummyAtlas=new Image(),bandageAtlas=new Image();
+const mummies=createMummies();
 const slashAtlas=new Image(),chargeAtlas=new Image(),dummyAtlas=new Image();
 const chargeWalkAtlas=new Image(),auraFrames={idle:{},walk:{}};
 const hurtAtlas=new Image(),shooterAtlas=new Image(),projectileAtlas=new Image();
@@ -43,11 +46,11 @@ const player={...START,facing:'down',moving:false,actualMoving:false,wasMoving:f
 let ready=false, camera={x:0,y:0}, keys=new Set(), joy={x:0,y:0}, previewAction='walk', previewPaused=false, previewTime=0;
 let previousTime=0, uiTime=0, hintGone=false;
 const world=document.createElement('canvas');world.width=WORLD.width;world.height=WORLD.height;
-const g=world.getContext('2d');g.imageSmoothingEnabled=false;g.translate(-WORLD.left,0);
+const g=world.getContext('2d');g.imageSmoothingEnabled=false;g.translate(-WORLD.left,-WORLD.top);
 const rect=(c,x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),w,h);};
 let seed=45;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
 const grass=['#7e984e','#829c52','#78924a','#81994e'];
-for(let y=0;y<WORLD.height;y+=32)for(let x=0;x<WORLD.left+WORLD.width;x+=32){
+for(let y=0;y<WORLD.top+WORLD.height;y+=32)for(let x=0;x<WORLD.left+WORLD.width;x+=32){
   rect(g,x,y,32,32,grass[Math.floor(rnd()*grass.length)]);
   for(let i=0;i<8;i++){const px=x+Math.floor(rnd()*30),py=y+Math.floor(rnd()*30);rect(g,px,py,2,1,rnd()>.5?'#97ad60':'#6c8844');}
 }
@@ -85,14 +88,14 @@ for(let i=0;i<290;i++){
   else {rect(g,x,y,2,2,'#657f40');rect(g,x+1,y-3,1,3,'#9aaf60');}
 }
 function bush(x,y){rect(g,x-14,y-7,29,15,'#47633b');rect(g,x-11,y-12,23,18,'#527740');rect(g,x-6,y-15,13,15,'#638847');rect(g,x-9,y-9,4,3,'#78994f');rect(g,x+4,y-8,5,3,'#78994f');rect(g,x-10,y+6,23,2,'#3f5d37');}
-for(let x=59;x<970;x+=30){bush(x,57);if(x<400||x>558)bush(x,737);}
+for(let x=59;x<970;x+=30){if(x<400||x>558)bush(x,57);if(x<400||x>558)bush(x,737);}
 for(let y=98;y<711;y+=32){if(y<336||y>532)bush(27,y);if(y<336||y>532)bush(999,y);bush(1640,y);}
 // Wooden fence.
 function fence(x,y,w){rect(g,x,y-12,w,4,'#766b41');rect(g,x,y-4,w,3,'#726039');for(let p=x;p<x+w;p+=28){rect(g,p,y-20,7,28,'#625539');rect(g,p,y-19,5,25,'#b8a071');rect(g,p,y-20,5,3,'#cfb684');rect(g,p+5,y-16,2,23,'#86734a');}}
-fence(48,89,915);fence(47,711,350);fence(566,711,407);
+fence(48,89,352);fence(558,89,405);fence(47,711,350);fence(566,711,407);
 fence(1040,148,570);fence(1040,652,570);
 // Extend west without moving any coordinates or random scenery in the old yard.
-for(let y=0;y<WORLD.height;y+=32)for(let x=WORLD.left;x<0;x+=32){
+for(let y=0;y<WORLD.top+WORLD.height;y+=32)for(let x=WORLD.left;x<0;x+=32){
   rect(g,x,y,32,32,grass[Math.floor(rnd()*grass.length)]);
   for(let i=0;i<8;i++)rect(g,x+Math.floor(rnd()*30),y+Math.floor(rnd()*30),2,1,'#6c8844');
 }
@@ -100,6 +103,18 @@ path(-44,350,140,182);path(SPIDER_ZONE.x,SPIDER_ZONE.y,SPIDER_ZONE.w,SPIDER_ZONE
 rect(g,-586,138,570,5,'#58615e');rect(g,-586,650,570,5,'#58615e');
 fence(-586,148,570);fence(-586,652,570);
 for(let y=98;y<711;y+=32)bush(-620,y);
+// Extend north without moving the old world's objects or consuming its terrain seed.
+for(let y=WORLD.top;y<0;y+=32)for(let x=WORLD.left;x<WORLD.left+WORLD.width;x+=32){
+  rect(g,x,y,32,32,grass[Math.floor(rnd()*grass.length)]);
+  for(let i=0;i<5;i++)rect(g,x+Math.floor(rnd()*30),y+Math.floor(rnd()*30),2,1,'#9bab65');
+}
+path(400,-112,158,238);path(MUMMY_ZONE.x,MUMMY_ZONE.y,MUMMY_ZONE.w,MUMMY_ZONE.h);
+// Sandstone border and an open south entrance into the garden.
+rect(g,202,-592,580,20,'#7b7057');rect(g,205,-589,574,10,'#cfbb86');
+for(const x of [202,766]){rect(g,x,-572,16,472,'#86785b');rect(g,x+3,-570,9,468,'#c9b88a');}
+for(const [x,w] of [[202,198],[558,224]]){rect(g,x,-100,w,16,'#86785b');rect(g,x+3,-97,w-6,8,'#c9b88a');}
+for(const x of [384,558]){rect(g,x,-100,16,162,'#7b7057');rect(g,x+3,-98,9,158,'#c9b88a');}
+for(let x=240;x<750;x+=36)for(let y=-540;y<-130;y+=36)rect(g,x,y,14,1,'#dfcc98');
 // Misc static ground details.
 rect(g,372,449,43,4,'#9d8f62');rect(g,380,454,30,2,'#b2a16d');
 const objects=[];
@@ -139,8 +154,10 @@ add(593,()=>{rect(ctx,555,576,4,22,'#775e3c');rect(ctx,586,576,4,22,'#775e3c');r
 add(354,()=>{rect(ctx,940,325,4,30,'#715b37');rect(ctx,920,307,82,27,'#614d35');rect(ctx,923,310,76,21,'#d2bb80');ctx.fillStyle='#35482e';ctx.font='bold 8px monospace';ctx.textAlign='center';ctx.fillText('SLIME YARD →',961,324);ctx.textAlign='left';});
 add(354,()=>{rect(ctx,65,325,4,30,'#715b37');rect(ctx,32,307,100,27,'#614d35');rect(ctx,35,310,94,21,'#d2bb80');ctx.fillStyle='#433c58';ctx.font='bold 8px monospace';ctx.textAlign='center';ctx.fillText('← SPIDER YARD',82,324);ctx.textAlign='left';});
 
+add(144,()=>{rect(ctx,312,112,5,28,'#715b37');rect(ctx,300,89,109,27,'#614d35');rect(ctx,303,92,103,21,'#d2bb80');ctx.fillStyle='#433c31';ctx.font='bold 8px monospace';ctx.textAlign='center';ctx.fillText('↑ MUMMY YARD',354,106);ctx.textAlign='left';});
+
 function resize(){const r=viewport.getBoundingClientRect();canvas.width=r.width<700?384:640;canvas.height=Math.round(canvas.width*r.height/r.width);ctx.imageSmoothingEnabled=false;snapCamera();}
-function targetCamera(){return{x:Math.max(WORLD.left,Math.min(WORLD.left+WORLD.width-canvas.width,player.x-canvas.width/2)),y:Math.max(0,Math.min(WORLD.height-canvas.height,player.y-canvas.height*.55))};}
+function targetCamera(){return{x:Math.max(WORLD.left,Math.min(WORLD.left+WORLD.width-canvas.width,player.x-canvas.width/2)),y:Math.max(WORLD.top,Math.min(WORLD.top+WORLD.height-canvas.height,player.y-canvas.height*.55))};}
 function snapCamera(){camera=targetCamera();}
 new ResizeObserver(resize).observe(viewport);
 function makeAura(image,sx,sy,size,facing,ax,ay){
@@ -212,6 +229,25 @@ function drawBrittleRock(p,rock,frame=rock.state==='intact'?0:rockBreakFrame(roc
 function drawSticky(p,x,y,time){const frame=stickyFrame(time);p.drawImage(stickyAtlas,frame%4*160,Math.floor(frame/4)*160,160,160,x-80,y-112,160,160);}
 function drawWebbed(p,x,y,status){const {sequence,frame:f}=webbedPose(status);p.drawImage(webbedAtlases[sequence],f%4*160,Math.floor(f/4)*160,160,160,x-80,y-112,160,160);}
 function drawWebShot(p,shot){const f=webShotFrame(shot.age);p.drawImage(webShotAtlas,f*32,0,32,32,Math.round(shot.x)-16,Math.round(shot.y)-16,32,32);}
+function drawBandage(p,shot){
+  const f=mummyShotFrame(shot.age);p.save();p.translate(Math.round(shot.x),Math.round(shot.y-22));p.rotate(Math.atan2(shot.vy,shot.vx));
+  p.drawImage(bandageAtlas,f*64,0,64,32,-32,-16,64,32);p.restore();
+}
+function drawMummyPads(){
+  for(const point of mummies.points){
+    rect(ctx,point.x-28,point.y-18,56,30,'#776346');rect(ctx,point.x-25,point.y-15,50,24,'#cebb8d');rect(ctx,point.x-19,point.y-10,38,14,'#88775a');
+    rect(ctx,point.x-3,point.y-7,6,12,'#decc9c');
+  }
+  ctx.fillStyle='#efe1b3';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('MUMMY TRAINING',492,-610);ctx.font='7px monospace';ctx.fillText('HEAVY GUARDIANS · CLAWS & BANDAGES',492,-597);ctx.textAlign='left';
+}
+function drawMummy(e){
+  const x=Math.round(e.x),y=Math.round(e.y),dead=e.hp<=0,f=mummyAtlasFrame(e);ctx.save();
+  ctx.globalAlpha=dead?Math.max(0,1-e.deathAge/MUMMY.deathDuration):Math.min(1,e.age/.3)*(e.hitTime<.18?.5:1);
+  ctx.fillStyle='#4b403a55';ctx.beginPath();ctx.ellipse(x,y,15,5,0,0,Math.PI*2);ctx.fill();
+  if(e.windup>0){ctx.strokeStyle=e.action==='cast'?'#fff3c5':'#edac78';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,y,22,8,0,0,Math.PI*2);ctx.stroke();}
+  ctx.drawImage(mummyAtlas,f%4*160,Math.floor(f/4)*160,160,160,x-80,y-112,160,160);ctx.restore();
+  if(!dead&&e.hp<e.maxHP){rect(ctx,x-19,y-63,38,4,'#4b3f35');rect(ctx,x-18,y-62,Math.round(36*e.hp/e.maxHP),2,'#e1c38a');}
+}
 function drawSpiderPads(){
   for(const point of spiders.points)ctx.drawImage(spiderNestAtlas,Math.round(point.x)-48,Math.round(point.y)-40);
   ctx.fillStyle='#ded4f0';ctx.font='bold 15px monospace';ctx.textAlign='center';ctx.fillText('SPIDER TRAINING',-300,117);ctx.font='7px monospace';ctx.fillText('PURPLE WEAVER · ORANGE HUNTER',-300,131);ctx.textAlign='left';
@@ -282,15 +318,16 @@ function render(dt){
   const target=targetCamera(), blend=1-Math.exp(-dt*9);camera.x+=(target.x-camera.x)*blend;camera.y+=(target.y-camera.y)*blend;
   const cx=Math.round(camera.x),cy=Math.round(camera.y);
   const wobble=shake>0?Math.round(Math.sin(sceneTime*110)*shake*3):0;
-  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.translate(-cx+wobble,-cy);ctx.drawImage(world,WORLD.left,0);
+  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.translate(-cx+wobble,-cy);ctx.drawImage(world,WORLD.left,WORLD.top);
   const gunner=dummies.find(d=>d.kind==='shooter');
   if(gunner){for(let y=gunner.y+40;y<704;y+=18)rect(ctx,gunner.x-1,y,2,6,'#b56c4459');}
-  drawSlimePads();drawSpiderPads();
+  drawSlimePads();drawSpiderPads();drawMummyPads();
   for(const ring of swordFire.rings)drawFireRing(ctx,ring);
   for(const b of bombs.placed)drawBombWarning(b);
-  const ordered=[...objects,...dummies.map(d=>({y:d.y,draw:()=>drawDummy(d)})),...slimes.entities.map(s=>({y:s.y,draw:()=>drawSlime(s)})),...spiders.entities.map(s=>({y:s.y,draw:()=>drawSpider(s)})),...bombs.rocks.filter(r=>r.state!=='gone').map(r=>({y:r.y,draw:()=>drawBrittleRock(ctx,r)})),...bombs.drops.map(d=>({y:d.y,draw:()=>drawBombDrop(d)})),...bombs.placed.map(b=>({y:b.y,draw:()=>drawPlacedBomb(b)})),...nitro.drops.map(d=>({y:d.y,draw:()=>drawNitroDrop(d)})),...swordFire.waves.map(w=>({y:w.y,draw:()=>drawSwordWave(ctx,w)})),{y:player.y,draw:drawPlayer}].sort((a,b)=>a.y-b.y);for(const obj of ordered)obj.draw();
+  const ordered=[...objects,...mummies.entities.map(e=>({y:e.y,draw:()=>drawMummy(e)})),...dummies.map(d=>({y:d.y,draw:()=>drawDummy(d)})),...slimes.entities.map(s=>({y:s.y,draw:()=>drawSlime(s)})),...spiders.entities.map(s=>({y:s.y,draw:()=>drawSpider(s)})),...bombs.rocks.filter(r=>r.state!=='gone').map(r=>({y:r.y,draw:()=>drawBrittleRock(ctx,r)})),...bombs.drops.map(d=>({y:d.y,draw:()=>drawBombDrop(d)})),...bombs.placed.map(b=>({y:b.y,draw:()=>drawPlacedBomb(b)})),...nitro.drops.map(d=>({y:d.y,draw:()=>drawNitroDrop(d)})),...swordFire.waves.map(w=>({y:w.y,draw:()=>drawSwordWave(ctx,w)})),{y:player.y,draw:drawPlayer}].sort((a,b)=>a.y-b.y);for(const obj of ordered)obj.draw();
   for(const blast of bombs.blasts)drawBombBlast(ctx,blast.x,blast.y,blast.age);
   for(const shot of spiders.shots)drawWebShot(ctx,shot);
+  for(const shot of mummies.shots)drawBandage(ctx,shot);
   for(const b of projectiles){const f=Math.floor(b.age*12)%4;ctx.drawImage(projectileAtlas,f*24,0,24,24,Math.round(b.x)-12,Math.round(b.y)-18,24,24);}
   for(const e of damageEvents){ctx.save();ctx.globalAlpha=Math.min(1,(.85-e.age)*3);ctx.textAlign='center';ctx.font=`bold ${['spin','fireSpin','bomb'].includes(e.kind)?16:13}px monospace`;const y=e.y-e.age*32;ctx.lineWidth=3;ctx.strokeStyle='#233126';ctx.strokeText(e.damage,e.x,y);ctx.fillStyle=e.kind==='heal'?'#c8f2aa':e.kind==='player'?'#ff9990':e.kind.startsWith('fire')||e.kind==='bomb'?'#ffbc68':e.kind==='spin'?'#ffe298':'#fff8dc';ctx.fillText(e.damage,e.x,y);if(e.kind==='spin'||e.kind==='bomb'||e.kind.startsWith('fire')){ctx.font='bold 6px monospace';ctx.fillText(e.kind==='bomb'?'BOMB':e.kind.startsWith('fire')?'FIRE':'SPIN',e.x,y+10);}ctx.restore();}
   ctx.restore();
@@ -324,8 +361,9 @@ function updateUI(){
   $('struggleButton').querySelector('strong').textContent=webbed.bound?webbed.tier===2?'ฉีกใยขั้นสอง!':'ดิ้นให้ใยขาด!':'สลัดเมือก!';
   $('slimePopulation').textContent=slimes.entities.filter(s=>s.hp>0).length;
   $('spiderPopulation').textContent=spiderPopulation(spiders);
-  document.querySelector('.scene-caption span').textContent=inSpider?'ลานฝึกแมงมุม':inArena?'ลานฝึก Slime':'ลานฝึก Nitro';
-  $('walkHint').lastChild.textContent=inSpider?' ระวังใยสีขาว!':inArena?' ลองฟัน Slime ดูสิ!':' ลองฟัน Dummy ดูสิ!';$('walkHint').classList.toggle('gone',hintGone||bound());
+  $('mummyPopulation').textContent=mummyPopulation(mummies);
+  document.querySelector('.scene-caption span').textContent=insideMummyYard(player)?'ลานฝึก Mummy':inSpider?'ลานฝึกแมงมุม':inArena?'ลานฝึก Slime':'ลานฝึก Nitro';
+  $('walkHint').lastChild.textContent=insideMummyYard(player)?' หลบกรงเล็บและสายผ้าพันแผล!':inSpider?' ระวังใยสีขาว!':inArena?' ลองฟัน Slime ดูสิ!':' ลองฟัน Dummy ดูสิ!';$('walkHint').classList.toggle('gone',hintGone||bound());
   if(sticky.bound&&!health.dead)$('stateLabel').textContent='ติดเมือก! กดทิศทางรัว ๆ';
   if(webbed.bound&&!health.dead)$('stateLabel').textContent=webbed.tier===2?`Webbed II! เหลือ ${webbed.remaining.toFixed(1)} วิ`:'Webbed! กดทิศทางรัว ๆ';
   $('itemNotice').textContent=noticeText;$('itemNotice').hidden=noticeTime<=0;
@@ -340,12 +378,18 @@ function updateUI(){
   $('attackButton').querySelector('strong').textContent=chargeRatio(combat)>=1?'ปล่อย!':combat.state==='charging'?'ชาร์จ…':'ฟันดาบ';
 }
 const defeatPreviews={dizzy:{stage:'spin',count:16,fps:16},fall:{stage:'collapse',count:16,fps:16},rest:{stage:'rest',count:8,fps:8}};
+const mummyPreviews={mummyWalk:0,mummyScratch:4,mummyCast:8,mummyBandage:12};
 const spiderPreviews={weaverWalk:{type:'weaver',attack:false},weaverAttack:{type:'weaver',attack:true},hunterWalk:{type:'hunter',attack:false},hunterAttack:{type:'hunter',attack:true}};
 function previewCount(){if(previewAction==='trees')return 1;if(spiderPreviews[previewAction])return 4;return ['slimes','spiders','webStatus'].includes(previewAction)?12:previewAction==='bombs'?8:previewAction==='nitro'?48:defeatPreviews[previewAction]?.count??(['spin','fireWave','fireSpin'].includes(previewAction)?8:['idle','charge'].includes(previewAction)?2:4);}
-function previews(){if($('spriteLab').hidden)return;const count=previewCount(),defeat=defeatPreviews[previewAction],fps=defeat?.fps??(spiderPreviews[previewAction]||previewAction==='webStatus'?WEB.fps:previewAction==='spiders'?WEB.fps:previewAction==='slimes'?SLIME.stickyFPS:previewAction==='fireWave'?16:['fireSpin','bombs'].includes(previewAction)?12.5:previewAction==='hurt'?10:previewAction==='spin'||previewAction==='slash'?12:['walk','chargeWalk'].includes(previewAction)?8:2);const np=nitroPose(previewTime%NITRO.duration),frame=previewPaused?Number($('frameSlider').value):previewAction==='nitro'?['fetch','sip','cheer'].indexOf(np.stage)*16+np.frame:Math.floor(previewTime*fps)%count;for(const c of document.querySelectorAll('.preview')){
+function previews(){if($('spriteLab').hidden)return;const count=previewCount(),defeat=defeatPreviews[previewAction],fps=defeat?.fps??(Object.hasOwn(mummyPreviews,previewAction)?6:spiderPreviews[previewAction]||previewAction==='webStatus'?WEB.fps:previewAction==='spiders'?WEB.fps:previewAction==='slimes'?SLIME.stickyFPS:previewAction==='fireWave'?16:['fireSpin','bombs'].includes(previewAction)?12.5:previewAction==='hurt'?10:previewAction==='spin'||previewAction==='slash'?12:['walk','chargeWalk'].includes(previewAction)?8:2);const np=nitroPose(previewTime%NITRO.duration),frame=previewPaused?Number($('frameSlider').value):previewAction==='nitro'?['fetch','sip','cheer'].indexOf(np.stage)*16+np.frame:Math.floor(previewTime*fps)%count;for(const c of document.querySelectorAll('.preview')){
   if(c.width!==160){c.width=160;c.height=160;}const p=c.getContext('2d'),r=row[c.dataset.direction],facing=c.dataset.direction;
   p.clearRect(0,0,160,160);p.imageSmoothingEnabled=false;
-  if(previewAction==='trees')drawTree(p,80,128,r);
+  if(Object.hasOwn(mummyPreviews,previewAction)){
+    const offset=mummyPreviews[previewAction];
+    if(offset===12)drawBandage(p,{x:80,y:104,age:(frame+.001)/10,vx:Math.cos(r*Math.PI/2),vy:Math.sin(r*Math.PI/2)});
+    else{const f=r*12+offset+frame;p.drawImage(mummyAtlas,f%4*160,Math.floor(f/4)*160,160,160,0,0,160,160);}
+  }
+  else if(previewAction==='trees')drawTree(p,80,128,r);
   else if(spiderPreviews[previewAction]){
     const sequence=spiderPreviews[previewAction],f=r*8+(sequence.attack?4:0)+frame;p.drawImage(spiderAtlases[sequence.type],f%4*96,Math.floor(f/4)*96,96,96,32,48,96,96);
   }
@@ -405,19 +449,21 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   if(health.hurtTime>0)player.facing=health.facing;
   else if(combat.state==='charging')combat.facing=player.facing;
   else if(locked&&!bound())player.facing=combat.facing;
-  const targets=[...dummies,...slimes.entities.filter(s=>s.hp>0),...spiders.entities.filter(s=>s.hp>0)],hits=resolveHits(combat,player,targets,rocks);emitSwordFire(swordFire,combat,player,health);
+  const targets=[...dummies,...slimes.entities.filter(s=>s.hp>0),...spiders.entities.filter(s=>s.hp>0),...mummies.entities.filter(s=>s.hp>0)],hits=resolveHits(combat,player,targets,rocks);emitSwordFire(swordFire,combat,player,health);
   hits.push(...updateSwordFire(swordFire,dt,targets,combat.stats,rocks));
   for(const d of dummies)if(d.kind==='shooter')updateShooter(d,dt,projectiles);
   if(updateProjectiles(projectiles,dt,player,health,rocks))playerDamaged('−½♥');
   const blast=advanceBombs(bombs,dt,targets,combat.stats,player,health);hits.push(...blast.hits);
   for(const hit of hits){rollNitroDrop(nitro,hit);damageEvents.push({...hit,age:0});shake=hit.kind==='bomb'?1.8:['spin','fireSpin'].includes(hit.kind)?1:.55;}
-  handleSlimeDefeats(slimes,hits);handleSpiderDefeats(spiders,hits);
+  handleSlimeDefeats(slimes,hits);handleSpiderDefeats(spiders,hits);handleMummyDefeats(mummies,hits);
   if(blast.exploded)shake=1.8;
   if(blast.broken.length)showNotice(`หินแตก ${blast.broken.length} ก้อน · เดินผ่านได้แล้ว!`);
   if(blast.playerHit)playerDamaged('−1♥');
   const slimeAttack=advanceSlimes(slimes,dt,player,health,webbed.bound?{bound:true}:sticky,{obstacles});
   if(slimeAttack.playerHit)playerDamaged('−½♥');
   if(slimeAttack.bound)enterRestraint('ติดเมือกเหนียว! กด WASD / ลูกศรรัว ๆ หรือปุ่มสลัด');
+  const mummyAttack=advanceMummies(mummies,dt,player,health,{restrained:bound(),obstacles});
+  if(mummyAttack.playerHit)playerDamaged('โดนโจมตี!');
   const spiderAttack=advanceSpiders(spiders,dt,player,health,webbed,{restrained:sticky.bound,obstacles});
   if(spiderAttack.playerHit)playerDamaged('−½♥');
   if(spiderAttack.bound)enterRestraint(`Webbed! กดทิศทางรัว ๆ ${WEB.escapePresses} ครั้งเพื่อดิ้นให้ใยขาด`);
@@ -425,7 +471,7 @@ function tick(now){const dt=previousTime?Math.min((now-previousTime)/1000,.05):0
   if(spiderAttack.upgraded)enterRestraint(`Webbed II! ดิ้น ${WEB.secondPresses} ครั้งใน ${WEB.secondDuration} วินาที!`);
   }
   }else{
-    advanceDefeat(health,dt);advanceBombEffects(bombs,dt);
+    advanceDefeat(health,dt);advanceBombEffects(bombs,dt);advanceMummyEffects(mummies,dt);
     if(webbed.failed){
       advanceWebbed(webbed,dt);const obstacles=[...dummyObstacles(dummies),...rockObstacles(bombs)];
       advanceSpidersAfterWebDefeat(spiders,dt,player,{obstacles});advanceSlimes(slimes,dt,player,health,sticky,{obstacles});
@@ -446,12 +492,12 @@ function resetJoystick(){joy={x:0,y:0};joyPointer=null;gooGesture='';$('joyKnob'
 function resetInput(){keys.clear();resetJoystick();attackSources.clear();cancelAttack(combat);}
 function showNotice(text){noticeText=text;noticeTime=2.4;}
 function enterRestraint(notice){keys.clear();joy={x:0,y:0};gooGesture='';attackSources.clear();cancelAttack(combat);player.facing='down';health.hurtTime=0;health.knockTime=0;showNotice(notice);}
-function finishWebDefeat(){resetInput();projectiles=[];spiders.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;noticeTime=0;}
+function finishWebDefeat(){resetInput();projectiles=[];spiders.shots=[];mummies.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;noticeTime=0;}
 function struggle(){if(!ready||!bound()||health.dead)return;const isWeb=webbed.bound;if(isWeb?struggleWebbed(webbed,health):struggleSticky(sticky,health)){resetInput();showNotice(isWeb?'ดิ้นหลุดจากใยแล้ว!':'สลัดเมือกออกแล้ว!');}updateUI();}
 $('struggleButton').addEventListener('click',struggle);
 function playerDamaged(label){
   cancelAttack(combat);attackSources.clear();shake=1;damageEvents.push({x:player.x,y:player.y-46,damage:label,kind:'player',age:0});
-  if(health.dead){projectiles=[];spiders.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;resetJoystick();}
+  if(health.dead){projectiles=[];spiders.shots=[];mummies.shots=[];Object.assign(swordFire,createSwordFire());player.moving=false;player.actualMoving=false;resetJoystick();}
 }
 function useBomb(){
   if(!ready||bound()||!canUseBomb(bombs,health,nitro.active))return;
@@ -474,7 +520,7 @@ $('attackButton').addEventListener('keydown',e=>{if(e.code==='Enter'){e.preventD
 $('attackButton').addEventListener('keyup',e=>{if(e.code==='Enter'){e.preventDefault();letGoAttack('Enter');}});
 function resetTraining(){dummies=createDummies();projectiles=[];Object.assign(swordFire,createSwordFire());damageEvents=[];Object.assign(combat.stats,{hits:0,total:0,last:0,lastKind:'',spins:0});}
 $('resetDummies').addEventListener('click',()=>{if(nitro.active||bound())return;resetInput();resetTraining();updateUI();});
-function restartGame(){resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(webbed,createWebbed());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});snapCamera();updateUI();}
+function restartGame(){resetInput();resetTraining();Object.assign(nitro,createNitro());Object.assign(bombs,createBombs());Object.assign(slimes,createSlimes());Object.assign(sticky,createSticky());Object.assign(spiders,createSpiders());Object.assign(mummies,createMummies());Object.assign(webbed,createWebbed());noticeTime=0;Object.assign(health,createHealth());lastHP=-1;Object.assign(player,{...START,facing:'down',moving:false,actualMoving:false,wasMoving:false,animTime:0,distance:0});snapCamera();updateUI();}
 $('resetButton').addEventListener('click',restartGame);$('retryButton').addEventListener('click',restartGame);
 $('fullscreenButton').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(viewport.requestFullscreen)await viewport.requestFullscreen();else{viewport.classList.toggle('expanded');$('fullscreenButton').textContent=viewport.classList.contains('expanded')?'×':'⛶';}}catch{viewport.classList.toggle('expanded');}resize();});
 $('spriteButton').addEventListener('click',()=>{const lab=$('spriteLab');lab.hidden=!lab.hidden;$('spriteButton').innerHTML=lab.hidden?'ดู Sprite <span>↗</span>':'ซ่อน Sprite <span>↙</span>';if(!lab.hidden)lab.scrollIntoView({behavior:'smooth',block:'start'});});
@@ -485,7 +531,8 @@ for(const button of document.querySelectorAll('#animTabs button'))button.addEven
   const labels=['↓ ด้านหน้า','← ด้านซ้าย','→ ด้านขวา','↑ ด้านหลัง'],short=['DOWN','LEFT','RIGHT','UP'];
   document.querySelectorAll('.direction-cards article').forEach((card,i)=>{
     const sequence=defeatPreviews[previewAction];let label=labels[i],detail=short[i];
-    if(previewAction==='trees'){label=['ต้นไม้ทรงกลม','ต้นไม้ทรงสูง','ต้นไม้พุ่มกว้าง','ต้นไม้พุ่มซ้อน'][i];detail='STATIC · 1 FRAME';}
+    if(Object.hasOwn(mummyPreviews,previewAction)){detail=`${{mummyWalk:'WALK',mummyScratch:'SCRATCH',mummyCast:'CAST',mummyBandage:'BANDAGE'}[previewAction]} · 4 FRAMES`;if(previewAction==='mummyBandage')label=['→ ขวา','↓ ลง','← ซ้าย','↑ ขึ้น'][i];}
+    else if(previewAction==='trees'){label=['ต้นไม้ทรงกลม','ต้นไม้ทรงสูง','ต้นไม้พุ่มกว้าง','ต้นไม้พุ่มซ้อน'][i];detail='STATIC · 1 FRAME';}
     else if(spiderPreviews[previewAction])detail=`${spiderPreviews[previewAction].attack?'ATTACK':'WALK'} · 4 FRAMES`;
     else if(previewAction==='webStatus'){label=['Webbed ขั้นแรก','Webbed II · ปิดตา','หมดเวลา · หายใจเบา ๆ','Projectile ใย'][i];detail=['12 FRAMES','12 FRAMES','8 FRAMES · 4 FPS','4 FRAMES'][i];}
     else if(previewAction==='spiders'){label=['แมงมุมยิงใย','แมงมุมประชิด','Projectile ใย','Burnice ติดใย Webbed'][i];detail=['32 FRAMES · 4 DIR','32 FRAMES · 4 DIR','4 FRAMES','12 FRAMES · 8 FPS'][i];}
@@ -501,6 +548,7 @@ $('pausePreview').addEventListener('click',()=>{previewPaused=!previewPaused;$('
 $('frameSlider').addEventListener('input',previews);
 const loadImage=(image,src)=>new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;image.src=src;});
 const imageSources=[
+  [mummyAtlas,'assets/mummy-v18-atlas.png'],[bandageAtlas,'assets/mummy-bandage-v18-atlas.png'],
   [spiderNestAtlas,'assets/spider-nest-v16-atlas.png'],
   [treeAtlas,'assets/trees-v15-atlas.png'],
   [atlas,'assets/burnice-atlas.png'],[slashAtlas,'assets/burnice-slash-v3-atlas.png'],

@@ -18,7 +18,7 @@ function setup(type='weaver'){
 function directShot(a){a.s.shots=[{id:'test',x:a.p.x,y:a.p.y-20,vx:0,vy:0,age:0,travelled:0}];return advanceWebShots(a.s,0,a.p,a.h,a.w);}
 
 test('west spider yard connects to the old yard while original positions and east Slime zone remain stable',()=>{
-  assert.equal(WORLD.left,-640);assert.equal(WORLD.left+WORLD.width,1664);assert.equal(WORLD.height,768);assert.deepEqual(START,{x:468,y:408});assert.equal(TRAINING_ZONE.x,1048);
+  assert.equal(WORLD.left,-640);assert.equal(WORLD.left+WORLD.width,1664);assert.equal(WORLD.top+WORLD.height,768);assert.deepEqual(START,{x:468,y:408});assert.equal(TRAINING_ZONE.x,1048);
   assert.equal(collides(20,400),false);assert.equal(collides(20,300),true);assert.equal(collides(-620,400),true);
   const p={x:80,y:400,facing:'left'};updatePlayer(p,{x:-1,y:0},2);assert.ok(insideSpiderYard(p));
 });

@@ -1,0 +1,1101 @@
+{
+  "sources": [
+    "mummy-v18-generated.png",
+    "mummy-v18-draft-generated.png"
+  ],
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "selection": "complete connected subjects sorted by column and vertical position; transparent gutters verified; no fixed-cell clipping",
+  "layout": "12 frames per direction: four walk, four scratch, four cast; down,left,right,up",
+  "scale": 0.5294117647058824,
+  "sequences": {
+    "mummy": [
+      {
+        "file": "mummy-v18-frames/mummy-0.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "walk",
+        "sourceBounds": [
+          93,
+          92,
+          176,
+          194
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-1.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "walk",
+        "sourceBounds": [
+          326,
+          92,
+          413,
+          194
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-2.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "walk",
+        "sourceBounds": [
+          575,
+          92,
+          655,
+          194
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-3.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "walk",
+        "sourceBounds": [
+          806,
+          92,
+          889,
+          193
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-4.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "scratch",
+        "sourceBounds": [
+          88,
+          210,
+          190,
+          308
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-5.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "scratch",
+        "sourceBounds": [
+          308,
+          210,
+          442,
+          308
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-6.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "scratch",
+        "sourceBounds": [
+          519,
+          210,
+          680,
+          309
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-7.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 160,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "scratch",
+        "sourceBounds": [
+          804,
+          209,
+          898,
+          308
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-8.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "cast",
+        "sourceBounds": [
+          84,
+          325,
+          192,
+          425
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-9.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "cast",
+        "sourceBounds": [
+          311,
+          324,
+          446,
+          425
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-10.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "cast",
+        "sourceBounds": [
+          533,
+          325,
+          700,
+          423
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-11.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 320,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "down",
+        "action": "cast",
+        "sourceBounds": [
+          803,
+          323,
+          902,
+          426
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-12.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "walk",
+        "sourceBounds": [
+          80,
+          445,
+          187,
+          548
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-13.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "walk",
+        "sourceBounds": [
+          318,
+          443,
+          424,
+          548
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-14.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "walk",
+        "sourceBounds": [
+          552,
+          446,
+          658,
+          549
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-15.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 480,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "walk",
+        "sourceBounds": [
+          793,
+          447,
+          901,
+          549
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-16.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 640,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "scratch",
+        "sourceBounds": [
+          79,
+          565,
+          188,
+          664
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-17.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 640,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "scratch",
+        "sourceBounds": [
+          306,
+          562,
+          448,
+          666
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-18.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 640,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "scratch",
+        "sourceBounds": [
+          523,
+          567,
+          666,
+          667
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-19.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 640,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "scratch",
+        "sourceBounds": [
+          797,
+          566,
+          900,
+          667
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-20.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 800,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "cast",
+        "sourceBounds": [
+          81,
+          680,
+          185,
+          785
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-21.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 800,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "cast",
+        "sourceBounds": [
+          306,
+          676,
+          449,
+          779
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-22.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 800,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "cast",
+        "sourceBounds": [
+          528,
+          680,
+          704,
+          781
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-23.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 800,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "left",
+        "action": "cast",
+        "sourceBounds": [
+          801,
+          681,
+          908,
+          785
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-24.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 960,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "walk",
+        "sourceBounds": [
+          89,
+          803,
+          200,
+          908
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-25.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 960,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "walk",
+        "sourceBounds": [
+          318,
+          803,
+          434,
+          908
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-26.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 960,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "walk",
+        "sourceBounds": [
+          559,
+          803,
+          671,
+          908
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-27.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 960,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "walk",
+        "sourceBounds": [
+          808,
+          803,
+          919,
+          908
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-28.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 1120,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "scratch",
+        "sourceBounds": [
+          81,
+          924,
+          193,
+          1026
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-29.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 1120,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "scratch",
+        "sourceBounds": [
+          299,
+          920,
+          460,
+          1025
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-30.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 1120,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "scratch",
+        "sourceBounds": [
+          541,
+          923,
+          713,
+          1024
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-31.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 1120,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "scratch",
+        "sourceBounds": [
+          803,
+          921,
+          907,
+          1022
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-32.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 1280,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "cast",
+        "sourceBounds": [
+          85,
+          1041,
+          190,
+          1141
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-33.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 1280,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "cast",
+        "sourceBounds": [
+          310,
+          1041,
+          439,
+          1141
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-34.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 1280,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "cast",
+        "sourceBounds": [
+          527,
+          1040,
+          707,
+          1141
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-35.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 1280,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "right",
+        "action": "cast",
+        "sourceBounds": [
+          801,
+          1040,
+          906,
+          1141
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-36.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 1440,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "walk",
+        "sourceBounds": [
+          89,
+          1165,
+          183,
+          1262
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-37.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 1440,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "walk",
+        "sourceBounds": [
+          326,
+          1166,
+          417,
+          1261
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-38.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 1440,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "walk",
+        "sourceBounds": [
+          562,
+          1166,
+          651,
+          1262
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-39.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 1440,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "walk",
+        "sourceBounds": [
+          812,
+          1167,
+          901,
+          1264
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-40.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 1600,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "scratch",
+        "sourceBounds": [
+          82,
+          1277,
+          188,
+          1373
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-41.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 1600,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "scratch",
+        "sourceBounds": [
+          306,
+          1276,
+          440,
+          1372
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-42.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 1600,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "scratch",
+        "sourceBounds": [
+          525,
+          1276,
+          695,
+          1372
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-43.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 1600,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "scratch",
+        "sourceBounds": [
+          803,
+          1277,
+          905,
+          1372
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-44.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 0,
+        "y": 1760,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "cast",
+        "sourceBounds": [
+          86,
+          1381,
+          186,
+          1478
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-45.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 160,
+        "y": 1760,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "cast",
+        "sourceBounds": [
+          313,
+          1381,
+          430,
+          1472
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-46.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 320,
+        "y": 1760,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "cast",
+        "sourceBounds": [
+          552,
+          1382,
+          658,
+          1478
+        ],
+        "footBaseline": 112
+      },
+      {
+        "file": "mummy-v18-frames/mummy-47.png",
+        "image": "mummy-v18-atlas.png",
+        "x": 480,
+        "y": 1760,
+        "w": 160,
+        "h": 160,
+        "anchor": [
+          80,
+          112
+        ],
+        "facing": "up",
+        "action": "cast",
+        "sourceBounds": [
+          802,
+          1382,
+          905,
+          1475
+        ],
+        "footBaseline": 112
+      }
+    ],
+    "bandage": [
+      {
+        "file": "mummy-v18-frames/bandage-0.png",
+        "image": "mummy-bandage-v18-atlas.png",
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32,
+        "anchor": [
+          32,
+          16
+        ],
+        "sourceBounds": [
+          41,
+          1495,
+          220,
+          1539
+        ]
+      },
+      {
+        "file": "mummy-v18-frames/bandage-1.png",
+        "image": "mummy-bandage-v18-atlas.png",
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 32,
+        "anchor": [
+          32,
+          16
+        ],
+        "sourceBounds": [
+          276,
+          1491,
+          464,
+          1539
+        ]
+      },
+      {
+        "file": "mummy-v18-frames/bandage-2.png",
+        "image": "mummy-bandage-v18-atlas.png",
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 32,
+        "anchor": [
+          32,
+          16
+        ],
+        "sourceBounds": [
+          517,
+          1490,
+          707,
+          1539
+        ]
+      },
+      {
+        "file": "mummy-v18-frames/bandage-3.png",
+        "image": "mummy-bandage-v18-atlas.png",
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 32,
+        "anchor": [
+          32,
+          16
+        ],
+        "sourceBounds": [
+          767,
+          1491,
+          950,
+          1537
+        ]
+      }
+    ]
+  }
+}
